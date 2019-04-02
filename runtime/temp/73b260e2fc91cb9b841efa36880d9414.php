@@ -1,4 +1,4 @@
-<?php /*a:1:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1554169531;}*/ ?>
+<?php /*a:1:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1554190277;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -73,7 +73,7 @@
                         </a>
                         <dl class="layui-nav-child">
                             <dd><a href="/public/static/admin/views/users.html">用户组</a></dd>
-                            <dd><a href="/public/static/admin/views/operaterule.html">权限配置</a></dd>
+                            <dd><a href="<?php echo url('column/index'); ?>">权限配置</a></dd>
                         </dl>
                     </li>
                 </ul>

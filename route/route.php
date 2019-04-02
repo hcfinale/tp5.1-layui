@@ -14,7 +14,7 @@ Route::get('thinks', function () {
 });
 
 Route::get('hello/:name', 'index/index/hello');
-Route::get('login', 'admin/index/login');
+Route::get('login', 'admin/login/login');
 
 return [
 

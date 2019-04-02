@@ -3,8 +3,9 @@
 namespace app\common\model;
 
 use think\Model;
-class User extends Model
+class Detail extends Model
 {
     protected $pk = 'id';
-    protected $name = 'AdminUser';
+    protected $name = 'Detail';
+    protected $autoWriteTimestamp = true;
 }
