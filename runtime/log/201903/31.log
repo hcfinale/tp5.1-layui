@@ -1,0 +1,309 @@
+---------------------------------------------------------------
+[ 2019-03-31T08:18:24+08:00 ] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.047931s] [吞吐率：20.86req/s] [内存消耗：1,400.28kb] [文件加载：62]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/template/index/index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2019-03-31T08:18:31+08:00 ] 127.0.0.1 GET www.tp5123.com/admin
+[运行时间：0.047301s] [吞吐率：21.14req/s] [内存消耗：1,697.95kb] [文件加载：72]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/template/admin/login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2019-03-31T08:18:43+08:00 ] 127.0.0.1 GET www.tp5123.com/admin/index/index
+[运行时间：0.069666s] [吞吐率：14.35req/s] [内存消耗：1,709.02kb] [文件加载：76]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2019-03-31T08:18:47+08:00 ] 127.0.0.1 GET www.tp5123.com/index/index/index.html
+[运行时间：0.041627s] [吞吐率：24.02req/s] [内存消耗：1,400.79kb] [文件加载：62]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/template/index/index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2019-03-31T08:18:59+08:00 ] 127.0.0.1 GET www.tp5123.com/admin/index/index.html
+[运行时间：0.040424s] [吞吐率：24.74req/s] [内存消耗：1,709.08kb] [文件加载：76]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2019-03-31T08:19:01+08:00 ] 127.0.0.1 GET www.tp5123.com/admin/
+[运行时间：0.060189s] [吞吐率：16.61req/s] [内存消耗：1,697.56kb] [文件加载：72]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/template/admin/login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2019-03-31T08:19:08+08:00 ] 127.0.0.1 POST www.tp5123.com/admin/login/login.html
+[运行时间：0.197451s] [吞吐率：5.06req/s] [内存消耗：2,456.38kb] [文件加载：76]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp5123.com/admin/',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => 'www.tp5123.com',
+  'content-length' => '0',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001245s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_admin_user` [ RunTime:0.067327s ]
+[ sql ] [ SQL ] SELECT * FROM `my_admin_user` WHERE  `name` IS NULL LIMIT 1 [ RunTime:0.002387s ]
+---------------------------------------------------------------
+[ 2019-03-31T08:19:08+08:00 ] 127.0.0.1 POST www.tp5123.com/admin/
+[运行时间：0.215404s] [吞吐率：4.64req/s] [内存消耗：2,514.49kb] [文件加载：79]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://www.tp5123.com/admin/',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'content-length' => '23',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'admin',
+  'passwd' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001856s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_admin_user` [ RunTime:0.024625s ]
+[ sql ] [ SQL ] SELECT * FROM `my_admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.003067s ]
+[ sql ] [ SQL ] SELECT * FROM `my_admin_user` WHERE  `name` = 'admin'  AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1 [ RunTime:0.002880s ]
+---------------------------------------------------------------
+[ 2019-03-31T08:19:11+08:00 ] 127.0.0.1 GET www.tp5123.com/admin/index/index.html
+[运行时间：0.130220s] [吞吐率：7.68req/s] [内存消耗：2,473.52kb] [文件加载：86]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://www.tp5123.com/admin/',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148; userKey=EohlBL98jNUYt35Q2zPmTdDa64bROkvp',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001033s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp5.my_group_access' doesn't exist[E:\www\tp5\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[ 2019-03-31T08:20:00+08:00 ] 127.0.0.1 GET www.tp5123.com/admin/
+[运行时间：0.058355s] [吞吐率：17.14req/s] [内存消耗：1,703.61kb] [文件加载：72]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148; userKey=EohlBL98jNUYt35Q2zPmTdDa64bROkvp',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-03-31T08:20:00+08:00 ] 127.0.0.1 GET www.tp5123.com/admin/index/index.html
+[运行时间：0.056008s] [吞吐率：17.85req/s] [内存消耗：2,510.91kb] [文件加载：86]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148; userKey=EohlBL98jNUYt35Q2zPmTdDa64bROkvp',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000904s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_admin_access` [ RunTime:0.006554s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp5.my_group' doesn't exist[E:\www\tp5\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[ 2019-03-31T08:20:02+08:00 ] 127.0.0.1 GET www.tp5123.com/admin/index/index.html
+[运行时间：0.128668s] [吞吐率：7.77req/s] [内存消耗：2,510.91kb] [文件加载：86]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148; userKey=EohlBL98jNUYt35Q2zPmTdDa64bROkvp',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000889s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_admin_access` [ RunTime:0.006507s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp5.my_group' doesn't exist[E:\www\tp5\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[ 2019-03-31T08:21:18+08:00 ] 127.0.0.1 GET www.tp5123.com/admin/index/index.html
+[运行时间：0.067434s] [吞吐率：14.83req/s] [内存消耗：2,510.93kb] [文件加载：86]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148; userKey=EohlBL98jNUYt35Q2zPmTdDa64bROkvp',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_admin_access` [ RunTime:0.007049s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AdminRole.title' in 'field list'[E:\www\tp5\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[ 2019-03-31T08:25:31+08:00 ] 127.0.0.1 GET www.tp5123.com/admin/index/index.html
+[运行时间：0.095614s] [吞吐率：10.46req/s] [内存消耗：2,515.91kb] [文件加载：85]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.tp5123.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=d7d8883ee1e41c1071a557b404148148; userKey=EohlBL98jNUYt35Q2zPmTdDa64bROkvp',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000909s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_admin_access` [ RunTime:0.022061s ]
+[ sql ] [ SQL ] SELECT `AdminAccess`.`uid`,`AdminAccess`.`group_id`,`AdminRole`.`title`,`AdminRole`.`rules` FROM `my_admin_access` `AdminAccess` LEFT JOIN `my_admin_role` `AdminRole` ON `AdminAccess`.`group_id`=`AdminRole`.`id` WHERE  ( AdminAccess.uid='2' and AdminRole.status='1' ) [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_admin_node` [ RunTime:0.012170s ]
+[ error ] [8]Array to string conversion[E:\www\tp5\thinkphp\library\think\db\Builder.php:651]
