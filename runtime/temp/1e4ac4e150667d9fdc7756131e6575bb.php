@@ -1,12 +1,15 @@
-<?php /*a:1:{s:44:"E:\www\tp5\/template/admin/column\index.html";i:1554199722;}*/ ?>
+<?php /*a:2:{s:44:"E:\www\tp5\/template/admin/column\index.html";i:1554258625;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/public/static/admin/assets/css/layui.css">
+    <link rel="stylesheet" href="/public/static/admin/assets/common.css">
     <link rel="stylesheet" href="/public/static/admin/assets/css/view.css"/>
-    <title>权限配置</title>
+    <link rel="icon" href="/public/static/admin/favicon.ico">
+    <title>权限配置</title>    
     <style type="text/css">
         .layui-input-block{margin-left:0px; }
     </style>
@@ -62,13 +65,13 @@
                         </td>
                         <td>
                             <div class="layui-btn-group">
-                                <button class="layui-btn layui-btn-primary layui-btn-sm">
+                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_move('1')">
                                     <i class="layui-icon">&#xe65f;</i>
                                 </button>
-                                <button class="layui-btn layui-btn-primary layui-btn-sm">
+                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_edit('1')">
                                     <i class="layui-icon">&#xe642;</i>
                                 </button>
-                                <button class="layui-btn layui-btn-primary layui-btn-sm">
+                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_del('1')">
                                     <i class="layui-icon">&#xe640;</i>
                                 </button>
                             </div>
@@ -80,16 +83,21 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/public/static/admin/assets/layui.all.js"></script>
+<script src="/public/static/admin/assets/common.js"></script>
 <script>
-layui.use('form', function(){
-    var form = layui.form;
-    form.on('switch', function(data) {
-        // $(data.elem).attr('type', 'hidden').val(this.checked ? 1 : 0);
-        console.log(data.elem.value);
-        console.log(data.elem.value);
+window.onload = function(){
+    layui.use(['form','layer'], function(){
+        var form = layui.form;
+        var layer = layui.layer;   
+        form.on('switch', function(data) {
+            // $(data.elem).attr('type', 'hidden').val(this.checked ? 1 : 0);
+            console.log(data.elem.value);
+        });
+
     });
-});
+}
 </script>
 </body>
 </html>

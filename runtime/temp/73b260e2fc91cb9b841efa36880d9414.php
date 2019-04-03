@@ -1,11 +1,12 @@
-<?php /*a:1:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1554190277;}*/ ?>
+<?php /*a:3:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1554259067;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1554258877;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
+    	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/public/static/admin/assets/css/layui.css">
+    <link rel="stylesheet" href="/public/static/admin/assets/common.css">
     <link rel="stylesheet" href="/public/static/admin/assets/css/admin.css">
     <link rel="icon" href="/public/static/admin/favicon.ico">
     <title>管理后台</title>
@@ -47,6 +48,16 @@
                         <dl class="layui-nav-child">
                             <dd><a href="/public/static/admin/views/console.html">控制台</a></dd>
                             <dd><a href="<?php echo url('index/demo'); ?>">测试</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">
+                            <i class="layui-icon">&#xe649;</i>
+                            <em>栏目</em>
+                        </a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="<?php echo url('column/index'); ?>">栏目管理</a></dd>
+                            <dd><a href="<?php echo url('column/add'); ?>">栏目添加</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
@@ -94,7 +105,9 @@
 
         <div class="mobile-mask"></div>
     </div>
-    <script src="/public/static/admin/assets/layui.js"></script>
+    	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/public/static/admin/assets/layui.all.js"></script>
+    <script src="/public/static/admin/assets/common.js"></script>
     <script src="/public/static/admin/home.js" data-main="home"></script>
 </body>
 </html>

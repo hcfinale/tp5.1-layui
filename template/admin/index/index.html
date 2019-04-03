@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="__STATIC__/admin/assets/css/layui.css">
+    {include file="Public:header" /}
     <link rel="stylesheet" href="__STATIC__/admin/assets/css/admin.css">
     <link rel="icon" href="__STATIC__/admin/favicon.ico">
     <title>管理后台</title>
@@ -46,6 +43,16 @@
                         <dl class="layui-nav-child">
                             <dd><a href="__STATIC__/admin/views/console.html">控制台</a></dd>
                             <dd><a href="{:url('index/demo')}">测试</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">
+                            <i class="layui-icon">&#xe649;</i>
+                            <em>栏目</em>
+                        </a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="{:url('column/index')}">栏目管理</a></dd>
+                            <dd><a href="{:url('column/add')}">栏目添加</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
@@ -93,7 +100,7 @@
 
         <div class="mobile-mask"></div>
     </div>
-    <script src="__STATIC__/admin/assets/layui.js"></script>
+    {include file="Public:footer" /}
     <script src="__STATIC__/admin/home.js" data-main="home"></script>
 </body>
 </html>
