@@ -1,4 +1,4 @@
-<?php /*a:2:{s:44:"E:\www\tp5\/template/admin/column\index.html";i:1554258625;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;}*/ ?>
+<?php /*a:2:{s:44:"E:\www\tp5\/template/admin/column\index.html";i:1554465064;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,34 +49,37 @@
                     </tr> 
                 </thead>
                 <tbody>
+                    <?php if(is_array($category) || $category instanceof \think\Collection || $category instanceof \think\Paginator): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$column): $mod = ($i % 2 );++$i;?>
                     <tr>
-                        <td><input type="text" name="sort" style="width: 35px;text-align: center;"></td>
-                        <td>1</td>
-                        <td>2016-11-29</td>
-                        <td>2016-11-29</td>
+                        <input type="hidden" name="cid" value="<?php echo htmlentities($column['id']); ?>">
+                        <td><input type="text" name="sort" value="<?php echo htmlentities($column['sort']); ?>" style="width: 35px;text-align: center;"></td>
+                        <td><?php echo htmlentities($column['id']); ?></td>
+                        <td><?php if($column['pid'] != '0'): ?>|<?php echo str_repeat("___",$column['level']); ?><?php endif; ?><?php echo htmlentities($column['title']); ?></td>
+                        <td><?php echo htmlentities($column['keyword']); ?></td>
                         <td>
                             <form class="layui-form">
                                 <div class="layui-form-item">
                                     <div class="layui-input-block">
-                                        <input type="checkbox" value="0" name="status" lay-skin="switch" lay-text="开启|关闭">
+                                        <input type="checkbox" value="<?php echo htmlentities($column['status']); ?>" <?php if($column->status == '1'): ?>checked<?php endif; ?> title="<?php echo htmlentities($column['id']); ?>" lay-skin="switch" lay-text="开启|关闭">
                                     </div>
                                 </div>
                             </form>
                         </td>
                         <td>
                             <div class="layui-btn-group">
-                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_move('1')">
+                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_move('修改栏目','<?php echo url("column/edit",["id"=>$column["id"]]); ?>')">
                                     <i class="layui-icon">&#xe65f;</i>
                                 </button>
-                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_edit('1')">
+                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_edit('修改栏目','<?php echo url("column/edit",["id"=>$column["id"]]); ?>')">
                                     <i class="layui-icon">&#xe642;</i>
                                 </button>
-                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_del('1')">
+                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_del('','<?php echo url("column/del",["id"=>$column["id"]]); ?>')">
                                     <i class="layui-icon">&#xe640;</i>
                                 </button>
                             </div>
                         </td>
                     </tr>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </tbody>
                 </table>
             </div>
@@ -92,10 +95,57 @@ window.onload = function(){
         var form = layui.form;
         var layer = layui.layer;   
         form.on('switch', function(data) {
-            // $(data.elem).attr('type', 'hidden').val(this.checked ? 1 : 0);
+            $(data.elem).val(this.checked ? 1 : 0);
+            var id = data.elem.title;
             console.log(data.elem.value);
+            $.ajax({
+                method: 'post',
+                url: '<?php echo url("column/status"); ?>',
+                data: {
+                    id: id,
+                },
+                dataType: 'json',
+                success: function(res) {
+                    if(res.code == '1001'){
+                        layer.msg(res.data);
+                        setTimeout(function () {
+                            window.location.href = '';
+                        },2000)
+                    }else{
+                        layer.msg('修改失败 ');
+                    }
+                },
+                error:function () {
+                    layer.msg('状态修改失败 ');
+                }
+            })
         });
-
+        // 栏目排序 fid
+        $("input[name='sort']").each(function () {
+            $(this).on('change',function () {
+                var cid = $(this).parents('td').siblings("input[name='cid']").val();
+                var sort = $(this).val();
+                $.ajax({
+                    method: 'post',
+                    url: '<?php echo url("column/sort"); ?>',
+                    data: {
+                        id: cid,
+                        sort: sort,
+                    },
+                    dataType: 'json',
+                    success: function(res) {
+                        if(res.code == '1001'){
+                            layer.msg(res.data);
+                        }else{
+                            layer.msg('修改失败 ');
+                        }
+                    },
+                    error:function (err) {
+                        layer.msg('修改失败'+err);
+                    }
+                });
+            });
+        });
     });
 }
 </script>

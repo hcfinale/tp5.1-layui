@@ -1,4 +1,4 @@
-<?php /*a:3:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1554259067;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1554258877;}*/ ?>
+<?php /*a:3:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1554361146;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1554258877;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -56,8 +56,20 @@
                             <em>栏目</em>
                         </a>
                         <dl class="layui-nav-child">
-                            <dd><a href="<?php echo url('column/index'); ?>">栏目管理</a></dd>
-                            <dd><a href="<?php echo url('column/add'); ?>">栏目添加</a></dd>
+                            <dd>
+                                <a href="javascript:;">栏目</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="<?php echo url('column/index'); ?>">栏目管理</a></dd>
+                                    <dd><a href="<?php echo url('column/add'); ?>">栏目添加</a></dd>
+                                </dl>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">商品</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="<?php echo url('detail/index'); ?>">商品管理</a></dd>
+                                    <dd><a href="<?php echo url('detail/add'); ?>">商品添加</a></dd>
+                                </dl>
+                            </dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">

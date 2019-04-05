@@ -10,7 +10,7 @@ class Column extends Model
     protected $autoWriteTimestamp = true;
     protected $updateTime = false;
     public function listTree(){
-        $data = $this->select();
+        $data = $this->field('id,pid,uid,title,keyword,sort,status')->select();
         return $this->sortTree($data);
     }
     public function sortTree($data,$pid = 0,$level = 0){
@@ -23,5 +23,19 @@ class Column extends Model
             }
         }
         return $arr;
+    }
+    // 添加栏目
+    public function addClumn($data){
+        $data['uid'] = session('uid');
+        $result = $this->save($data);
+        return $result;
+    }
+    // 获取腹肌栏目
+    public function getParentById($id){
+        $res = $this->field('id,pid')->find($id);
+        if ($res['pid']!=0){
+            return $res['pid'];
+        }
+        return $res['id'];
     }
 }

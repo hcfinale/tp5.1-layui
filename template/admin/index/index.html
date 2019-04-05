@@ -51,8 +51,20 @@
                             <em>栏目</em>
                         </a>
                         <dl class="layui-nav-child">
-                            <dd><a href="{:url('column/index')}">栏目管理</a></dd>
-                            <dd><a href="{:url('column/add')}">栏目添加</a></dd>
+                            <dd>
+                                <a href="javascript:;">栏目</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="{:url('column/index')}">栏目管理</a></dd>
+                                    <dd><a href="{:url('column/add')}">栏目添加</a></dd>
+                                </dl>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">商品</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="{:url('detail/index')}">商品管理</a></dd>
+                                    <dd><a href="{:url('detail/add')}">商品添加</a></dd>
+                                </dl>
+                            </dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">

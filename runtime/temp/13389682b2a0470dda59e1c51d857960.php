@@ -1,10 +1,15 @@
+<?php /*a:3:{s:42:"E:\www\tp5\/template/admin/detail\add.html";i:1554467278;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1554258877;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-	{include file="Public:header" /}
-	<link rel="stylesheet" href="__STATIC__/admin/assets/css/view.css"/>
-    <link rel="icon" href="__STATIC__/admin/favicon.ico">
-    <title>栏目添加</title>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/public/static/admin/assets/css/layui.css">
+    <link rel="stylesheet" href="/public/static/admin/assets/common.css">
+	<link rel="stylesheet" href="/public/static/admin/assets/css/view.css"/>
+    <link rel="icon" href="/public/static/admin/favicon.ico">
+    <title>商品添加</title>
 </head>
 <body class="layui-view-body">
 <div class="layui-content">
@@ -13,39 +18,51 @@
 			<span class="layui-breadcrumb">
 				<a href="">首页</a>
 				<a href="">用户</a>
-				<a><cite>栏目添加</cite></a>
+				<a><cite>商品添加</cite></a>
 			</span>
-			<h2 class="title">栏目添加</h2>
+			<h2 class="title">商品添加</h2>
 		</div>
 	</div>
 	<div class="layui-row">
 		<div class="layui-col-lg-offset3 layui-col-xs6">
 			<form class="layui-form">
 				<div class="layui-form-item">
-					<label class="layui-form-label">父级栏目</label>
+					<label class="layui-form-label">所属分类</label>
 					<div class="layui-input-block">
-						<select name="pid" lay-verify="required">
+						<select name="cid" lay-verify="required">
 							<option value="0">请选择</option>
-							{volist name="category" id="cate"}
-							<option value="{$cate.id}">{if condition ="$cate['pid'] neq '0'"}|<?php echo str_repeat("___",$cate['level']); ?>{/if} {$cate.title}</option>
-							{/volist}
+							<?php if(is_array($category) || $category instanceof \think\Collection || $category instanceof \think\Paginator): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?>
+							<option value="<?php echo htmlentities($cate['id']); ?>"><?php if($cate['pid'] != '0'): ?>|<?php echo str_repeat("___",$cate['level']); ?><?php endif; ?> <?php echo htmlentities($cate['title']); ?></option>
+							<?php endforeach; endif; else: echo "" ;endif; ?>
 						</select>
 					</div>
 				</div>
 				<div class="layui-form-item">
-					<label class="layui-form-label">栏目名称</label>
+					<label class="layui-form-label">商品名称</label>
 					<div class="layui-input-block">
-						<input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+						<input type="text" name="name" required  lay-verify="required" placeholder="请输入商品名" autocomplete="off" class="layui-input">
 					</div>
 				</div>
 				<div class="layui-form-item">
-					<label class="layui-form-label">栏目图片</label>
+					<label class="layui-form-label">商品图片</label>
 					<div class="layui-input-block">
 						<button type="button" class="layui-btn" id="upcolumn">
 							<i class="layui-icon">&#xe67c;</i>上传图片
 						</button>
 						<img src="" alt="" width="30%" height="auto" id="columnImg" class="layui-hide" />
 						<input type="hidden" value="" name="img" id="columnimgs">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">商品数量</label>
+					<div class="layui-input-block">
+						<input type="text" name="sum" required  lay-verify="required" placeholder="请输入商品数量" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">商品价格</label>
+					<div class="layui-input-block">
+						<input type="text" name="price" required  lay-verify="required" placeholder="请输入商品价格" autocomplete="off" class="layui-input">
 					</div>
 				</div>
 				<div class="layui-form-item layui-form-text">
@@ -60,7 +77,7 @@
 						<textarea name="description" placeholder="请输入内容" class="layui-textarea"></textarea>
 					</div>
 				</div>
-				{:token()}
+				<?php echo token(); ?>
 				<div class="layui-form-item">
 					<div class="layui-input-block">
 						<button class="layui-btn" lay-submit lay-filter="add">立即提交</button>
@@ -71,10 +88,12 @@
 		</div>
 	</div>
 </div>
-{include file="Public:footer" /}
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/public/static/admin/assets/layui.all.js"></script>
+    <script src="/public/static/admin/assets/common.js"></script>
 <script type="text/javascript">
 var option = {
-	"upcolumnurl":"{:url('column/columnUpImg')}",
+	"upcolumnurl":"<?php echo url('detail/columnUpImg'); ?>",
 };
 layui.use(['form','upload'], function(){
 	var form = layui.form;
@@ -92,7 +111,7 @@ layui.use(['form','upload'], function(){
 			console.log(obj);
 			// 预览
 			obj.preview(function(index,file,result) {
-				$('#columnImg').toggleClass('layui-hide').attr({'src':result,'title':'栏目图片'});;// 图片链接加载
+				$('#columnImg').toggleClass('layui-hide').attr({'src':result,'title':'商品图片'});;// 图片链接加载
 				$('#columnImgs').val(result);
 			});
 		}
@@ -115,7 +134,7 @@ layui.use(['form','upload'], function(){
 	form.on('submit(add)', function(data){
 		var data = data.field;
 		// console.log(data);
-		$.post("{:url('column/add')}",data,function(res){
+		$.post("<?php echo url('detail/add'); ?>",data,function(res){
 			if(res.code == '1001'){
 				layer.msg(res.data);
 				setTimeout(function () {

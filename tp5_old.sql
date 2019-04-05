@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : root用户
-Source Server Version : 100136
+Source Server         : 本地
+Source Server Version : 50505
 Source Host           : localhost:3306
 Source Database       : tp5
 
 Target Server Type    : MYSQL
-Target Server Version : 100136
+Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2019-04-05 21:16:43
+Date: 2019-04-04 14:59:53
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -281,7 +281,7 @@ CREATE TABLE `my_column` (
   `sort` char(5) NOT NULL DEFAULT '50' COMMENT '排序',
   `status` smallint(3) NOT NULL DEFAULT '1' COMMENT '状态',
   PRIMARY KEY (`id`,`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of my_column
@@ -299,22 +299,6 @@ INSERT INTO `my_column` VALUES ('10', '1', '2', '辅食', '', '辅食', '辅食'
 INSERT INTO `my_column` VALUES ('11', '1', '2', '营养品', '', '营养品', '营养品', '1554282681', '50', '1');
 INSERT INTO `my_column` VALUES ('12', '2', '2', '纸尿裤', '\\public\\uploads\\20190403\\8c3884293e972b9c07f86bb2c2ecd2af.jpg', '纸尿裤', '纸尿裤', '1554282934', '50', '1');
 INSERT INTO `my_column` VALUES ('13', '2', '2', '婴儿湿巾', '\\public\\uploads\\20190403\\eba3ac6a7ecec4f4c76b3f22632aa6a8.jpg', '婴儿湿巾', '婴儿湿巾', '1554283050', '50', '1');
-INSERT INTO `my_column` VALUES ('14', '3', '2', '母婴洗护用品', '', '母婴洗护用品', '母婴洗护用品', '1554467900', '50', '1');
-INSERT INTO `my_column` VALUES ('15', '3', '2', '孕婴童用品', '', '孕婴童用品', '孕婴童用品', '1554467913', '50', '1');
-INSERT INTO `my_column` VALUES ('16', '4', '2', '婴幼玩具', '', '婴幼玩具', '婴幼玩具', '1554467935', '50', '1');
-INSERT INTO `my_column` VALUES ('17', '4', '2', '遥控玩具', '', '遥控玩具', '遥控玩具', '1554467946', '50', '1');
-INSERT INTO `my_column` VALUES ('18', '4', '2', '积木拼插', '', '积木拼插', '积木拼插', '1554467959', '50', '1');
-INSERT INTO `my_column` VALUES ('19', '5', '2', '婴儿推车', '', '婴儿推车', '婴儿推车', '1554467980', '50', '1');
-INSERT INTO `my_column` VALUES ('20', '5', '2', '儿童安全座骑', '', '儿童安全座骑', '儿童安全座骑', '1554467992', '50', '1');
-INSERT INTO `my_column` VALUES ('21', '6', '2', '童装', '', '童装', '童装', '1554468029', '50', '1');
-INSERT INTO `my_column` VALUES ('22', '6', '2', '童鞋', '', '童鞋', '童鞋', '1554468039', '50', '1');
-INSERT INTO `my_column` VALUES ('23', '6', '2', '婴童内衣及配饰', '', '婴童内衣及配饰', '婴童内衣及配饰', '1554468049', '50', '1');
-INSERT INTO `my_column` VALUES ('24', '7', '2', '0-2岁', '', '0-2岁', '0-2岁', '1554468066', '50', '1');
-INSERT INTO `my_column` VALUES ('25', '7', '2', '早教启蒙', '', '早教启蒙', '早教启蒙', '1554468076', '50', '1');
-INSERT INTO `my_column` VALUES ('26', '7', '2', '孕产育儿', '', '孕产育儿', '孕产育儿', '1554468086', '50', '1');
-INSERT INTO `my_column` VALUES ('27', '8', '2', '孕妇装', '', '孕妇装', '孕妇装', '1554468100', '50', '1');
-INSERT INTO `my_column` VALUES ('28', '8', '2', '背婴带', '', '背婴带', '背婴带', '1554468110', '50', '1');
-INSERT INTO `my_column` VALUES ('29', '8', '2', '母婴服务', '', '母婴服务', '母婴服务', '1554468119', '50', '1');
 
 -- ----------------------------
 -- Table structure for my_detail
@@ -329,19 +313,17 @@ CREATE TABLE `my_detail` (
   `description` varchar(255) DEFAULT NULL,
   `img` varchar(255) NOT NULL DEFAULT '/public/static/images/default.jpg' COMMENT '商品图片',
   `sum` int(255) NOT NULL DEFAULT '1' COMMENT '商品数量',
-  `price` float(255,0) DEFAULT NULL COMMENT '商品价格',
+  `price` char(255) DEFAULT NULL COMMENT '商品价格',
   `create_time` int(11) unsigned NOT NULL,
   `update_time` int(11) unsigned NOT NULL,
   `sort` char(5) NOT NULL DEFAULT '50',
   `status` smallint(3) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`,`cid`,`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of my_detail
 -- ----------------------------
-INSERT INTO `my_detail` VALUES ('1', '21', '2', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', '\\public\\uploads\\20190405\\829aa4b62b9de6c8d3905d00b81e06be.jpg', '37', '49', '1554468256', '1554470135', '50', '1');
-INSERT INTO `my_detail` VALUES ('2', '21', '2', '小白兔童装', '小白兔童装', '小白兔童装', '\\public\\uploads\\20190405\\07d5229a5a9b63547fc2661556850cc9.jpg', '23', '388', '1554468350', '1554470138', '50', '1');
 
 -- ----------------------------
 -- Table structure for my_group

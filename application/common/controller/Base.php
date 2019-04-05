@@ -91,6 +91,6 @@ abstract class Base extends ReturnCode {
         return $data;
     }
     public function _empty(){
-        $this->error('您访问了一个不存在的方法');
+        $this->error('您访问了一个不存在的方法','admin/index/demo');
     }
 }
