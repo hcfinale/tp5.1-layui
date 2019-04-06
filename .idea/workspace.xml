@@ -3,21 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="97d77dec-0363-4779-82a5-8db98bf7f59f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Column.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Column.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/controller/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Base.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/controller/ReturnCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/ReturnCode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/model/Column.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/model/Column.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/common/model/Detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/model/Detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/route/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201904/03.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/201904/03.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/1e4ac4e150667d9fdc7756131e6575bb.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/1e4ac4e150667d9fdc7756131e6575bb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/1ea0da894b6ed08323511d80feefaf7a.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/1ea0da894b6ed08323511d80feefaf7a.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/73b260e2fc91cb9b841efa36880d9414.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/73b260e2fc91cb9b841efa36880d9414.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/column/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/admin/column/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/column/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/admin/column/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/admin/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tp5.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201903/27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201903/28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201903/29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201903/31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201904/01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201904/02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201904/03.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201904/04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201904/05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/13389682b2a0470dda59e1c51d857960.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/160a682e21d40ed687992536039c76c1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/1e4ac4e150667d9fdc7756131e6575bb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/1ea0da894b6ed08323511d80feefaf7a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/3b24dd440ce4d27c67106a19d3ced5ef.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/4e2c290a6cb36f170e6da4fda81cb35b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/54e557a612ef4c671f09d7964dd64a4d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/5fb9554b4e8a2ed1b120c72e7fc34648.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/62b2d2d37374cbc78b72291494503f0a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/6a0c90272adda9c3ba832a5f5b210860.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/73b260e2fc91cb9b841efa36880d9414.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/7b5ab1e5f2709303d4629d1589a517c2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/e26620bc03e9bddfe1abfa6ab7daa299.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/e4629c776c5c2e34b163c4e4ef87fb44.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,41 +44,67 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="6" />
           <entry key="js" value="1" />
-          <entry key="php" value="6" />
+          <entry key="php" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="6" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="6" />
+          <entry key="PHP" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="381" />
           <entry key="js" value="26" />
-          <entry key="php" value="529" />
+          <entry key="php" value="606" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="381" />
           <entry key="JavaScript" value="26" />
-          <entry key="PHP" value="529" />
+          <entry key="PHP" value="606" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/Detail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+              <folding>
+                <element signature="e#39#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/common/model/Detail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <folding>
+                <element signature="e#53#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -142,7 +178,6 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
         <option value="$PROJECT_DIR$/public/static/admin/assets/common.css" />
         <option value="$PROJECT_DIR$/application/common/controller/ReturnCode.php" />
-        <option value="$PROJECT_DIR$/application/common/controller/Base.php" />
         <option value="$PROJECT_DIR$/application/common/model/Column.php" />
         <option value="$PROJECT_DIR$/template/admin/column/add.html" />
         <option value="$PROJECT_DIR$/template/admin/column/edit.html" />
@@ -152,9 +187,10 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Column.php" />
         <option value="$PROJECT_DIR$/template/admin/detail/add.html" />
         <option value="$PROJECT_DIR$/template/admin/detail/edit.html" />
+        <option value="$PROJECT_DIR$/template/admin/detail/index.html" />
+        <option value="$PROJECT_DIR$/application/common/controller/Base.php" />
         <option value="$PROJECT_DIR$/application/common/model/Detail.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Detail.php" />
-        <option value="$PROJECT_DIR$/template/admin/detail/index.html" />
       </list>
     </option>
   </component>
@@ -188,6 +224,24 @@
             <path>
               <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
               <item name="tp5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -244,18 +298,21 @@
       <workItem from="1554080979592" duration="603000" />
       <workItem from="1554102057202" duration="12990000" />
       <workItem from="1554463353635" duration="6720000" />
+      <workItem from="1554521834803" duration="632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78134000" />
+    <option name="totallyTimeSpent" value="78766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1386" height="788" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13951735" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1417798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Tail" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -494,16 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/controller/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="93" column="56" lean-forward="true" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/admin/column/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -536,9 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -553,9 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="108" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="108" selection-end-column="5" />
-          <folding>
-            <element signature="e#39#70#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,16 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/model/Detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding>
-            <element signature="e#53#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/admin/detail/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-371">
@@ -604,10 +635,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/controller/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <element signature="e#53#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="53" column="56" lean-forward="true" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        <state relative-caret-position="350">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding>
             <element signature="e#39#70#0#PHP" expanded="true" />
           </folding>

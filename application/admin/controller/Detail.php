@@ -12,11 +12,7 @@ class Detail extends Base {
         $this->modDetail = new DetailModule();
     }
     public function index(){
-        $detail = $this->modDetail
-            ->alias('d')
-            ->leftJoin('__COLUMN__ c','d.cid = c.id')
-            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.sort,d.status,c.title')
-            ->select();
+        $detail = $this->modDetail->selectDetail();
         return $this->fetch('index',[
             'detail'  =>  $detail,
         ]);

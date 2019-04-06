@@ -25,6 +25,14 @@ class Detail extends Model
         }
         return $arr;
     }
+    // 首页商品展示
+    public function selectDetail(){
+        $result = $this->alias('d')
+            ->leftJoin('__COLUMN__ c','d.cid = c.id')
+            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.sort,d.status,c.title')
+            ->select();
+        return $result;
+    }
     // 添加商品
     public function addDetail($data){
         $data['uid'] = session('uid');
