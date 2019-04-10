@@ -13,9 +13,9 @@ Route::get('thinks', function () {
     return 'hello,ThinkPHP5!这个也是可以的';
 });
 
-Route::get('hello/:name', 'index/index/hello');
-Route::get('login', 'admin/login/login');
-Route::get('index', 'index/index/index');
+
+Route::get('/', 'index/index');
+Route::rule('goods/:id', 'goods/index');
 
 return [
 

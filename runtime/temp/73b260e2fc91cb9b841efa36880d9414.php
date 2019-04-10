@@ -1,4 +1,4 @@
-<?php /*a:3:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1554361146;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1554258877;}*/ ?>
+<?php /*a:3:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1554691985;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1554258877;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -95,12 +95,11 @@
                             <em>用户</em>
                         </a>
                         <dl class="layui-nav-child">
-                            <dd><a href="/public/static/admin/views/users.html">用户组</a></dd>
-                            <dd><a href="<?php echo url('column/index'); ?>">权限配置</a></dd>
+                            <dd><a href="<?php echo url('users/index'); ?>">用户组</a></dd>
+                            <dd><a href="<?php echo url('rules/index'); ?>">权限配置</a></dd>
                         </dl>
                     </li>
                 </ul>
-
             </div>
         </div>
 

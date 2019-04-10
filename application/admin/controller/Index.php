@@ -11,8 +11,9 @@ class Index extends Base {
         return $this->fetch('form');
     }
     public function demo(){
-    	request()->setAction('123hcdex');
-    	dump(request()->action());
-    	dump(cookie('userKey'));
+    	// request()->setAction('123hcdex');
+    	// dump(request()->action());
+    	// dump(cookie('userKey'));
+        dump(randOrder());
     }
 }

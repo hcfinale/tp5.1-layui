@@ -25,4 +25,8 @@ class User extends Model
         session(null);
         cookie(null);
     }
+    public function userSelectAll(){
+        $data = $this->field('uid,name,email,mobile,gender,status,loginnum')->select();
+        return $data;
+    }
 }

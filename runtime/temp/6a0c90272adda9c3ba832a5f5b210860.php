@@ -1,14 +1,15 @@
+<?php /*a:1:{s:43:"E:\www\tp5\/template/admin/login\login.html";i:1554877268;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="__STATIC__/admin/assets/css/layui.css">
-    <link rel="stylesheet" href="__STATIC__/admin/assets/css/login.css">
+    <link rel="stylesheet" href="/public/static/admin/assets/css/layui.css">
+    <link rel="stylesheet" href="/public/static/admin/assets/css/login.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="__STATIC__/admin/assets/common.css">
-    <link rel="icon" href="__ROOT__favicon.ico">
+    <link rel="stylesheet" href="/public/static/admin/assets/common.css">
+    <link rel="icon" href="/favicon.ico">
     <title>管理后台</title>
 </head>
 <body class="login-wrap">
@@ -31,8 +32,8 @@
         </form>
     </div>
 </body>
-<script src="__STATIC__/admin/assets/layui.js"></script>
-<script src="__STATIC__/admin/login.js" data-main="login"></script>
+<script src="/public/static/admin/assets/layui.js"></script>
+<script src="/public/static/admin/login.js" data-main="login"></script>
 <script>
 layui.use(['layer','form'], function(){
     var form = layui.form;
@@ -42,13 +43,13 @@ layui.use(['layer','form'], function(){
     form.on('submit(login)', function(data){
         var param = data.field;
         $.ajax({
-            url:"{:url('admin/login/login')}",
+            url:"<?php echo url('admin/login/login'); ?>",
             method:'post',
             data:param,
             dataType:'JSON',
             success:function(res){
                 if (res.code==1001){
-                    location.href = '{:url("admin/index/index")}';
+                    location.href = '<?php echo url("admin/index/index"); ?>';
                 } else{
                     layer.msg('登录名或密码错误');
                 }

@@ -20,8 +20,9 @@ abstract class Base extends ReturnCode {
             $this->error('请登录后再说！', url('index/index/index'));
         }
         $auth = new auth();
-        if(!$uid || request()->time() - session('logintime') > 4*60*60){
-            session_destroy();
+        if(!$uid || request()->time() - session('logintime') > 8*60*60){
+            session(null);
+            cookie(null);
             $this->error('非法访问,请重新登录','admin/Login/login');
         }elseif(session('uid') == '2') {
             return true;

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="__STATIC__/index/static/css/main.css">
+  <link rel="stylesheet" type="text/css" href="__STATIC__/index/layui/css/layui.css">
+  <script type="text/javascript" src="__STATIC__/index/layui/layui.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+</head>
+<body>
+
+  <div class="site-nav-bg">
+    <div class="site-nav w1200">
+      <p class="sn-back-home">
+        <i class="layui-icon layui-icon-home"></i>
+        <a href="#">首页</a>
+      </p>
+      <div class="sn-quick-menu">
+        <div class="login"><a href="login.html">登录</a></div>
+        <div class="sp-cart"><a href="shopcart.html">购物车</a><span>2</span></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="header">
+    <div class="headerLayout w1200">
+      <div class="headerCon">
+        <h1 class="mallLogo">
+          <a href="#" title="母婴商城">
+            <img src="__STATIC__/index/static/img/logo.png">
+          </a>
+        </h1>
+        <div class="mallSearch">
+          <form action="" class="layui-form" novalidate>
+            <input type="text" name="title" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">
+                <i class="layui-icon layui-icon-search"></i>
+            </button>
+            <input type="hidden" name="" value="">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="content content-nav-base commodity-content">
+    <div class="main-nav">
+      <div class="inner-cont0">
+        <div class="inner-cont1 w1200">
+          <div class="inner-cont2">
+            <a href="{:url('goods/index')}" class="active">所有商品</a>
+            <a href="buytoday.html">今日团购</a>
+            <a href="information.html">母婴资讯</a>
+            <a href="about.html">关于我们</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="commod-cont-wrap">
+      <div class="commod-cont w1200 layui-clear">
+        <div class="left-nav">
+          <div class="title">所有分类</div>
+          <div class="list-box">
+            {volist name="category" id="cate"}
+            <dl>
+              <dt>{$cate.title}</dt>
+              {volist name="$cate['child']" id="vo"}
+              <dd><a href="{:url('goods/index',['id'=>$vo['id']])}" {eq name="vo.id" value="$id"}style="color:#ff0000"{/eq}>{$vo.title}</a></dd>
+              {/volist}
+            </dl>
+            {/volist}
+          </div>
+        </div>
+        <div class="right-cont-wrap">
+          <div class="right-cont">
+            <div class="sort layui-clear">
+              <a class="active" href="javascript:;" event = 'volume'>销量</a>
+              <a href="javascript:;" event = 'price'>价格</a>
+              <a href="javascript:;" event = 'newprod'>新品</a>
+              <a href="javascript:;" event = 'collection'>收藏</a>
+            </div>
+            <div class="prod-number">
+              <span>{$count}</span>
+            </div>
+            <div class="cont-list layui-clear" id="list-cont">
+              {volist name="goods" id="vo"}
+              <div class="item">
+                <div class="img">
+                  <a href="javascript:;"><img src="{$vo.img}" title="{$vo.name}" style="display: block;margin: 0 auto;"></a>
+                </div>
+                <div class="text">
+                  <p class="title">{$vo.name}</p>
+                  <p class="price">
+                    <span class="pri">￥{$vo.price}</span>
+                    <span class="nub">1266付款</span>
+                  </p>
+                </div>
+              </div>
+              {/volist}
+            </div>
+            <!-- 模版引擎导入 -->
+            <!-- <script type="text/html" id="demo">
+              {{# layui.each(d.menu.milk.content,function(index,item){}}
+                <div class="item">
+                  <div class="img">
+                    <a href="javascript:;"><img src="{{item.img}}"></a>
+                  </div>
+                  <div class="text">
+                    <p class="title"></p>
+                    <p class="price">
+                      <span class="pri">{{item.pri}}</span>
+                      <span class="nub">{{item.nub}}</span>
+                    </p>
+                  </div>
+                </div>
+              {{# }); }}
+            </script> -->
+            <div id="demo0" style="text-align: center;">
+              {$page|raw}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+
+  layui.config({
+    base: '__STATIC__/index/static/js/util/' //你存放新模块的目录，注意，不是layui的模块目录
+  }).use(['mm','laypage','jquery'],function(){
+      var laypage = layui.laypage,$ = layui.$,
+     mm = layui.mm;
+
+
+
+    // 模版引擎导入
+    //  var html = demo.innerHTML;
+    //  var listCont = document.getElementById('list-cont');
+    //  // console.log(layui.router("#/about.html"))
+    // mm.request({
+    //     url: '../json/commodity.json',
+    //     success : function(res){
+    //       console.log(res)
+    //       listCont.innerHTML = mm.renderHtml(html,res)
+    //     },
+    //     error: function(res){
+    //       console.log(res);
+    //     }
+    //   })
+
+    $('.sort a').on('click',function(){
+      $(this).addClass('active').siblings().removeClass('active');
+    })
+    $('.list-box dt').on('click',function(){
+      if($(this).attr('off')){
+        $(this).removeClass('active').siblings('dd').show()
+        $(this).attr('off','')
+      }else{
+        $(this).addClass('active').siblings('dd').hide()
+        $(this).attr('off',true)
+      }
+    })
+
+});
+</script>
+
+
+</body>
+</html>

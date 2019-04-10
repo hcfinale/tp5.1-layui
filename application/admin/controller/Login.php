@@ -25,7 +25,7 @@ class Login extends Controller{
                 session('uid',$result['uid']);
                 session('user',$result['name']);
                 session('logintime',request()->time());
-                $this->success('登录成功','index/index');
+                return $this->success('登录成功','admin/index/index');
             }else{
                 $this->error('密码错误');
             }

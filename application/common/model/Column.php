@@ -38,4 +38,16 @@ class Column extends Model
         }
         return $res['id'];
     }
+    // 首页导航
+    public function getNavCategory($id = 0){
+        $result = $this->where(['status'=>'1','pid'=>$id])->field('id,pid,title')->select();
+        $arr = array();
+        if (!empty($result)){
+            foreach ($result as $v){
+                $v['child'] = self::getNavCategory($v['id']);
+                $arr[] = $v;
+            }
+        }
+        return $arr;
+    }
 }

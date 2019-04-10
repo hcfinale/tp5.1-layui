@@ -1,11 +1,12 @@
+<?php /*a:1:{s:43:"E:\www\tp5\/template/index/index\index.html";i:1554880453;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="__STATIC__/index/static/css/main.css">
-  <link rel="stylesheet" type="text/css" href="__STATIC__/index/layui/css/layui.css">
-  <script type="text/javascript" src="__STATIC__/index/layui/layui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/public/static/index/static/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css">
+  <script type="text/javascript" src="/public/static/index/layui/layui.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 </head>
@@ -17,8 +18,8 @@
         <a href="#">首页</a>
       </p>
       <div class="sn-quick-menu">
-        <div class="login"><a href="{:url('user/login')}">登录</a></div>
-        <div class="sp-cart"><a href="{:url('user/shopCart')}">购物车</a><span>2</span></div>
+        <div class="login"><a href="<?php echo url('user/login'); ?>">登录</a></div>
+        <div class="sp-cart"><a href="<?php echo url('user/shopCart'); ?>">购物车</a><span>2</span></div>
       </div>
     </div>
   </div>
@@ -29,7 +30,7 @@
       <div class="headerCon">
         <h1 class="mallLogo">
           <a href="#" title="母婴商城">
-            <img src="__STATIC__/index/static/img/logo.png">
+            <img src="/public/static/index/static/img/logo.png">
           </a>
         </h1>
         <div class="mallSearch">
@@ -67,24 +68,24 @@
         <div class="category-tab-content">
           <div class="nav-con">
             <ul class="normal-nav layui-clear">
-              {volist name="result" id="vo"}
+              <?php if(is_array($result) || $result instanceof \think\Collection || $result instanceof \think\Paginator): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
               <li class="nav-item">
-                <div class="title">{$vo.title}</div>
+                <div class="title"><?php echo htmlentities($vo['title']); ?></div>
                 <p>
-                  {volist name="$vo['child']" id="v"}
-                  <a href="{:url('goods/index',['id'=>$v['id']])}" target="_blank" title="{$v.title}">{$v.title}</a>
-                  {/volist}
+                  <?php if(is_array($vo['child']) || $vo['child'] instanceof \think\Collection || $vo['child'] instanceof \think\Paginator): $i = 0; $__LIST__ = $vo['child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                  <a href="<?php echo url('goods/index',['id'=>$v['id']]); ?>" target="_blank" title="<?php echo htmlentities($v['title']); ?>"><?php echo htmlentities($v['title']); ?></a>
+                  <?php endforeach; endif; else: echo "" ;endif; ?>
                 </p>
                 <i class="layui-icon layui-icon-right"></i>
               </li>
-              {/volist}
+              <?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
           </div>
         </div>
       </div>
       <div class="category-banner">
         <div class="w1200">
-          <img src="__STATIC__/index/static/img/banner1.jpg">
+          <img src="/public/static/index/static/img/banner1.jpg">
         </div>
       </div>
     </div>
@@ -93,7 +94,7 @@
         <div class="sk_inner w1200">
           <div class="sk_hd">
             <a href="javascript:;">
-              <img src="__STATIC__/index/static/img/s_img1.jpg">
+              <img src="/public/static/index/static/img/s_img1.jpg">
             </a>
           </div>
           <div class="sk_bd">
@@ -101,7 +102,7 @@
               <div carousel-item>
                 <div class="item-box">
                   <div class="item">
-                    <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img2.jpg"></a>
+                    <a href="javascript:;"><img src="/public/static/index/static/img/s_img2.jpg"></a>
                     <div class="title">宝宝五彩袜棉质舒服</div>
                     <div class="price">
                       <span>￥49.00</span>
@@ -109,7 +110,7 @@
                     </div>
                   </div>
                   <div class="item">
-                    <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img3.jpg"></a>
+                    <a href="javascript:;"><img src="/public/static/index/static/img/s_img3.jpg"></a>
                     <div class="title">宝宝五彩袜棉质舒服</div>
                     <div class="price">
                       <span>￥49.00</span>
@@ -117,7 +118,7 @@
                     </div>
                   </div>
                   <div class="item">
-                    <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img4.jpg"></a>
+                    <a href="javascript:;"><img src="/public/static/index/static/img/s_img4.jpg"></a>
                     <div class="title">宝宝五彩袜棉质舒服</div>
                     <div class="price">
                       <span>￥49.00</span>
@@ -125,7 +126,7 @@
                     </div>
                   </div>
                   <div class="item">
-                    <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img5.jpg"></a>
+                    <a href="javascript:;"><img src="/public/static/index/static/img/s_img5.jpg"></a>
                     <div class="title">宝宝五彩袜棉质舒服</div>
                     <div class="price">
                       <span>￥49.00</span>
@@ -135,7 +136,7 @@
                 </div>
                 <div class="item-box">
                   <div class="item">
-                    <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img2.jpg"></a>
+                    <a href="javascript:;"><img src="/public/static/index/static/img/s_img2.jpg"></a>
                     <div class="title">宝宝五彩袜棉质舒服</div>
                     <div class="price">
                       <span>￥49.00</span>
@@ -143,7 +144,7 @@
                     </div>
                   </div>
                   <div class="item">
-                    <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img3.jpg"></a>
+                    <a href="javascript:;"><img src="/public/static/index/static/img/s_img3.jpg"></a>
                     <div class="title">宝宝五彩袜棉质舒服</div>
                     <div class="price">
                       <span>￥49.00</span>
@@ -151,7 +152,7 @@
                     </div>
                   </div>
                   <div class="item">
-                    <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img4.jpg"></a>
+                    <a href="javascript:;"><img src="/public/static/index/static/img/s_img4.jpg"></a>
                     <div class="title">宝宝五彩袜棉质舒服</div>
                     <div class="price">
                       <span>￥49.00</span>
@@ -159,7 +160,7 @@
                     </div>
                   </div>
                   <div class="item">
-                    <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img5.jpg"></a>
+                    <a href="javascript:;"><img src="/public/static/index/static/img/s_img5.jpg"></a>
                     <div class="title">宝宝五彩袜棉质舒服</div>
                     <div class="price">
                       <span>￥49.00</span>
@@ -184,24 +185,24 @@
           <div class="item">
             <h4>热销推荐</h4>
             <div class="big-img">
-              <a href="javascript:;"><img src="__STATIC__/index/static/img/hot1.png"></a>
+              <a href="javascript:;"><img src="/public/static/index/static/img/hot1.png"></a>
             </div>
             <div class="small-img">
-              <a href="javascript:;"><img src="__STATIC__/index/static/img/hot2.png" alt=""></a>
+              <a href="javascript:;"><img src="/public/static/index/static/img/hot2.png" alt=""></a>
             </div>
           </div>
           <div class="item">
             <div class="top-img">
-              <a href="javascript:;"><img src="__STATIC__/index/static/img/hot5.jpg"></a>
+              <a href="javascript:;"><img src="/public/static/index/static/img/hot5.jpg"></a>
             </div>
             <div class="bottom-img">
-              <a href="javascript:;"><img src="__STATIC__/index/static/img/hot6.jpg"></a>
-              <a class="baby-cream" href="javascript:;"><img src="__STATIC__/index/static/img/hot7.jpg"></a>
+              <a href="javascript:;"><img src="/public/static/index/static/img/hot6.jpg"></a>
+              <a class="baby-cream" href="javascript:;"><img src="/public/static/index/static/img/hot7.jpg"></a>
             </div>
           </div>
           <div class="item item1 margin0 padding0">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/hot8.jpg"></a>
-            <a href="javascript:;"><img class="btm-img" src="__STATIC__/index/static/img/hot9.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/hot8.jpg"></a>
+            <a href="javascript:;"><img class="btm-img" src="/public/static/index/static/img/hot9.jpg"></a>
           </div>
       </div>
     </div>
@@ -212,51 +213,51 @@
       <div class="product-item product-item1 layui-clear">
         <div class="left-title">
           <h4><i>1F</i></h4>
-          <img src="__STATIC__/index/static/img/icon_gou.png">
+          <img src="/public/static/index/static/img/icon_gou.png">
           <h5>宝宝服饰</h5>
         </div>
         <div class="right-cont">
-          <a href="javascript:;" class="top-img"><img src="__STATIC__/index/static/img/img12.jpg" alt=""></a>
+          <a href="javascript:;" class="top-img"><img src="/public/static/index/static/img/img12.jpg" alt=""></a>
           <div class="img-box">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img7.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img8.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img9.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img10.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img11.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img7.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img8.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img9.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img10.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img11.jpg"></a>
           </div>
         </div>
       </div>
       <div class="product-item product-item2 layui-clear">
         <div class="left-title">
           <h4><i>2F</i></h4>
-          <img src="__STATIC__/index/static/img/icon_gou.png">
+          <img src="/public/static/index/static/img/icon_gou.png">
           <h5>奶粉辅食</h5>
         </div>
         <div class="right-cont">
-          <a href="javascript:;" class="top-img"><img src="__STATIC__/index/static/img/img12.jpg" alt=""></a>
+          <a href="javascript:;" class="top-img"><img src="/public/static/index/static/img/img12.jpg" alt=""></a>
           <div class="img-box">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img7.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img8.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img9.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img10.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img11.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img7.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img8.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img9.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img10.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img11.jpg"></a>
           </div>
         </div>
       </div>
       <div class="product-item product-item3 layui-clear">
         <div class="left-title">
           <h4><i>3F</i></h4>
-          <img src="__STATIC__/index/static/img/icon_gou.png">
+          <img src="/public/static/index/static/img/icon_gou.png">
           <h5>宝宝用品</h5>
         </div>
         <div class="right-cont">
-          <a href="javascript:;" class="top-img"><img src="__STATIC__/index/static/img/img12.jpg" alt=""></a>
+          <a href="javascript:;" class="top-img"><img src="/public/static/index/static/img/img12.jpg" alt=""></a>
           <div class="img-box">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img7.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img8.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img9.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img10.jpg"></a>
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/s_img11.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img7.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img8.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img9.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img10.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/s_img11.jpg"></a>
           </div>
         </div>
       </div>
@@ -267,137 +268,137 @@
         <h4>更多推荐</h4>
         <div class="product-item-box layui-clear">
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more1.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more1.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more2.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more2.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more3.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more3.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more1.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more1.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more2.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more2.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more3.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more3.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more1.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more1.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more2.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more2.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more3.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more3.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more1.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more1.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more2.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more2.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more3.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more3.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more1.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more1.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more2.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more2.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more3.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more3.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more1.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more1.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more2.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more2.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more3.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more3.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more1.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more1.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more2.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more2.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more3.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more3.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more1.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more1.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more2.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more2.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more3.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more3.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more1.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more1.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more2.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more2.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
           <div class="list-item">
-            <a href="javascript:;"><img src="__STATIC__/index/static/img/more3.jpg"></a>
+            <a href="javascript:;"><img src="/public/static/index/static/img/more3.jpg"></a>
             <p>时尚宝宝小黄鸭T恤纯棉耐脏多色可选0-2岁宝宝</p>
             <span>￥100.00</span>
           </div>
@@ -434,7 +435,7 @@
   <script type="text/javascript">
 
 layui.config({
-    base: '__STATIC__/index/static/js/util/' //你存放新模块的目录，注意，不是layui的模块目录
+    base: '/public/static/index/static/js/util/' //你存放新模块的目录，注意，不是layui的模块目录
   }).use(['mm','carousel'],function(){
       var carousel = layui.carousel,
       mm = layui.mm;

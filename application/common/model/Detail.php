@@ -30,7 +30,20 @@ class Detail extends Model
         $result = $this->alias('d')
             ->leftJoin('__COLUMN__ c','d.cid = c.id')
             ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.sort,d.status,c.title')
-            ->select();
+            ->paginate(15,false,[
+                'type'=>'BootstrapDetailed'
+            ]);
+        return $result;
+    }
+    // 根据栏目展示
+    public function selectCId($id){
+        $result = $this->alias('d')
+            ->leftJoin('__COLUMN__ c','d.cid = c.id')
+            ->where('d.cid',$id)
+            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.sort,d.status,c.title')
+            ->paginate(1,false,[
+                'type'=>'BootstrapDetailed'
+            ]);
         return $result;
     }
     // 添加商品
