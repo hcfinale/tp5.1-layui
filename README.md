@@ -29,7 +29,7 @@ ThinkPHP5.1对底层架构做了进一步的改进，减少依赖，其主要特
  + Swoole/Workerman支持（V5.1.18+）
 
 
-> ThinkPHP5的运行环境要求PHP5.6以上。
+> ThinkPHP5的运行环境要求PHP5.6以上,yes.。
 
 ## 安装
 
