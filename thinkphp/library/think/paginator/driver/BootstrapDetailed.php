@@ -8,11 +8,8 @@
 // +----------------------------------------------------------------------
 // | Author: zhangyajun <448901948@qq.com>
 // +----------------------------------------------------------------------
-
 namespace think\paginator\driver;
-
 use think\Paginator;
-
 class BootstrapDetailed extends Paginator
 {
  

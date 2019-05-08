@@ -1,4 +1,4 @@
-<?php /*a:2:{s:44:"E:\www\tp5\/template/admin/detail\index.html";i:1554685209;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1554259509;}*/ ?>
+<?php /*a:2:{s:44:"E:\www\tp5\/template/admin/detail\index.html";i:1555291684;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1555291684;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>

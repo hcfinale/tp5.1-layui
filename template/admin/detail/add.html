@@ -19,7 +19,7 @@
 		</div>
 	</div>
 	<div class="layui-row">
-		<div class="layui-col-lg-offset3 layui-col-xs6">
+		<div class="layui-col-lg-offset1 layui-col-xs10">
 			<form class="layui-form">
 				<div class="layui-form-item">
 					<label class="layui-form-label">所属分类</label>
@@ -72,6 +72,13 @@
 						<textarea name="description" placeholder="请输入内容" class="layui-textarea"></textarea>
 					</div>
 				</div>
+				<div class="layui-form-item layui-form-text">
+					<label class="layui-form-label">详情</label>
+					<div class="layui-input-block">
+						<!--style给定宽度可以影响编辑器的最终宽度-->
+						<script type="text/plain" id="editor" name="content" style="width:100%;height:400px;"></script>
+					</div>
+				</div>
 				{:token()}
 				<div class="layui-form-item">
 					<div class="layui-input-block">
@@ -84,10 +91,14 @@
 	</div>
 </div>
 {include file="Public:footer" /}
+<script src="__STATIC__/editor/ueditor.config.js"></script>
+<script src="__STATIC__/editor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__STATIC__/editor/lang/zh-cn/zh-cn.js"></script>
 <script type="text/javascript">
 var option = {
 	"upcolumnurl":"{:url('detail/columnUpImg')}",
 };
+var editor = UE.getEditor('editor', { initialFrameWidth: null , autoHeightEnabled: false});
 layui.use(['form','upload'], function(){
 	var form = layui.form;
 	var upload = layui.upload;
@@ -125,12 +136,14 @@ layui.use(['form','upload'], function(){
 	});
 	//监听提交
 	form.on('submit(add)', function(data){
+		$('#editor').text(UE.getEditor('editor').getContent());
 		var data = data.field;
 		// console.log(data);
 		$.post("{:url('detail/add')}",data,function(res){
 			if(res.code == '1001'){
 				layer.msg(res.data);
 				setTimeout(function () {
+					$('#editor').text("");
 					window.location.href = '';
 				},2000)
 			}else{

@@ -24,7 +24,7 @@ class Detail extends Base {
             $columns = $this->modDetail->listTree();
             $detailId = request()->param('id');
             $colPId = $this->modDetail->getParentById($detailId);
-            $detailRes = $this->modDetail->field('id,cid,name,img,sum,price,keyword,description,status')->find($detailId);
+            $detailRes = $this->modDetail->field('id,cid,name,img,sum,price,keyword,description,content,status')->find($detailId);
             return $this->fetch('edit',[
                 'category'  =>  $columns,
                 'detail'    =>  $detailRes,
@@ -33,6 +33,7 @@ class Detail extends Base {
             ]);
         } elseif (request()->isPost()) {
             $update = input('post.');
+            $update['price'] = sprintf("%.2f", input('post.price'));
             $res = $this->modDetail->save($update,['id'=>$update['id']]);
             if($res){
                 return self::showReturnCode('1001','更新成功');

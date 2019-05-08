@@ -3,19 +3,22 @@ namespace app\index\controller;
 
 use app\common\model\Column;
 use app\common\model\Detail;
-use think\facade\Config;
 class Goods extends Base {
+    protected function initialize(){
+        parent::initialize();
+        $this->column = new Column();
+        $this->goods = new Detail();
+    }
     public function index(){
-        $column = new Column();
-        $category = $column->getNavCategory(0);
+        $category = $this->column->getNavCategory(0);
         $id = request()->param('id');
-        $goods = new Detail();
+
         if (!empty($id)){
-            $res = $goods->selectCId($id);
+            $res = $this->goods->selectCId($id);
             $page = $res->render();
             $count = count($res);
         }else{
-            $res = $goods->selectDetail();
+            $res = $this->goods->selectDetail();
             $page = $res->render();
             $count = count($res);
         }
@@ -25,6 +28,14 @@ class Goods extends Base {
             'count' =>  $count,
             'goods' =>  $res,
             'page'  =>  $page,
+        ]);
+    }
+    public function details($id){
+        $rescloumn = $this->goods->selectCId($id);
+        $res = $this->goods->findId($id);
+        return $this->fetch('details',[
+            'rescloumn'    =>  $rescloumn,
+            'res' => $res,
         ]);
     }
 }

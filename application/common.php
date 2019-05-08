@@ -11,6 +11,11 @@
 
 // 应用公共文件
 
+// 小数化处理
+function decimal($data){
+    $price = sprintf("%.2f", $data);
+    return $price;
+}
 
 function createStr($length)
 {

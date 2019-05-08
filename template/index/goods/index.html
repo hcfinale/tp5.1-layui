@@ -91,13 +91,13 @@
               {volist name="goods" id="vo"}
               <div class="item">
                 <div class="img">
-                  <a href="javascript:;"><img src="{$vo.img}" title="{$vo.name}" style="display: block;margin: 0 auto;"></a>
+                  <a href="{:url('goods/details',['id'=>$vo.id])}"><img src="{$vo.img}" title="{$vo.name}" style="display: block;margin: 0 auto;"></a>
                 </div>
                 <div class="text">
                   <p class="title">{$vo.name}</p>
                   <p class="price">
                     <span class="pri">￥{$vo.price}</span>
-                    <span class="nub">1266付款</span>
+                    <span class="nub">{$vo.payman}付款</span>
                   </p>
                 </div>
               </div>

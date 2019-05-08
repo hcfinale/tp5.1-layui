@@ -1,4 +1,4 @@
-<?php /*a:1:{s:43:"E:\www\tp5\/template/index/goods\index.html";i:1554887038;}*/ ?>
+<?php /*a:1:{s:43:"E:\www\tp5\/template/index/goods\index.html";i:1557114546;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,13 +92,13 @@
               <?php if(is_array($goods) || $goods instanceof \think\Collection || $goods instanceof \think\Paginator): $i = 0; $__LIST__ = $goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
               <div class="item">
                 <div class="img">
-                  <a href="javascript:;"><img src="<?php echo htmlentities($vo['img']); ?>" title="<?php echo htmlentities($vo['name']); ?>" style="display: block;margin: 0 auto;"></a>
+                  <a href="<?php echo url('goods/details',['id'=>$vo['id']]); ?>"><img src="<?php echo htmlentities($vo['img']); ?>" title="<?php echo htmlentities($vo['name']); ?>" style="display: block;margin: 0 auto;"></a>
                 </div>
                 <div class="text">
                   <p class="title"><?php echo htmlentities($vo['name']); ?></p>
                   <p class="price">
                     <span class="pri">￥<?php echo htmlentities($vo['price']); ?></span>
-                    <span class="nub">1266付款</span>
+                    <span class="nub"><?php echo htmlentities($vo['payman']); ?>付款</span>
                   </p>
                 </div>
               </div>

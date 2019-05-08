@@ -1,0 +1,201 @@
+---------------------------------------------------------------
+[ 2019-04-29T08:44:55+08:00 ] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.484028s] [吞吐率：2.07req/s] [内存消耗：3,509.35kb] [文件加载：80]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/template/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102006s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.248014s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-04-29T08:46:48+08:00 ] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.098005s] [吞吐率：10.20req/s] [内存消耗：3,326.77kb] [文件加载：78]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/template/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-04-29T08:47:55+08:00 ] 127.0.0.1 GET www.tp5123.com/extend/WxpyAPI/example/native.php
+[运行时间：0.038002s] [吞吐率：26.31req/s] [内存消耗：1,294.31kb] [文件加载：50]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2019-04-29T08:47:58+08:00 ] 127.0.0.1 GET www.tp5123.com/extend/WxpyAPI/example/native.php
+[运行时间：0.037003s] [吞吐率：27.02req/s] [内存消耗：1,294.27kb] [文件加载：50]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2019-04-29T08:48:23+08:00 ] 127.0.0.1 GET www.tp5123.com/extend/WxpyAPI/example/native.php
+[运行时间：0.023001s] [吞吐率：43.48req/s] [内存消耗：1,294.36kb] [文件加载：50]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2019-04-29T09:26:59+08:00 ] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.298018s] [吞吐率：3.36req/s] [内存消耗：3,326.55kb] [文件加载：78]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/template/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067004s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.001000s ]

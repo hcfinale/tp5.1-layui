@@ -29,26 +29,36 @@ class Detail extends Model
     public function selectDetail(){
         $result = $this->alias('d')
             ->leftJoin('__COLUMN__ c','d.cid = c.id')
-            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.sort,d.status,c.title')
+            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.payman,d.sort,d.status,c.title')
             ->paginate(15,false,[
                 'type'=>'BootstrapDetailed'
             ]);
         return $result;
     }
     // 根据栏目展示
-    public function selectCId($id){
+    public function selectCId($cid){
         $result = $this->alias('d')
             ->leftJoin('__COLUMN__ c','d.cid = c.id')
-            ->where('d.cid',$id)
-            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.sort,d.status,c.title')
+            ->where('d.cid',$cid)
+            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.payman,d.sort,d.status,c.title')
             ->paginate(1,false,[
                 'type'=>'BootstrapDetailed'
             ]);
         return $result;
     }
+    // 查看商品详情
+    public function findId($id){
+        $result = $this->alias('d')
+            ->leftJoin('__COLUMN__ c','d.cid = c.id')
+            ->where('d.id',$id)
+            ->field('d.id,d.name,d.keyword,d.description,d.content,d.img,d.sum,d.price,d.payman,d.sort,d.status,c.title')
+            ->find();
+        return $result;
+    }
     // 添加商品
     public function addDetail($data){
         $data['uid'] = session('uid');
+        $data['price'] = sprintf("%.2f", $data['price']);
         $result = $this->save($data);
         return $result;
     }
