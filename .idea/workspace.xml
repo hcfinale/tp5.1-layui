@@ -2,45 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97d77dec-0363-4779-82a5-8db98bf7f59f" name="Default Changelist" comment="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。">
-      <change afterPath="$PROJECT_DIR$/template/index/wxpay/qrcode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tp5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tp5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/validate/Column.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common/validate/Column.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/index/validate/Column.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Wxpay.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Wxpay.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/07.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/201905/07.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Log.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Log.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Validate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/Driver.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/Driver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Redis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/Builder.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Builder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/Query.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Query.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Mysql.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Sqlsrv.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Sqlsrv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/connector/pgsql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/pgsql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/DbException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/DbException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/facade/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/facade/Log.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Log.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/log/driver/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/log/driver/File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Attribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Attribute.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Conversion.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Conversion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/concern/SoftDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/SoftDelete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/BelongsToMany.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/BelongsToMany.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasMany.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasMany.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/paginator/driver/BootstrapDetailed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/response/Download.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Download.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/response/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Redirect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/route/Rule.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/route/Rule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/route/RuleGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/route/RuleGroup.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +34,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -124,9 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/static/admin/index.js" />
-        <option value="$PROJECT_DIR$/application/admin/view/login/login.html" />
-        <option value="$PROJECT_DIR$/config/common/app.php" />
         <option value="$PROJECT_DIR$/application/admin/view/index/form.html" />
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/admin/view/index/demo.html" />
@@ -175,6 +139,9 @@
         <option value="$PROJECT_DIR$/application/index/controller/Wxpay.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/wxpay.php" />
+        <option value="$PROJECT_DIR$/application/common/validate/column.php" />
+        <option value="$PROJECT_DIR$/application/admin/validate/Column.php" />
+        <option value="$PROJECT_DIR$/application/common/validate/Column.php" />
       </list>
     </option>
   </component>
@@ -199,42 +166,33 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hcadmin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\www\tp5\application\index\validate" />
+      <recent name="E:\www\tp5\template" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\www\tp5\application\admin" />
+      <recent name="E:\www\tp5\application\index\validate" />
       <recent name="E:\www\tp5\template\index\goods" />
       <recent name="E:\www\tp5\application\index\controller" />
       <recent name="E:\www\tp5\config\index" />
-      <recent name="E:\www\tp5\config\admin" />
-      <recent name="E:\www\tp5\application\admin\view\index" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\www\tp5\template" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -273,17 +231,18 @@
       <workItem from="1554877608924" duration="9858000" />
       <workItem from="1556498374062" duration="569000" />
       <workItem from="1557109349735" duration="11882000" />
-      <workItem from="1557188602073" duration="16177000" />
+      <workItem from="1557188602073" duration="17371000" />
+      <workItem from="1557361702577" duration="1290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121318000" />
+    <option name="totallyTimeSpent" value="123802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18991417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19259657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -297,13 +256,13 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32905483" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32905483" />
       <window_info anchor="bottom" id="Tail" order="12" />
-      <window_info anchor="right" id="Remote Host" weight="0.3299356" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.3299356" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.3299356" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25697425" />
@@ -335,30 +294,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/admin/users/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/admin/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2820">
-          <caret line="94" column="29" lean-forward="true" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="e#39#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/admin/login/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
@@ -637,9 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/extra/queue.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Wxpay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -657,13 +589,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/wxpay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/wxpay.php" />
     <entry file="file://$PROJECT_DIR$/think">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -680,6 +606,30 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/extra/queue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/validate/Column.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/validate/Column.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/validate/Column.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
