@@ -34,6 +34,10 @@ class Detail extends Base {
         } elseif (request()->isPost()) {
             $update = input('post.');
             $update['price'] = sprintf("%.2f", input('post.price'));
+            $validate = validate('app\admin\validate\Detail');
+            if (!$validate->scene('edit')->check($update)) {
+                $this->error($validate->getError());
+            }
             $res = $this->modDetail->save($update,['id'=>$update['id']]);
             if($res){
                 return self::showReturnCode('1001','更新成功');
@@ -58,6 +62,10 @@ class Detail extends Base {
         $columns = $this->modDetail->listTree();
         if(request()->isPost()){
             $data = input('post.');
+            $validate = validate('app\admin\validate\Detail');
+            if (!$validate->scene('add')->check($data)) {
+                $this->error($validate->getError());
+            }
             $res = $this->modDetail->addDetail($data);
             if ($res){
                 return json(self::showReturnCode(1001,"添加成功"));

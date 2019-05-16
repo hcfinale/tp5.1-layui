@@ -32,6 +32,10 @@ class Column extends Base {
             ]);
     	} elseif (request()->isPost()) {
     		$update = input('post.');
+            $validate = validate('app\admin\validate\Column');
+            if (!$validate->scene('edit')->check($update)) {
+                $this->error($validate->getError());
+            }
     		$res = $this->modColumn->save($update,['id'=>$update['id']]);
     		if($res){
                 return self::showReturnCode('1001','更新成功');
@@ -56,6 +60,10 @@ class Column extends Base {
         $columns = $this->modColumn->listTree();
     	if(request()->isPost()){
     	    $data = input('post.');
+            $validate = validate('app\admin\validate\Column');
+            if (!$validate->scene('add')->check($data)) {
+                $this->error($validate->getError());
+            }
             $res = $this->modColumn->addClumn($data);
             if ($res){
                 return json(self::showReturnCode(1001,"添加成功"));

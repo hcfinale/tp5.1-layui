@@ -1,4 +1,4 @@
-<?php /*a:3:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1555291684;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1555291684;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1555291684;}*/ ?>
+<?php /*a:3:{s:43:"E:\www\tp5\/template/admin/index\index.html";i:1557971930;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1555291684;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1555291684;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -46,14 +46,14 @@
                             <em>主页</em>
                         </a>
                         <dl class="layui-nav-child">
-                            <dd><a href="/public/static/admin/views/console.html">控制台</a></dd>
+                            <dd><a href="<?php echo url('index/statistics'); ?>">控制台</a></dd>
                             <dd><a href="<?php echo url('index/demo'); ?>">测试</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
                         <a href="javascript:;">
                             <i class="layui-icon">&#xe649;</i>
-                            <em>栏目</em>
+                            <em>类别</em>
                         </a>
                         <dl class="layui-nav-child">
                             <dd>
@@ -68,6 +68,12 @@
                                 <dl class="layui-nav-child">
                                     <dd><a href="<?php echo url('detail/index'); ?>">商品管理</a></dd>
                                     <dd><a href="<?php echo url('detail/add'); ?>">商品添加</a></dd>
+                                </dl>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">订单</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="<?php echo url('index/shop_cart/order'); ?>">订单一览表</a></dd>
                                 </dl>
                             </dd>
                         </dl>

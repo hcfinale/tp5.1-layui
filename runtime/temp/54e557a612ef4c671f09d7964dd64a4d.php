@@ -1,4 +1,4 @@
-<?php /*a:3:{s:43:"E:\www\tp5\/template/admin/detail\edit.html";i:1557128012;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1555291684;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1555291684;}*/ ?>
+<?php /*a:3:{s:43:"E:\www\tp5\/template/admin/detail\edit.html";i:1557896485;s:45:"E:\www\tp5\/template/admin/Public\header.html";i:1555291684;s:45:"E:\www\tp5\/template/admin/Public\footer.html";i:1555291684;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -156,7 +156,7 @@ layui.use(['form','upload'], function(){
 				},2000);
 			}else{
 				// layer.msg(res.info, {time: 2000});
-				layer.msg('添加失败 ');
+				layer.msg('更新失败 ');
 			}
 		},'json');
 		return false;

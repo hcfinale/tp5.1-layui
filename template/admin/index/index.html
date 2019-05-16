@@ -41,14 +41,14 @@
                             <em>主页</em>
                         </a>
                         <dl class="layui-nav-child">
-                            <dd><a href="__STATIC__/admin/views/console.html">控制台</a></dd>
+                            <dd><a href="{:url('index/statistics')}">控制台</a></dd>
                             <dd><a href="{:url('index/demo')}">测试</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
                         <a href="javascript:;">
                             <i class="layui-icon">&#xe649;</i>
-                            <em>栏目</em>
+                            <em>类别</em>
                         </a>
                         <dl class="layui-nav-child">
                             <dd>
@@ -63,6 +63,12 @@
                                 <dl class="layui-nav-child">
                                     <dd><a href="{:url('detail/index')}">商品管理</a></dd>
                                     <dd><a href="{:url('detail/add')}">商品添加</a></dd>
+                                </dl>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">订单</a>
+                                <dl class="layui-nav-child">
+                                    <dd><a href="{:url('index/shop_cart/order')}">订单一览表</a></dd>
                                 </dl>
                             </dd>
                         </dl>

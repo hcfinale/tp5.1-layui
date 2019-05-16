@@ -1,13 +1,9 @@
 <?php
 namespace app\index\controller;
 
-use think\Db;
-use think\Session;
-use think\Request;
-use think\Cache;
-use think\Loader;
-use think\Exception;
+use app\common\model\User;
 use think\Controller;
+
 abstract class Base extends Controller {
     protected function initialize(){
     	
@@ -24,6 +20,14 @@ abstract class Base extends Controller {
             return false;
         }
     }
+    // 判断是否登录
+    public function islogin(){
+        if (User::isLogin()){
+            return true;
+        }
+        return false;
+    }
+    // 空控制器处理
     public function _empty(){
         $this->error('您访问了一个不存在的方法');
     }
