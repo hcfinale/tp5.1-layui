@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2019-05-16 17:03:58
+Date: 2019-05-20 17:49:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -247,7 +247,7 @@ CREATE TABLE `my_shop_address` (
 -- ----------------------------
 DROP TABLE IF EXISTS `my_shop_cart`;
 CREATE TABLE `my_shop_cart` (
-  `id` int(11) NOT NULL,
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `uid` int(11) NOT NULL COMMENT '用户id',
   `order_id` varchar(50) DEFAULT NULL COMMENT '订单id，默认为空',
   `name` varchar(255) NOT NULL COMMENT '商品名字',
@@ -258,9 +258,11 @@ CREATE TABLE `my_shop_cart` (
   `sort` char(5) NOT NULL DEFAULT '50' COMMENT '排序',
   `status` smallint(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of my_shop_cart
 -- ----------------------------
-INSERT INTO `my_shop_cart` VALUES ('1', '2', null, '黄色衣服', '0', '9.52', '1', '1554948742', '55', '1');
+INSERT INTO `my_shop_cart` VALUES ('1', '2', null, '黄色衣服', '0', '9.52', '1', '1558063848', '50', '1');
+INSERT INTO `my_shop_cart` VALUES ('2', '2', null, '宝宝五彩袜棉质舒服', '0', '49.00', '3', '1558063870', '50', '1');
+INSERT INTO `my_shop_cart` VALUES ('6', '2', null, '黑色童鞋', '0', '99.00', '1', '1558073338', '50', '1');
