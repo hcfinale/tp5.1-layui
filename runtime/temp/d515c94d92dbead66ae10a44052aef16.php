@@ -1,4 +1,4 @@
-<?php /*a:1:{s:45:"E:\www\tp5\/template/index/goods\details.html";i:1557996706;}*/ ?>
+<?php /*a:1:{s:45:"E:\www\tp5\/template/index/goods\details.html";i:1558058418;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,8 +69,8 @@
       <a href="javascript:;">产品详情</a>
     </div>
     <div class="product-intro layui-clear">
-      <form class="layui-form" action="" method="post">
-        <input type="hidden" name="goodName" value="<?php echo htmlentities($res['name']); ?>" />
+      <form class="layui-form" method="post">
+        <input type="hidden" name="did" value="<?php echo htmlentities($res['id']); ?>">
         <div class="preview-wrap">
           <a href="javascript:;"><img src="<?php echo htmlentities($res['img']); ?>" width="100%"></a>
         </div>
@@ -87,10 +87,10 @@
             </div>
             <div class="choose-attrs">
               <div class="color layui-clear"><span class="title">颜&nbsp;&nbsp;&nbsp;&nbsp;色</span> <div class="color-cont"><span class="btn">白色</span> <span class="btn active">粉丝</span></div></div>
-              <div class="number layui-clear"><span class="title">数&nbsp;&nbsp;&nbsp;&nbsp;量</span><div class="number-cont"><span class="cut btn">-</span><input onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" maxlength="4" type="" name="" value="1"><span class="add btn">+</span></div></div>
+              <div class="number layui-clear"><span class="title">数&nbsp;&nbsp;&nbsp;&nbsp;量</span><div class="number-cont"><span class="cut btn">-</span><input onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" maxlength="4" type="" name="sum" value="1"><span class="add btn">+</span></div></div>
             </div>
             <div class="choose-btns">
-              <button class="layui-btn layui-btn-primary purchase-btn" lay-filter="lay-submit">立刻购买</button>
+              <button class="layui-btn layui-btn-primary purchase-btn" lay-submit lay-filter="add-pay">立刻购买</button>
               <button class="layui-btn layui-btn-danger car-btn" lay-filter="lay-add-cart"><i class="layui-icon layui-icon-cart-simple"></i>加入购物车</button>
             </div>
           </div>
@@ -118,7 +118,7 @@
     </div>
   </div>
 </div>
-<!--<script type="text/javascript" src="/public/static/index/layui/layui.js"></script>-->
+<script type="text/javascript" src="/public/static/index/layui/layui.js"></script>
 <script type="text/javascript">
   layui.use(['form','layer','jquery'], function(){
     var form = layui.form;
@@ -134,10 +134,10 @@
           cur--;
         }
       }
-      $('.number-cont input').val(cur)
+      $('.number-cont input').val(cur);
     });
     //监听提交,直接购买
-    form.on('submit(lay-submit)', function(data){
+    form.on('submit(add-pay)', function(data){
       $.ajax({
         url:"<?php echo url('ShopCart/pay'); ?>",
         method:'post',

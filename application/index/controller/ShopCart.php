@@ -21,9 +21,11 @@ class ShopCart extends Base {
     }
     // 购物车商品购买
     public function pay(){
-        $goodsName = input('post.');
-        if ($goodsName){
-            return json(['code'=>'1001','data'=>$goodsName]);
+        $goodsId = input('post.did');
+        $goodsSum = input('post.sum');
+        $pay = $this->Cart->addPay($goodsId,$goodsSum);
+        if ($pay){
+            return json(['code'=>'1001','data'=>'购买成功']);
         }else
             return json(['code'=>'1004','data'=>'付款失败']);
     }
