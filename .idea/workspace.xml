@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="97d77dec-0363-4779-82a5-8db98bf7f59f" name="Default Changelist" comment="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/extra/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/ShopCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/ShopCart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/62b2d2d37374cbc78b72291494503f0a.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/62b2d2d37374cbc78b72291494503f0a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/route/route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201905/24.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/201905/24.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/d515c94d92dbead66ae10a44052aef16.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/d515c94d92dbead66ae10a44052aef16.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/index/goods/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index/goods/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index/index/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +102,6 @@
         <option value="$PROJECT_DIR$/template/admin/login/login.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Login.php" />
         <option value="$PROJECT_DIR$/application/common/model/Column.php" />
-        <option value="$PROJECT_DIR$/route/route.php" />
         <option value="$PROJECT_DIR$/thinkphp/library/think/paginator/driver/BootstrapDetailed.php" />
         <option value="$PROJECT_DIR$/extend/WxpayAPI/index.php" />
         <option value="$PROJECT_DIR$/template/index/goods/index.html" />
@@ -145,6 +140,7 @@
         <option value="$PROJECT_DIR$/application/index/controller/ShopCart.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/template/index/goods/details.html" />
+        <option value="$PROJECT_DIR$/route/route.php" />
       </list>
     </option>
   </component>
@@ -156,7 +152,7 @@
       <path value="$PROJECT_DIR$/vendor/aferrandini/phpqrcode" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1386" />
@@ -196,19 +192,19 @@
     <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\www\tp5\public" />
-      <recent name="E:\www\tp5\template\index\shop_cart" />
-      <recent name="E:\www\tp5\application\index\controller" />
-      <recent name="E:\www\tp5\application\common\model" />
-      <recent name="E:\www\tp5\template\admin\index" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\www\tp5\config" />
       <recent name="E:\www\tp5\application\index\controller" />
       <recent name="E:\www\tp5\application\common\controller" />
       <recent name="E:\www\tp5\application\index\validate" />
       <recent name="E:\www\tp5\template" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\www\tp5\public" />
+      <recent name="E:\www\tp5\template\index\shop_cart" />
+      <recent name="E:\www\tp5\application\index\controller" />
+      <recent name="E:\www\tp5\application\common\model" />
+      <recent name="E:\www\tp5\template\admin\index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,12 +251,12 @@
       <workItem from="1558053134902" duration="9720000" />
       <workItem from="1558086287327" duration="473000" />
       <workItem from="1558572460377" duration="2178000" />
-      <workItem from="1558657831702" duration="4930000" />
+      <workItem from="1558657831702" duration="6561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169923000" />
+    <option name="totallyTimeSpent" value="171554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -296,13 +292,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/admin/validate/Detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/admin/detail/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3836">
@@ -620,10 +609,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/route/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/template/index/goods/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="149" column="32" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
+        <state relative-caret-position="390">
+          <caret line="148" column="15" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="15" />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-<?php /*a:1:{s:45:"E:\www\tp5\/template/index/goods\details.html";i:1558664843;}*/ ?>
+<?php /*a:1:{s:45:"E:\www\tp5\/template/index/goods\details.html";i:1558690933;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -148,7 +148,7 @@
             window.location.href = '<?php echo url("ShopCart/cart"); ?>';
           }
           else{
-            window.location.href = '<?php echo url("index/demo"); ?>';
+            window.location.href = '<?php echo url("index/index/demo"); ?>';
           }
         },
         error:function (err) {
@@ -169,7 +169,7 @@
             window.location.href = '<?php echo url("ShopCart/cart"); ?>';
           }
           else{
-            window.location.href = '<?php echo url("index/index"); ?>';
+            window.location.href = '<?php echo url("index/demo"); ?>';
           }
         },
         error:function (err) {

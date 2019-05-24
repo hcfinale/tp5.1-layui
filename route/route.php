@@ -15,8 +15,10 @@ Route::get('thinks', function () {
 
 
 Route::get('/', 'index/index');
+Route::get('demo', 'index/demo');
+Route::rule('goods', 'goods/index');
 Route::rule('goods/:id', 'goods/index');
-
+Route::rule('details/:id', 'goods/details');
 return [
 
 ];
