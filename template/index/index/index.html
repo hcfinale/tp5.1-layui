@@ -72,7 +72,7 @@
                 <div class="title">{$vo.title}</div>
                 <p>
                   {volist name="$vo['child']" id="v"}
-                  <a href="{:url('goods/index',['id'=>$v['id']])}" target="_blank" title="{$v.title}">{$v.title}</a>
+                  <a href="{:url('goods/index',['id'=>$v['id']])}" title="{$v.title}">{$v.title}</a>
                   {/volist}
                 </p>
                 <i class="layui-icon layui-icon-right"></i>

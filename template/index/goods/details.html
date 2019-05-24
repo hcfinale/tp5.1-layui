@@ -144,16 +144,17 @@
         dataType:'JSON',
         success:function(res){
           if(res.code='1001'){
-            console.log(res);
+            window.location.href = '{:url("ShopCart/cart")}';
           }
           else{
-            alert(res.msg);
+            layui.msg(res.data);
           }
         },
-        error:function (data) {
-          console.log(data);
+        error:function (err) {
+          layui.msg(err);
         }
       });
+      return false;
     });
     //监听提交,加入购物车
     form.on('submit(lay-add-cart)', function(data){
@@ -163,15 +164,15 @@
         data:data.field,
         dataType:'JSON',
         success:function(res){
-          if(res.code='0'){
-            console.log(res);
+          if(res.code='1001'){
+            window.location.href = '{:url("ShopCart/cart")}';
           }
           else{
-            alert(res.msg);
+            window.location.href = '{:url("index/index")}';
           }
         },
-        error:function (data) {
-          console.log(data);
+        error:function (err) {
+          layui.msg(err);
         }
       });
     });

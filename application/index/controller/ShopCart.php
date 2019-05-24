@@ -17,7 +17,13 @@ class ShopCart extends Base {
     }
     // 购物车商品添加
     public function add(){
-
+        $goodsId = input('post.did');
+        $goodsSum = input('post.sum');
+        $pay = $this->Cart->addPay($goodsId,$goodsSum);
+        if ($pay){
+            return json(['code'=>'1001','data'=>'添加成功','url'=>'{:url("ShopCart/cart")}']);
+        }else
+            return json(['code'=>'1004','data'=>'添加失败']);
     }
     // 购物车商品购买
     public function pay(){

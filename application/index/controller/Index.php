@@ -11,4 +11,7 @@ class Index extends Base {
             'result'    =>  $result,
         ]);
     }
+    public function demo(){
+        var_dump(123);
+    }
 }

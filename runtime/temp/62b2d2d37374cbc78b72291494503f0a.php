@@ -1,4 +1,4 @@
-<?php /*a:1:{s:43:"E:\www\tp5\/template/index/index\index.html";i:1555291684;}*/ ?>
+<?php /*a:1:{s:43:"E:\www\tp5\/template/index/index\index.html";i:1558660665;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,7 +73,7 @@
                 <div class="title"><?php echo htmlentities($vo['title']); ?></div>
                 <p>
                   <?php if(is_array($vo['child']) || $vo['child'] instanceof \think\Collection || $vo['child'] instanceof \think\Paginator): $i = 0; $__LIST__ = $vo['child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                  <a href="<?php echo url('goods/index',['id'=>$v['id']]); ?>" target="_blank" title="<?php echo htmlentities($v['title']); ?>"><?php echo htmlentities($v['title']); ?></a>
+                  <a href="<?php echo url('goods/index',['id'=>$v['id']]); ?>" title="<?php echo htmlentities($v['title']); ?>"><?php echo htmlentities($v['title']); ?></a>
                   <?php endforeach; endif; else: echo "" ;endif; ?>
                 </p>
                 <i class="layui-icon layui-icon-right"></i>

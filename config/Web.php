@@ -10,5 +10,8 @@
 // +----------------------------------------------------------------------
 
 return [
-    'connector' => 'Sync'
+    'connector' => 'Sync',
+    'WEB_NAME' => '小奶嘴商城',
+    'WEB_HOST' => 'http://www.tp5123.com',
+    'WEB_BEIAN' => '苏ICP备11034309号-1',
 ];

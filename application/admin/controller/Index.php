@@ -2,6 +2,7 @@
 namespace app\admin\controller;
 
 use app\common\controller\Base;
+use think\Config;
 use think\Exception;
 class Index extends Base {
     public function index(){

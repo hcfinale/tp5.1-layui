@@ -1,4 +1,4 @@
-<?php /*a:1:{s:45:"E:\www\tp5\/template/index/goods\details.html";i:1558058418;}*/ ?>
+<?php /*a:1:{s:45:"E:\www\tp5\/template/index/goods\details.html";i:1558664843;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,16 +145,17 @@
         dataType:'JSON',
         success:function(res){
           if(res.code='1001'){
-            console.log(res);
+            window.location.href = '<?php echo url("ShopCart/cart"); ?>';
           }
           else{
-            alert(res.msg);
+            window.location.href = '<?php echo url("index/demo"); ?>';
           }
         },
-        error:function (data) {
-          console.log(data);
+        error:function (err) {
+          layui.msg(err);
         }
       });
+      return false;
     });
     //监听提交,加入购物车
     form.on('submit(lay-add-cart)', function(data){
@@ -164,15 +165,15 @@
         data:data.field,
         dataType:'JSON',
         success:function(res){
-          if(res.code='0'){
-            console.log(res);
+          if(res.code='1001'){
+            window.location.href = '<?php echo url("ShopCart/cart"); ?>';
           }
           else{
-            alert(res.msg);
+            window.location.href = '<?php echo url("index/index"); ?>';
           }
         },
-        error:function (data) {
-          console.log(data);
+        error:function (err) {
+          layui.msg(err);
         }
       });
     });
