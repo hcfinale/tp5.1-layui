@@ -3,6 +3,8 @@ namespace app\index\controller;
 
 use app\common\model\Column;
 use app\common\model\Detail;
+use think\Db;
+
 class Goods extends Base {
     protected function initialize(){
         parent::initialize();
@@ -33,6 +35,7 @@ class Goods extends Base {
     public function details($id){
         $rescloumn = $this->goods->selectCId($id);
         $res = $this->goods->findId($id);
+        $address = Db::name('ShopAddress')->where('uid',session('uid'))->select();
         return $this->fetch('details',[
             'rescloumn'    =>  $rescloumn,
             'res' => $res,

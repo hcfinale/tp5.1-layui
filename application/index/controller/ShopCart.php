@@ -19,9 +19,9 @@ class ShopCart extends Base {
     public function add(){
         $goodsId = input('post.did');
         $goodsSum = input('post.sum');
-        $pay = $this->Cart->addPay($goodsId,$goodsSum);
+        $pay = $this->Cart->addCart($goodsId,$goodsSum);
         if ($pay){
-            return json(['code'=>'1001','data'=>'添加成功','url'=>'{:url("ShopCart/cart")}']);
+            return json(['code'=>'1001','data'=>'添加成功']);
         }else
             return json(['code'=>'1004','data'=>'添加失败']);
     }

@@ -50,8 +50,24 @@ class ShopCart extends Model
         return $result;
     }
     // 加入购物车
-    public function addCart(){
-
+    public function addCart($id,$sum){
+        // 启动事务，启动事务之后时间在模型中不会自动更新上去。
+        Db::startTrans();
+        try {
+            $res = Db::name('detail')->where(['id'=>$id])->field('name,price')->find();
+            $res['sum'] = $sum;
+            $res['uid'] = session('uid');
+            $res['create_time'] = time();
+            $result = Db::name('ShopCart')->insert($res);
+//            Db::name('detail')->where(['id'=>$id])->update('');
+            // 提交事务
+            Db::commit();
+            return $result;
+        } catch (\Exception $e) {
+            // 回滚事务
+            Db::rollback();
+            return false;
+        }
     }
     // 直接购买
     public function addPay($id,$sum){

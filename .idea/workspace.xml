@@ -2,37 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97d77dec-0363-4779-82a5-8db98bf7f59f" name="Default Changelist" comment="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。">
-      <change afterPath="$PROJECT_DIR$/tpl/index/user/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/model/ShopCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/model/ShopCart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Goods.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Goods.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/controller/ShopCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/ShopCart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/admin/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/admin/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/index/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/index/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/column/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/column/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/column/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/column/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/column/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/column/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/detail/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/detail/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/detail/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/detail/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/detail/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/detail/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/index/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/index/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/index/statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/statistics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/public/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/public/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/public/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/public/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/rules/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/rules/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/rules/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/rules/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/rules/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/rules/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/admin/users/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/users/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index/goods/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/goods/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index/goods/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/goods/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index/shop_cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/shop_cart/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index/shop_cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/shop_cart/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index/wxpay/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/wxpay/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index/wxpay/qrcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/wxpay/qrcode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/bca4486f256f3f0e5c50017b429c20f4.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/bca4486f256f3f0e5c50017b429c20f4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/index/goods/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/goods/details.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,56 +34,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/index/goods/details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="149" column="43" selection-start-line="149" selection-start-column="43" selection-end-line="149" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/ShopCart.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tpl/index/user/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="131" column="27" lean-forward="true" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/index/goods/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="133" column="72" lean-forward="true" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-              <folding>
-                <element signature="e#39#67#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,11 +45,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$body</find>
-      <find>getAuthList</find>
-      <find>getGroups</find>
-      <find>ebookurl</find>
-      <find>preview</find>
       <find>columnImg</find>
       <find>status</find>
       <find>setType</find>
@@ -145,10 +66,15 @@
       <find>color-cont</find>
       <find>btn</find>
       <find>product-intro layui-clear</find>
-      <find>addPay</find>
       <find>number-cont</find>
       <find>rescloumn</find>
       <find>find</find>
+      <find>addPay</find>
+      <find>QRcode</find>
+      <find>qrcodeurl</find>
+      <find>lay-add-cart</find>
+      <find>create</find>
+      <find>qrcode</find>
     </findStrings>
     <replaceStrings>
       <replace>__STATIC__/admin/views</replace>
@@ -165,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/template/admin/detail/index.html" />
         <option value="$PROJECT_DIR$/application/common/controller/Base.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/User.php" />
         <option value="$PROJECT_DIR$/template/admin/users/index.html" />
@@ -177,7 +102,6 @@
         <option value="$PROJECT_DIR$/extend/WxpayAPI/index.php" />
         <option value="$PROJECT_DIR$/template/index/goods/index.html" />
         <option value="$PROJECT_DIR$/template/admin/detail/add.html" />
-        <option value="$PROJECT_DIR$/application/index/controller/Goods.php" />
         <option value="$PROJECT_DIR$/application/common/model/Detail.php" />
         <option value="$PROJECT_DIR$/application/common.php" />
         <option value="$PROJECT_DIR$/application/index/model/User.php" />
@@ -185,7 +109,6 @@
         <option value="$PROJECT_DIR$/template/index/wxpay/qrcodeshow.html" />
         <option value="$PROJECT_DIR$/template/index/wxpay/qrcode.html" />
         <option value="$PROJECT_DIR$/template/index/wxpay/index.html" />
-        <option value="$PROJECT_DIR$/application/index/controller/Wxpay.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/wxpay.php" />
         <option value="$PROJECT_DIR$/application/common/validate/column.php" />
@@ -201,7 +124,6 @@
         <option value="$PROJECT_DIR$/application/common/model/Order.php" />
         <option value="$PROJECT_DIR$/template/index/shop_cart/index.html" />
         <option value="$PROJECT_DIR$/template/index/shop_cart/cart.html" />
-        <option value="$PROJECT_DIR$/application/common/model/ShopCart.php" />
         <option value="$PROJECT_DIR$/public/router.php" />
         <option value="$PROJECT_DIR$/application/extra/Domain.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
@@ -211,11 +133,15 @@
         <option value="$PROJECT_DIR$/route/route.php" />
         <option value="$PROJECT_DIR$/config/admin/template.php" />
         <option value="$PROJECT_DIR$/config/index/template.php" />
-        <option value="$PROJECT_DIR$/tpl/index/goods/details.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Base.php" />
         <option value="$PROJECT_DIR$/application/index/controller/User.php" />
-        <option value="$PROJECT_DIR$/application/index/controller/ShopCart.php" />
         <option value="$PROJECT_DIR$/tpl/index/user/index.html" />
+        <option value="$PROJECT_DIR$/tpl/index/goods/details.html" />
+        <option value="$PROJECT_DIR$/application/common/model/ShopCart.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/ShopCart.php" />
+        <option value="$PROJECT_DIR$/tpl/index/wxpay/qrcode.html" />
+        <option value="$PROJECT_DIR$/application/index/controller/Wxpay.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Goods.php" />
       </list>
     </option>
   </component>
@@ -239,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,46 +172,11 @@
               <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
               <item name="tp5" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="tpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="tpl" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="tpl" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,17 +254,17 @@
       <workItem from="1558572460377" duration="2178000" />
       <workItem from="1558657831702" duration="6561000" />
       <workItem from="1558917328804" duration="5245000" />
+      <workItem from="1559005022745" duration="7456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176799000" />
+    <option name="totallyTimeSpent" value="184255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18776824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19045064" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -405,32 +295,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tpl/admin/index/form.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/admin/login.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/admin/home.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/admin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/admin/views/console.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2790" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/admin/index/statistics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3630">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/admin/public/header.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -617,16 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="e#39#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/index/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -638,16 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/model/ShopCart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-          <folding>
-            <element signature="e#53#69#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/index/goods/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="149" column="43" selection-start-line="149" selection-start-column="43" selection-end-line="149" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -687,10 +524,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/index/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="128" column="13" lean-forward="true" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/index/goods/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="133" column="72" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding>
             <element signature="e#39#67#0#PHP" expanded="true" />
           </folding>
@@ -699,32 +550,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="315">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="e#39#65#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/wxpay/images/success.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/gd/gd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="1043" column="9" selection-start-line="1043" selection-start-column="9" selection-end-line="1043" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/ShopCart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="71" column="11" lean-forward="true" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+          <folding>
+            <element signature="e#53#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode/QRencode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2118">
+          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode/QRcode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/ShopCart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="-762">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/index/goods/index.html">
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Goods.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="133" column="72" lean-forward="true" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="72" />
+        <state relative-caret-position="468">
+          <caret line="37" column="82" selection-start-line="37" selection-start-column="82" selection-end-line="37" selection-end-column="82" />
+          <folding>
+            <element signature="e#39#67#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/index/user/index.html">
+    <entry file="file://$PROJECT_DIR$/tpl/index/goods/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="131" column="27" lean-forward="true" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
+        <state relative-caret-position="461">
+          <caret line="84" column="131" selection-start-line="84" selection-start-column="100" selection-end-line="84" selection-end-column="131" />
+          <folding>
+            <element signature="e#3095#3101#0" expanded="true" />
+            <element signature="e#3101#3107#0" expanded="true" />
+            <element signature="e#3109#3115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Wxpay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="181" column="27" lean-forward="true" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="27" />
+          <folding>
+            <element signature="e#68#100#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/index/wxpay/qrcode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
         </state>
       </provider>
     </entry>

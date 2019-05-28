@@ -1,4 +1,4 @@
-<?php /*a:1:{s:40:"E:\www\tp5\/tpl/index/goods\details.html";i:1558948318;}*/ ?>
+<?php /*a:1:{s:40:"E:\www\tp5\/tpl/index/goods\details.html";i:1559006155;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,7 +91,7 @@
             </div>
             <div class="choose-btns">
               <button class="layui-btn layui-btn-primary purchase-btn" lay-submit lay-filter="add-pay">立刻购买</button>
-              <button class="layui-btn layui-btn-danger car-btn" lay-filter="lay-add-cart"><i class="layui-icon layui-icon-cart-simple"></i>加入购物车</button>
+              <button class="layui-btn layui-btn-danger car-btn" lay-submit lay-filter="lay-add-cart"><i class="layui-icon layui-icon-cart-simple"></i>加入购物车</button>
             </div>
           </div>
         </div>
