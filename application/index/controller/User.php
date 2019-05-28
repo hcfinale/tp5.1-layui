@@ -8,7 +8,6 @@ class User extends Base {
     }
 
     public function login(){
-
         return $this->fetch('index',[
         ]);
     }

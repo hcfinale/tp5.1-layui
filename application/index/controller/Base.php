@@ -29,6 +29,6 @@ abstract class Base extends Controller {
     }
     // 空控制器处理
     public function _empty(){
-        $this->error('您访问了一个不存在的方法');
+        $this->error('访问出现错误');
     }
 }

@@ -15,7 +15,7 @@
 
 return [
     // 模板路径
-    'view_path'    => Env::get('root_path') . '/template/index/',
+    'view_path'    => Env::get('root_path') . '/tpl/index/',
     // 模板后缀
     'view_suffix'  => 'html',
 ];

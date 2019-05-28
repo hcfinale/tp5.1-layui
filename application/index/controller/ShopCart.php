@@ -7,7 +7,7 @@ class ShopCart extends Base {
     protected function initialize(){
         parent::initialize();
         if (!self::islogin()){
-            $this->redirect('index/index');
+            $this->error('您需要登录后在进行操作','user/login');
         }
         $this->Cart = new Cart();
     }
