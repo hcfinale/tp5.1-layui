@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2019-05-20 17:49:07
+Date: 2019-05-29 17:48:29
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -235,6 +235,7 @@ CREATE TABLE `my_shop_address` (
   `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '主建',
   `uid` smallint(5) unsigned NOT NULL COMMENT '用户id',
   `address` varchar(255) DEFAULT NULL COMMENT '收货地址',
+  `default` enum('1','0') NOT NULL DEFAULT '0' COMMENT '0为否，1为师',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -251,14 +252,14 @@ CREATE TABLE `my_shop_cart` (
   `uid` int(11) NOT NULL COMMENT '用户id',
   `order_id` varchar(50) DEFAULT NULL COMMENT '订单id，默认为空',
   `name` varchar(255) NOT NULL COMMENT '商品名字',
-  `is_pay` smallint(3) NOT NULL DEFAULT '0' COMMENT '是否付款',
+  `is_pay` enum('-1','1','0') NOT NULL DEFAULT '0' COMMENT '是否付款',
   `price` float(6,2) NOT NULL DEFAULT '0.00' COMMENT '价格',
   `sum` smallint(5) NOT NULL DEFAULT '1' COMMENT '商品购买个数',
   `create_time` int(11) DEFAULT NULL,
   `sort` char(5) NOT NULL DEFAULT '50' COMMENT '排序',
   `status` smallint(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of my_shop_cart
@@ -266,3 +267,6 @@ CREATE TABLE `my_shop_cart` (
 INSERT INTO `my_shop_cart` VALUES ('1', '2', null, '黄色衣服', '0', '9.52', '1', '1558063848', '50', '1');
 INSERT INTO `my_shop_cart` VALUES ('2', '2', null, '宝宝五彩袜棉质舒服', '0', '49.00', '3', '1558063870', '50', '1');
 INSERT INTO `my_shop_cart` VALUES ('6', '2', null, '黑色童鞋', '0', '99.00', '1', '1558073338', '50', '1');
+INSERT INTO `my_shop_cart` VALUES ('7', '2', null, '黑色童鞋', '0', '99.00', '1', '1558663877', '50', '1');
+INSERT INTO `my_shop_cart` VALUES ('8', '2', null, '黑色童鞋', '0', '99.00', '3', '1558663966', '50', '1');
+INSERT INTO `my_shop_cart` VALUES ('9', '2', null, '小白兔童装', '0', '388.00', '1', '1558691297', '50', '1');

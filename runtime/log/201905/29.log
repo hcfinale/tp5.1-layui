@@ -1,0 +1,45 @@
+---------------------------------------------------------------
+[2019-05-29T17:46:07+08:00] 127.0.0.1 GET www.tp5123.com/index/wxpay/qrcode
+[运行时间：0.457026s] [吞吐率：2.19req/s] [内存消耗：2,037.13kb] [文件加载：72]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=srog4938kf3fdtjutrjm063bp0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/wxpay\qrcode.html [ array (
+  0 => 'qrCode_url',
+) ]
+---------------------------------------------------------------
+[2019-05-29T17:46:07+08:00] 127.0.0.1 POST www.tp5123.com/index/wxpay/create.html
+[运行时间：0.190011s] [吞吐率：5.26req/s] [内存消耗：2,396.02kb] [文件加载：81]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'content-length' => '57',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.tp5123.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tp5123.com/index/wxpay/qrcode',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=srog4938kf3fdtjutrjm063bp0',
+)
+[ info ] [ PARAM ] array (
+  'qrcodeurl' => 'weixin://wxpay/bizpayurl?pr=3nNq7oL',
+)
