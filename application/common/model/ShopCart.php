@@ -23,7 +23,7 @@ class ShopCart extends Model
             ]);
         return $result;
     }
-
+    // 获取商品状态为1的商品
     public function getStateAll(){
         $result = $this->alias('sc')
             ->leftJoin('__DETAIL__ d','sc.name = d.name')
@@ -36,7 +36,7 @@ class ShopCart extends Model
             ]);
         return $result;
     }
-
+    // 获取商品状态为0的商品
     public function getNoState(){
         $result = $this->alias('sc')
             ->leftJoin('__DETAIL__ d','sc.name = d.name')
@@ -45,6 +45,20 @@ class ShopCart extends Model
             ->where('status','0')
             ->field('sc.id,sc.name,sc.sum,sc.sort,sc.status,d.img,d.price,d.payman,c.title,u.name as username')
             ->paginate(15,false,[
+                'type'=>'BootstrapDetailed'
+            ]);
+        return $result;
+    }
+    // 获取购物车中商品信息 参数uid为登录人信息
+    public function getCart($uid){
+        $result = $this->alias('sc')
+            ->leftJoin('__DETAIL__ d','sc.name = d.name')
+            ->leftJoin('__COLUMN__ c','d.cid = c.id')
+            ->where('sc.status','=',1)
+            ->where('sc.is_pay','<>',1)
+            ->where('sc.uid','=',$uid)
+            ->field('sc.id,sc.name,sc.is_pay,sc.sum,sc.sort,sc.status,d.img,d.price,d.payman,c.title')
+            ->paginate(10,false,[
                 'type'=>'BootstrapDetailed'
             ]);
         return $result;
@@ -74,15 +88,24 @@ class ShopCart extends Model
         // 启动事务，启动事务之后时间在模型中不会自动更新上去。
         Db::startTrans();
         try {
-            $res = Db::name('detail')->where(['id'=>$id])->field('name,price')->find();
+            $res = Db::name('detail')->where(['id'=>$id])->field('name,sum,price')->find();
             $res['sum'] = $sum;
             $res['uid'] = session('uid');
             $res['create_time'] = time();
-            $result = Db::name('ShopCart')->insert($res);
-//            Db::name('detail')->where(['id'=>$id])->update('');
-            // 提交事务
-            Db::commit();
-            return $result;
+            if (($res['sum']-$sum)>=0){
+                $AfterNum = $res['sum']-$sum;
+                Db::name('detail')->where('id',$id)->update(['sum'=>$AfterNum]);
+                $result = Db::name('ShopCart')->insert($res);
+                // 提交事务
+                Db::commit();
+                return $result;
+            }else{
+                $res['is_pay'] = -2;    // -2为仓库没有货了
+                $result = Db::name('ShopCart')->insert($res);
+                // 提交事务
+                Db::commit();
+                return $result;
+            }
         } catch (\Exception $e) {
             // 回滚事务
             Db::rollback();

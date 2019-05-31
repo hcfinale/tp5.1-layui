@@ -2,6 +2,7 @@
 namespace app\index\controller;
 
 use app\common\model\ShopCart as Cart;
+use think\Db;
 
 class ShopCart extends Base {
     protected function initialize(){
@@ -13,7 +14,10 @@ class ShopCart extends Base {
     }
     // 购物车展示
     public function cart(){
-        return $this->fetch('cart');
+        $data = $this->Cart->getCart(session('uid'));
+        return $this->fetch('cart',[
+            'ShopCart'  =>  $data,
+        ]);
     }
     // 购物车商品添加
     public function add(){
@@ -40,6 +44,32 @@ class ShopCart extends Base {
         $shopCart = $this->Cart->getSelectAll();
         return $this->fetch('index',[
             'shopCart' =>  $shopCart,
+        ]);
+    }
+    // 修改收货地址
+    public function setAddress(){
+        $uid = session('uid');
+        $address = Db::name('ShopAddress')->field('id,address,action')->where('uid',$uid)->order('action DESC')->select();
+        if (request()->isPost()){
+            $shopAddId = $this->request->param('shopAddId');
+            // 启动事务，启动事务之后时间在模型中不会自动更新上去。
+            Db::startTrans();
+            try {
+                Db::name('ShopAddress')->where(['uid' => $uid])->update(['action' => '0']);
+                Db::name('ShopAddress')->where(['id' => $shopAddId,'uid' => $uid])->update(['action' => '1']);
+                $Address = Db::name('ShopAddress')->where(['id' => $shopAddId,'uid' => $uid])->find();
+                // 提交事务
+                Db::commit();
+                return json(['code'=>'1001','data'=>'修改成功','address'=>$Address]);
+            } catch (\Exception $e) {
+                // 回滚事务
+                Db::rollback();
+                return json(['code'=>'1004','data'=>'修改失败']);
+            }
+
+        }
+        return $this->fetch('address',[
+            'address'   =>  $address,
         ]);
     }
     // 状态修改

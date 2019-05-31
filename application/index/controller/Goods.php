@@ -35,7 +35,10 @@ class Goods extends Base {
     public function details($id){
         $rescloumn = $this->goods->selectCId($id);
         $res = $this->goods->findId($id);
-        $address = Db::name('ShopAddress')->where('uid',session('uid'))->select();
+        $uid = session('uid');
+        if (isset($uid)) {
+            $this->assign('address', Db::name('ShopAddress')->field('address')->where('uid',$uid)->where('action',['=',1],['=',0],'or')->order('action DESC')->find());
+        }
         return $this->fetch('details',[
             'rescloumn'    =>  $rescloumn,
             'res' => $res,

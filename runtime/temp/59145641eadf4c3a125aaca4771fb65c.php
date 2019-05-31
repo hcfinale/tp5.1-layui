@@ -1,4 +1,4 @@
-<?php /*a:1:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1557990672;}*/ ?>
+<?php /*a:1:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1559285840;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -229,30 +229,31 @@
   </div>
 
 <script type="text/javascript">
+
   layui.config({
     base: '/public/static/index/static/js/util/' //你存放新模块的目录，注意，不是layui的模块目录
-  }).use(['mm','jquery','element','car'],function(){
-    var mm = layui.mm,$ = layui.$,element = layui.element,car = layui.car;
+  }).use(['mm','form','layer','jquery','element','car'], function(){
     
+    let car = layui.car;
+
     // 模版导入数据
-    // var html = demo.innerHTML,
-    // listCont = document.getElementById('list-cont');
-    // mm.request({
-    //   url: '../json/shopcart.json',
-    //   success : function(res){
-    //     listCont.innerHTML = mm.renderHtml(html,res)
-    //     element.render();
-    //     car.init()
-    //   },
-    //   error: function(res){
-    //     console.log(res);
-    //   }
-    // })
-    // 
-    car.init()
-
-
-});
+    /*
+    var html = demo.innerHTML,
+    listCont = document.getElementById('list-cont');
+    mm.request({
+      url: '../json/shopcart.json',
+      success : function(res){
+        listCont.innerHTML = mm.renderHtml(html,res)
+        element.render();
+        car.init()
+      },
+      error: function(res){
+        console.log(res);
+      }
+    });
+   */
+    car.init();
+  });
 </script>
 </body>
 </html>

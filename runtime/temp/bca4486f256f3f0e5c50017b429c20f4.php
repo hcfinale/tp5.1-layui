@@ -1,13 +1,13 @@
-<?php /*a:1:{s:40:"E:\www\tp5\/tpl/index/goods\details.html";i:1559006155;}*/ ?>
+<?php /*a:1:{s:40:"E:\www\tp5\/tpl/index/goods\details.html";i:1559272826;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="/public/static/index/static/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title>商品信息</title>
+  <link rel="stylesheet" type="text/css" href="/public/static/index/static/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css">
 </head>
 <body>
 <div class="site-nav-bg">
@@ -83,7 +83,7 @@
             <div class="summary">
               <p class="reference"><span>参考价</span> <del>￥<?php echo htmlentities(decimal($res['price']*10/7)); ?></del></p>
               <p class="activity"><span>活动价</span><strong class="price"><i>￥</i><?php echo htmlentities(decimal($res['price'])); ?></strong></p>
-              <p class="address-box"><span>送&nbsp;&nbsp;&nbsp;&nbsp;至</span><strong class="address">江西&nbsp;&nbsp;南昌&nbsp;&nbsp;东湖区</strong></p>
+              <p class="address-box"><span>送&nbsp;&nbsp;&nbsp;&nbsp;至</span><strong class="address"><?php echo htmlentities((isset($address['address']) && ($address['address'] !== '')?$address['address']:"河南省   新乡市   红旗区")); ?></strong></p>
             </div>
             <div class="choose-attrs">
               <div class="color layui-clear"><span class="title">颜&nbsp;&nbsp;&nbsp;&nbsp;色</span> <div class="color-cont"><span class="btn">白色</span> <span class="btn active">粉丝</span></div></div>
@@ -136,25 +136,63 @@
       }
       $('.number-cont input').val(cur);
     });
+    $('.address').on('click',function () {
+      let uid = <?php if(empty(app('session')->get('uid')) || ((app('session')->get('uid') instanceof \think\Collection || app('session')->get('uid') instanceof \think\Paginator ) && app('session')->get('uid')->isEmpty())): ?>''<?php else: ?><?php echo htmlentities(app('session')->get('uid')); ?><?php endif; ?>;
+      if (uid != ''){
+        layer.open({
+          type: 2,
+          area: ['500px', '300px'],
+          fix: false, //不固定
+          maxmin: true,
+          shade:0.4,
+          title:'收货地址',
+          content: '<?php echo url("ShopCart/setAddress"); ?>' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+        });
+      }else {
+        layer.msg("您还没有登录");
+      }
+    });
     //监听提交,直接购买
     form.on('submit(add-pay)', function(data){
-      $.ajax({
-        url:"<?php echo url('ShopCart/pay'); ?>",
-        method:'post',
-        data:data.field,
-        dataType:'JSON',
-        success:function(res){
-          if(res.code='1001'){
-            window.location.href = '<?php echo url("ShopCart/cart"); ?>';
-          }
-          else{
-            window.location.href = '<?php echo url("index/demo"); ?>';
-          }
-        },
-        error:function (err) {
-          layui.msg(err);
-        }
-      });
+      let uid = <?php if(empty(app('session')->get('uid')) || ((app('session')->get('uid') instanceof \think\Collection || app('session')->get('uid') instanceof \think\Paginator ) && app('session')->get('uid')->isEmpty())): ?>''<?php else: ?><?php echo htmlentities(app('session')->get('uid')); ?><?php endif; ?>;
+      if (uid != ''){
+        layer.open({
+          type:2,
+          area:['500px','400px'],
+          fix: false, // 不固定
+          shade:0.5,
+          title:'微信支付',
+          btn:['确定','取消'],
+          yes:{
+            $.ajax({
+              url:"<?php echo url('ShopCart/pay'); ?>",
+              method:'post',
+              data:data.field,
+              dataType:'JSON',
+              success:function(res){
+                if(res.code='1001'){
+                  layer.msg('添加购物车成功');
+                  setTimeout(function () {
+                    window.location.href = '<?php echo url("ShopCart/cart"); ?>';
+                  },2000)
+                }
+                else{
+                  layer.msg('发生错误');
+                  setTimeout(function () {
+                    window.location.href = '<?php echo url("index/demo"); ?>';
+                  },2000)
+                }
+              },
+              error:function (err) {
+                layui.msg(err);
+              }
+            })
+          },
+          content: ''
+        });
+      } else {
+        layer.msg('您还没有登录');
+      }
       return false;
     });
     //监听提交,加入购物车
