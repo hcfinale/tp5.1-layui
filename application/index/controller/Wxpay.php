@@ -3,6 +3,7 @@
 namespace app\index\controller;
 
 use app\common\model\User;;
+use app\common\model\Order;
 use wxpay\database\WxPayResults;
 use wxpay\database\WxPayUnifiedOrder;
 use wxpay\database\WxPayOrderQuery;
@@ -13,6 +14,13 @@ use Predis;
 use PHPQRCode\QRcode;
 
 class Wxpay extends Base{
+    protected function initialize(){
+        parent::initialize();
+        if (!self::islogin()){
+            $this->error('您需要登录后在进行操作','user/login');
+        }
+        $this->Order = new Order();
+    }
 
     public function index(){
         $product_id = (time()+1).createStr(22);
@@ -30,13 +38,14 @@ class Wxpay extends Base{
         $input->setTradeType("NATIVE");
         //$product_id 为商品自定义id 可用作订单ID
         $input->setProductId($product_id);
-
+        /*
         $data = [
             'order_id'  =>  $input->getOutTradeNo(),
             'uid'   =>  session('uid'),
             'amount'    =>  $input->getTotalFee(),
         ];
         $res = db('order')->insert($data);
+        */
         $result = $notify->getPayUrl($input);
         if (empty($result['code_url'])){
             $qrCode_url = '';
@@ -139,30 +148,46 @@ class Wxpay extends Base{
     }
     // 二维码生成
     public function qrcode(){
-        $product_id = (time()+1).createStr(22);
-        $notify = new NativePay();
-        $input = new WxPayUnifiedOrder();
-        $input->setBody("微信支付的东西");
-        $input->setAttach("xxx");
-        //$input->setOutTradeNo(WxPayConfig::MCHID.date("YmdHis"));
-        $input->setOutTradeNo($product_id);
-        $input->setTotalFee("1");//以分为单位,一般是要乘100的。
-        $input->setTimeStart(date("YmdHis"));
-        $input->setTimeExpire(date("YmdHis", time() + 600));
-        $input->setGoodsTag("test");
-        $input->setNotifyUrl(wxPayConfig::NOTIFY_URL);
-        $input->setTradeType("NATIVE");
-        //$product_id 为商品自定义id 可用作订单ID
-        $input->setProductId($product_id);
-        $result = $notify->getPayUrl($input);
-        if (empty($result['code_url'])){
-            $qrCode_url = '';
+        if (request()->isGet()){
+            $product_id = (time()+1).createStr(22);
+
+            $goodsId = request()->param('did');
+            $goodsSum = request()->param('sum');
+            $this->Order->addPay($goodsId,$goodsSum,$product_id);
+            $id = db('ShopCart')->max('id');
+            $pay = db('ShopCart')->where('id',$id)->find();
+            if ($pay['is_pay']=='-2'){
+                return "当前商品库存不足，订单已经加入购物车中";
+            }
+            $nidePrice = $pay['price']*$pay['sum']*100;
+
+            $notify = new NativePay();
+            $input = new WxPayUnifiedOrder();
+            $input->setBody("$pay[name]");
+            $input->setAttach("xxx");
+            //$input->setOutTradeNo(WxPayConfig::MCHID.date("YmdHis"));
+            $input->setOutTradeNo($product_id);
+            $input->setTotalFee("$nidePrice");//以分为单位,一般是要乘100的。
+            $input->setTimeStart(date("YmdHis"));
+            $input->setTimeExpire(date("YmdHis", time() + 600));
+            $input->setGoodsTag("test");
+            $input->setNotifyUrl(wxPayConfig::NOTIFY_URL);
+            $input->setTradeType("NATIVE");
+            //$product_id 为商品自定义id 可用作订单ID
+            $input->setProductId($product_id);
+            $result = $notify->getPayUrl($input);
+            if (empty($result['code_url'])){
+                $qrCode_url = '';
+            }else{
+                $qrCode_url = $result["code_url"];
+            }
+            return $this->fetch('qrcode',[
+                'qrCode_url' => $qrCode_url,
+                'product_id'    =>  $product_id,
+            ]);
         }else{
-            $qrCode_url = $result["code_url"];
+            return json(['code'=>'1004','data'=>'操作非法']);
         }
-        return $this->fetch('qrcode',[
-            'qrCode_url' => $qrCode_url,
-        ]);
     }
     public function create(){
         $url = request()->param('qrcodeurl');

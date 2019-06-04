@@ -1,3 +1,4 @@
+<?php /*a:1:{s:39:"E:\www\tp5\/tpl/index/wxpay\qrcode.html";i:1559638534;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,15 +16,15 @@
 <h2 class="center">微信支付</h2>
 <div class="center">
     <img id="qrcode" src="" alt="" />
-    <input type="hidden" id="out_trade_no" value="{$product_id}" >
+    <input type="hidden" id="out_trade_no" value="<?php echo htmlentities($product_id); ?>" >
 </div>
-<p id="url">{$qrCode_url}</p>
-<script type="text/javascript" src="__STATIC__/js/jquery-3.3.1.min.js"></script>
+<p id="url"><?php echo htmlentities($qrCode_url); ?></p>
+<script type="text/javascript" src="/public/static/js/jquery-3.3.1.min.js"></script>
 <script>
     $(function () {
         var qrcodeurl = $('#url').text();
         $.ajax({
-            url:"{:url('wxpay/create')}",
+            url:"<?php echo url('wxpay/create'); ?>",
             data:{'qrcodeurl':qrcodeurl},
             type:'post',
             dataType:'json',
@@ -46,7 +47,7 @@
     // 产看订单状态
     var time = setInterval("check()",3000);    //3秒查询一次是否支付成功
     function check() {
-        var url = "{:url('/index/Wxpay/orderstate')}";
+        var url = "<?php echo url('/index/Wxpay/orderstate'); ?>";
         var out_trade_no = $("#out_trade_no").val();
         var param = {'out_trade_no':out_trade_no};
         $.post(url,param,function(data){

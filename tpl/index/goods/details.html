@@ -69,7 +69,7 @@
     </div>
     <div class="product-intro layui-clear">
       <form class="layui-form" method="post">
-        <input type="hidden" name="did" value="{$res.id}">
+        <input type="hidden" id="did" name="did" value="{$res.id}">
         <div class="preview-wrap">
           <a href="javascript:;"><img src="{$res.img}" width="100%"></a>
         </div>
@@ -155,6 +155,8 @@
     form.on('submit(add-pay)', function(data){
       let uid = {empty name="$Think.session.uid"}''{else /}{$Think.session.uid}{/empty};
       if (uid != ''){
+        let did = data.field.did;
+        let sum = data.field.sum;
         layer.open({
           type:2,
           area:['500px','400px'],
@@ -162,32 +164,11 @@
           shade:0.5,
           title:'微信支付',
           btn:['确定','取消'],
-          yes:{
-            $.ajax({
-              url:"{:url('ShopCart/pay')}",
-              method:'post',
-              data:data.field,
-              dataType:'JSON',
-              success:function(res){
-                if(res.code='1001'){
-                  layer.msg('添加购物车成功');
-                  setTimeout(function () {
-                    window.location.href = '{:url("ShopCart/cart")}';
-                  },2000)
-                }
-                else{
-                  layer.msg('发生错误');
-                  setTimeout(function () {
-                    window.location.href = '{:url("index/demo")}';
-                  },2000)
-                }
-              },
-              error:function (err) {
-                layui.msg(err);
-              }
-            })
+          anim: 5,
+          yes:function(index,layero){
+            layer.close(index);
           },
-          content: ''
+          content: "{:url('Wxpay/qrcode')}"+'?did='+did+'&sum='+sum,
         });
       } else {
         layer.msg('您还没有登录');

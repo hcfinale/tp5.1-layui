@@ -2,70 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97d77dec-0363-4779-82a5-8db98bf7f59f" name="Default Changelist" comment="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。">
-      <change afterPath="$PROJECT_DIR$/tpl/index/shop_cart/address.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/model/ShopCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/model/ShopCart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Goods.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Goods.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/model/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/model/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/controller/ShopCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/ShopCart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/index/static/js/util/car.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/index/static/js/util/car.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/22/dad802562cc1556f5b55cb7cf1440d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/3e/bb47d4a5c08f338dd6672176ad9917.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/4f/572de8199b081b1022db23ea2e139b.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/56/8c5d4ba27f2783cce1715b481d71d3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/7a/4c0ffc137ab84c1857c33e21342bf3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/b4/f930be3c5fb78f8a449f75e31e154f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/df/8a707e4ac13c5c66a69cbbd57d9af0.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/ee/085fe51e2748a92f553b72f7196ecf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201904/10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201904/29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/06.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/06_cli.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/08_cli.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/1557196926-07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/1557201993-07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/1557207804-07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/17_cli.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/13389682b2a0470dda59e1c51d857960.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/160a682e21d40ed687992536039c76c1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/1e4ac4e150667d9fdc7756131e6575bb.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/1ea0da894b6ed08323511d80feefaf7a.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/233f11f52ebb01b212b2edcd2c828b2c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/33ebc4559aa7daf28bb5e88923e62283.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/3787fb4ca2d76e31156eacb26ddf55b4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/3fd5299f2a95c022730216bce6f6a31f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/43fbaaa6bd799a106c97ad3dd229f294.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/51b494a36b396200eb8831f333e0dc6d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/54e557a612ef4c671f09d7964dd64a4d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/55b543de39d0e7d09bb391abfd9ce601.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/567a290931aeb9d44cf03612eeffdb72.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/59145641eadf4c3a125aaca4771fb65c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/5fb9554b4e8a2ed1b120c72e7fc34648.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/62b2d2d37374cbc78b72291494503f0a.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/6a0c90272adda9c3ba832a5f5b210860.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/73b260e2fc91cb9b841efa36880d9414.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/777f2e02314d97a93627664536943b79.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/7b5ab1e5f2709303d4629d1589a517c2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/7c6d8e86199cf527b8a2bc364c7e5d17.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/bca4486f256f3f0e5c50017b429c20f4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/bcb11c504c42931f44fd192e83414e09.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/c0e9193d2490ae76d07349629478c002.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/d515c94d92dbead66ae10a44052aef16.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/e54fb5a3a9090d8069db2b43db9c5ca6.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/ebfd5e41cc1c0f2a8770fe073b90262d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Wxpay.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Wxpay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wxpay/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/wxpay/images/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/bca4486f256f3f0e5c50017b429c20f4.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/bca4486f256f3f0e5c50017b429c20f4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tpl/index/goods/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/goods/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/index/shop_cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/shop_cart/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/index/wxpay/qrcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/wxpay/qrcode.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,18 +48,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sort</find>
-      <find>colPId</find>
-      <find>detail</find>
-      <find>showfirstpage</find>
-      <find>getPreviousButton</find>
-      <find>sprintf</find>
-      <find>getAvailablePageWrapper</find>
-      <find>totalshow</find>
-      <find>../res</find>
-      <find>trade_</find>
-      <find>onqr</find>
-      <find>aferrandini</find>
       <find>png</find>
       <find>../res/static</find>
       <find>color-cont</find>
@@ -124,16 +56,28 @@
       <find>number-cont</find>
       <find>find</find>
       <find>QRcode</find>
-      <find>qrcodeurl</find>
       <find>lay-add-cart</find>
       <find>create</find>
       <find>qrcode</find>
       <find>rescloumn</find>
       <find>default</find>
       <find>address</find>
-      <find>addPay</find>
       <find>cart w1200</find>
       <find>list-cont</find>
+      <find>did</find>
+      <find>sum</find>
+      <find>setBody</find>
+      <find>addPay</find>
+      <find>setAttach</find>
+      <find>setGoodsTag</find>
+      <find>orderstate</find>
+      <find>$product_id</find>
+      <find>out_trade_no</find>
+      <find>$qrCode_url</find>
+      <find>qrcodeurl</find>
+      <find>time</find>
+      <find>$id</find>
+      <find>onqr</find>
     </findStrings>
     <replaceStrings>
       <replace>__STATIC__/admin/views</replace>
@@ -176,7 +120,6 @@
         <option value="$PROJECT_DIR$/template/admin/index/statistics.html" />
         <option value="$PROJECT_DIR$/application/common/model/ShopAddress.php" />
         <option value="$PROJECT_DIR$/template/admin/index/index.html" />
-        <option value="$PROJECT_DIR$/application/common/model/Order.php" />
         <option value="$PROJECT_DIR$/template/index/shop_cart/index.html" />
         <option value="$PROJECT_DIR$/template/index/shop_cart/cart.html" />
         <option value="$PROJECT_DIR$/public/router.php" />
@@ -191,16 +134,17 @@
         <option value="$PROJECT_DIR$/application/index/controller/Base.php" />
         <option value="$PROJECT_DIR$/application/index/controller/User.php" />
         <option value="$PROJECT_DIR$/tpl/index/user/index.html" />
-        <option value="$PROJECT_DIR$/tpl/index/wxpay/qrcode.html" />
-        <option value="$PROJECT_DIR$/application/index/controller/Wxpay.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Goods.php" />
         <option value="$PROJECT_DIR$/public/static/js/city.js" />
         <option value="$PROJECT_DIR$/tpl/index/shop_cart/address.html" />
-        <option value="$PROJECT_DIR$/tpl/index/goods/details.html" />
         <option value="$PROJECT_DIR$/application/common/model/ShopCart.php" />
-        <option value="$PROJECT_DIR$/application/index/controller/ShopCart.php" />
         <option value="$PROJECT_DIR$/tpl/index/shop_cart/cart.html" />
         <option value="$PROJECT_DIR$/public/static/index/static/js/util/car.js" />
+        <option value="$PROJECT_DIR$/application/common/model/Order.php" />
+        <option value="$PROJECT_DIR$/tpl/index/wxpay/qrcode.html" />
+        <option value="$PROJECT_DIR$/tpl/index/goods/details.html" />
+        <option value="$PROJECT_DIR$/application/index/controller/ShopCart.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Wxpay.php" />
       </list>
     </option>
   </component>
@@ -316,16 +260,17 @@
       <workItem from="1559005022745" duration="7456000" />
       <workItem from="1559178266597" duration="19723000" />
       <workItem from="1559263197410" duration="12609000" />
+      <workItem from="1559522726468" duration="25960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216587000" />
+    <option name="totallyTimeSpent" value="242547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19581544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19849785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -356,36 +301,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tpl/admin/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/controller/ReturnCode.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/controller/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/admin/detail/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="143" column="36" selection-start-line="143" selection-start-column="36" selection-end-line="143" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#script#0;n#div#0;n#div#7;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -555,16 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="e#39#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/wxpay/images/success.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -589,41 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Wxpay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="181" column="27" lean-forward="true" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="27" />
-          <folding>
-            <element signature="e#68#100#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/index/wxpay/qrcode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="964">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/db/Query.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="1510" column="48" lean-forward="true" selection-start-line="1510" selection-start-column="48" selection-end-line="1510" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/common/model/ShopAddress.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/model/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -669,23 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/ShopCart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <element signature="e#39#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/index/goods/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="124" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/index/static/js/util/car.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2292">
@@ -717,10 +574,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/facade/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding>
+            <element signature="e#39#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/wxpay/WxPayConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/wxpay/database/WxPayUnifiedOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="407" column="22" lean-forward="true" selection-start-line="407" selection-start-column="22" selection-end-line="407" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/db/Query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="695" column="43" lean-forward="true" selection-start-line="695" selection-start-column="43" selection-end-line="695" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/ShopCart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <folding>
+            <element signature="e#39#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/common/model/ShopCart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="61" column="43" lean-forward="true" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+        <state relative-caret-position="176">
+          <caret line="89" column="13" lean-forward="true" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+          <folding>
+            <element signature="e#53#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/index/wxpay/qrcode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/index/goods/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="168" column="31" selection-start-line="168" selection-start-column="31" selection-end-line="168" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/index/wxpay/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Wxpay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="160" column="13" selection-start-line="160" selection-start-column="13" selection-end-line="160" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
           <folding>
             <element signature="e#53#69#0#PHP" expanded="true" />
           </folding>

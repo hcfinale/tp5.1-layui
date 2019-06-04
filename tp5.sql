@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2019-05-31 15:06:56
+Date: 2019-06-04 17:18:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -186,7 +186,7 @@ CREATE TABLE `my_detail` (
 -- ----------------------------
 INSERT INTO `my_detail` VALUES ('1', '21', '2', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', null, '\\public\\uploads\\20190405\\829aa4b62b9de6c8d3905d00b81e06be.jpg', '37', '49.00', '33', '1554468256', '1557130763', '50', '1');
 INSERT INTO `my_detail` VALUES ('2', '21', '2', '小白兔童装', '小白兔童装', '小白兔童装', null, '\\public\\uploads\\20190405\\07d5229a5a9b63547fc2661556850cc9.jpg', '23', '388.00', '23', '1554468350', '1557130765', '50', '1');
-INSERT INTO `my_detail` VALUES ('3', '9', '2', '黄色衣服', '黄色衣服', '黄色衣服', '<p><strong>狗蛋</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '0', '9.52', '47', '1554948742', '1557130766', '50', '1');
+INSERT INTO `my_detail` VALUES ('3', '9', '2', '黄色衣服', '黄色衣服', '黄色衣服', '<p><strong>狗蛋</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '0', '0.01', '47', '1554948742', '1557130766', '50', '1');
 INSERT INTO `my_detail` VALUES ('4', '21', '2', '黄色小鸭童装', '黄色童装', '黄色童装', '<p>妈卖批，就是不加进去。<strong>我也不小的啦</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '22', '99.00', '32', '1554949357', '1557896723', '50', '1');
 INSERT INTO `my_detail` VALUES ('5', '23', '2', '黑色童鞋', '灰色的童鞋，灰色的童装，傻傻的孩子，宽宽的胸膛。', '灰色的童鞋，灰色的童装，傻傻的孩子，宽宽的胸膛。', '<p style=\"text-align: center;\"><strong>商品详情：</strong></p><p style=\"text-align: center;\"><strong><img src=\"/ueditor/php/upload/image/20190506/1557126608104851.jpg\" title=\"1557126608104851.jpg\" alt=\"1557126608104851.jpg\" width=\"800\" height=\"322\"/></strong></p><p>春季换新装，新鞋先穿上。</p><p><img src=\"/ueditor/php/upload/image/20190506/1557126656137490.jpg\" title=\"1557126656137490.jpg\" alt=\"1557126656137490.jpg\" width=\"300\" height=\"230\"/><img src=\"/ueditor/php/upload/image/20190506/1557126697841185.jpg\" title=\"1557126697841185.jpg\" alt=\"1557126697841185.jpg\" width=\"300\" height=\"276\"/></p><p><br/></p><p>不知道好不好，试试就知道。</p><p style=\"text-align: center;\"><img src=\"/ueditor/php/upload/image/20190506/1557126745707528.jpg\" title=\"1557126745707528.jpg\" alt=\"1557126745707528.jpg\" width=\"800\" height=\"430\"/></p>', '\\public\\uploads\\20190506\\f8af55e474aeca9e8afd140dddcbbdb5.jpg', '100', '99.00', '0', '1557126803', '1557130768', '50', '1');
 
@@ -216,7 +216,7 @@ CREATE TABLE `my_order` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `order_id` varchar(50) NOT NULL,
   `uid` int(11) NOT NULL,
-  `ispay` smallint(3) NOT NULL DEFAULT '0' COMMENT '订单支付状态值字段名，0支付准备，1支付成功，2支付失败',
+  `ispay` enum('2','1','0') NOT NULL DEFAULT '0' COMMENT '订单支付状态值字段名，0支付准备，1支付成功，2支付失败',
   `amount` float(10,2) NOT NULL COMMENT '订单金额值字段名',
   `create_time` int(11) DEFAULT NULL,
   `status` int(5) NOT NULL DEFAULT '1',
@@ -263,12 +263,8 @@ CREATE TABLE `my_shop_cart` (
   `sort` char(5) NOT NULL DEFAULT '50' COMMENT '排序',
   `status` smallint(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of my_shop_cart
 -- ----------------------------
-INSERT INTO `my_shop_cart` VALUES ('1', '2', null, '黄色衣服', '0', '9.52', '2', '1559268313', '50', '1');
-INSERT INTO `my_shop_cart` VALUES ('2', '2', null, '黄色衣服', '-1', '9.52', '2', '1559270459', '50', '1');
-INSERT INTO `my_shop_cart` VALUES ('3', '2', null, '黄色衣服', '0', '9.52', '1', '1559270642', '50', '1');
-INSERT INTO `my_shop_cart` VALUES ('4', '2', null, '黄色衣服', '-2', '9.52', '1', '1559271217', '50', '1');

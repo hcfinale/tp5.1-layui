@@ -1,4 +1,4 @@
-<?php /*a:1:{s:40:"E:\www\tp5\/tpl/index/goods\details.html";i:1559272826;}*/ ?>
+<?php /*a:1:{s:40:"E:\www\tp5\/tpl/index/goods\details.html";i:1559638945;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +70,7 @@
     </div>
     <div class="product-intro layui-clear">
       <form class="layui-form" method="post">
-        <input type="hidden" name="did" value="<?php echo htmlentities($res['id']); ?>">
+        <input type="hidden" id="did" name="did" value="<?php echo htmlentities($res['id']); ?>">
         <div class="preview-wrap">
           <a href="javascript:;"><img src="<?php echo htmlentities($res['img']); ?>" width="100%"></a>
         </div>
@@ -156,6 +156,8 @@
     form.on('submit(add-pay)', function(data){
       let uid = <?php if(empty(app('session')->get('uid')) || ((app('session')->get('uid') instanceof \think\Collection || app('session')->get('uid') instanceof \think\Paginator ) && app('session')->get('uid')->isEmpty())): ?>''<?php else: ?><?php echo htmlentities(app('session')->get('uid')); ?><?php endif; ?>;
       if (uid != ''){
+        let did = data.field.did;
+        let sum = data.field.sum;
         layer.open({
           type:2,
           area:['500px','400px'],
@@ -163,32 +165,11 @@
           shade:0.5,
           title:'微信支付',
           btn:['确定','取消'],
-          yes:{
-            $.ajax({
-              url:"<?php echo url('ShopCart/pay'); ?>",
-              method:'post',
-              data:data.field,
-              dataType:'JSON',
-              success:function(res){
-                if(res.code='1001'){
-                  layer.msg('添加购物车成功');
-                  setTimeout(function () {
-                    window.location.href = '<?php echo url("ShopCart/cart"); ?>';
-                  },2000)
-                }
-                else{
-                  layer.msg('发生错误');
-                  setTimeout(function () {
-                    window.location.href = '<?php echo url("index/demo"); ?>';
-                  },2000)
-                }
-              },
-              error:function (err) {
-                layui.msg(err);
-              }
-            })
+          anim: 5,
+          yes:function(index,layero){
+            layer.close(index);
           },
-          content: ''
+          content: "<?php echo url('Wxpay/qrcode'); ?>"+'?did='+did+'&sum='+sum,
         });
       } else {
         layer.msg('您还没有登录');
