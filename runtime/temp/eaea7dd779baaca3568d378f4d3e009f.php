@@ -1,9 +1,14 @@
+<?php /*a:2:{s:42:"E:\www\tp5\/tpl/index/shop_cart\index.html";i:1559641457;s:30:"./tpl/admin/public/header.html";i:1555291684;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
-    {include file="./tpl/admin/public/header.html" /}
-    <link rel="stylesheet" href="__STATIC__/admin/assets/css/view.css"/>
-    <link rel="icon" href="__STATIC__/admin/favicon.ico">
+    	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/public/static/admin/assets/css/layui.css">
+    <link rel="stylesheet" href="/public/static/admin/assets/common.css">
+    <link rel="stylesheet" href="/public/static/admin/assets/css/view.css"/>
+    <link rel="icon" href="/public/static/admin/favicon.ico">
     <title>订单一览表</title>
     <style type="text/css">
         .layui-input-block{margin-left:0px; }
@@ -52,41 +57,41 @@
                     </tr> 
                 </thead>
                 <tbody>
-                    {volist name="shopCart" id="vo"}
+                    <?php if(is_array($shopCart) || $shopCart instanceof \think\Collection || $shopCart instanceof \think\Paginator): $i = 0; $__LIST__ = $shopCart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                     <tr>
-                        <input type="hidden" name="did" value="{$vo.id}">
-                        <td><input type="text" name="sort" value="{$vo.sort}" style="width: 35px;text-align: center;"></td>
-                        <td>{$vo.id}</td>
-                        <td>{$vo.username}</td>
-                        <td>{$vo.name}</td>
-                        <td>{$vo.title}</td>
-                        <td><img src="{$vo.img}" width="75" alt="{$vo.name}"></td>
-                        <td>{$vo.sum}</td>
-                        <td style="color: #ff0000">{$vo.price}元</td>
+                        <input type="hidden" name="did" value="<?php echo htmlentities($vo['id']); ?>">
+                        <td><input type="text" name="sort" value="<?php echo htmlentities($vo['sort']); ?>" style="width: 35px;text-align: center;"></td>
+                        <td><?php echo htmlentities($vo['id']); ?></td>
+                        <td><?php echo htmlentities($vo['username']); ?></td>
+                        <td><?php echo htmlentities($vo['name']); ?></td>
+                        <td><?php echo htmlentities($vo['title']); ?></td>
+                        <td><img src="<?php echo htmlentities($vo['img']); ?>" width="75" alt="<?php echo htmlentities($vo['name']); ?>"></td>
+                        <td><?php echo htmlentities($vo['sum']); ?></td>
+                        <td style="color: #ff0000"><?php echo htmlentities($vo['price']); ?>元</td>
                         <td>
                             <form class="layui-form">
                                 <div class="layui-form-item">
                                     <div class="layui-input-block">
-                                        <input type="checkbox" value="{$vo.status}" {eq name="vo:status" value="1" }checked{/eq} title="{$vo.id}" lay-skin="switch" lay-text="开启|关闭">
+                                        <input type="checkbox" value="<?php echo htmlentities($vo['status']); ?>" <?php if($vo->status == '1'): ?>checked<?php endif; ?> title="<?php echo htmlentities($vo['id']); ?>" lay-skin="switch" lay-text="开启|关闭">
                                     </div>
                                 </div>
                             </form>
                         </td>
                         <td>
                             <div class="layui-btn-group">
-                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_move('修改栏目','{:url("shopCart/edit",["id"=>$vo["id"]])}')">
+                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_move('修改栏目','<?php echo url("shopCart/edit",["id"=>$vo["id"]]); ?>')">
                                     <i class="layui-icon">&#xe65f;</i>
                                 </button>
-                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_edit('修改栏目','{:url("shopCart/edit",["id"=>$vo["id"]])}')">
+                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_edit('修改栏目','<?php echo url("shopCart/edit",["id"=>$vo["id"]]); ?>')">
                                     <i class="layui-icon">&#xe642;</i>
                                 </button>
-                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_del('','{:url("shopCart/del",["id"=>$vo["id"]])}')">
+                                <button class="layui-btn layui-btn-primary layui-btn-sm" onclick="hc_del('','<?php echo url("shopCart/del",["id"=>$vo["id"]]); ?>')">
                                     <i class="layui-icon">&#xe640;</i>
                                 </button>
                             </div>
                         </td>
                     </tr>
-                    {/volist}
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </tbody>
                 </table>
             </div>
@@ -94,8 +99,8 @@
     </div>
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="__STATIC__/admin/assets/layui.all.js"></script>
-<script src="__STATIC__/admin/assets/common.js"></script>
+<script src="/public/static/admin/assets/layui.all.js"></script>
+<script src="/public/static/admin/assets/common.js"></script>
 <script>
 window.onload = function(){
     layui.use(['form','layer'], function(){
@@ -107,7 +112,7 @@ window.onload = function(){
             console.log(data.elem.value);
             $.ajax({
                 method: 'post',
-                url: '{:url("ShopCart/status")}',
+                url: '<?php echo url("ShopCart/status"); ?>',
                 data: {
                     id: id,
                 },
@@ -134,7 +139,7 @@ window.onload = function(){
                 var sort = $(this).val();
                 $.ajax({
                     method: 'post',
-                    url: '{:url("ShopCart/sort")}',
+                    url: '<?php echo url("ShopCart/sort"); ?>',
                     data: {
                         id: did,
                         sort: sort,

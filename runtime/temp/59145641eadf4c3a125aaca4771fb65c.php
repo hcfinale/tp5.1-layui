@@ -1,4 +1,4 @@
-<?php /*a:1:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1559285840;}*/ ?>
+<?php /*a:1:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1559285852;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -233,7 +233,11 @@
   layui.config({
     base: '/public/static/index/static/js/util/' //你存放新模块的目录，注意，不是layui的模块目录
   }).use(['mm','form','layer','jquery','element','car'], function(){
-    
+    let mm = layui.mm;
+    let form = layui.form;
+    let layer = layui.layer;
+    let $ = layui.jquery;
+    let element = layui.element;
     let car = layui.car;
 
     // 模版导入数据
