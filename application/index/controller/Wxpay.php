@@ -47,10 +47,11 @@ class Wxpay extends Base{
         $res = db('order')->insert($data);
         */
         $result = $notify->getPayUrl($input);
+
         if (empty($result['code_url'])){
             $qrCode_url = '';
         }else{
-            $qrCode_url = $result["code_url"];
+            $qrCode_url = $this->setQrcode($result['code_url']);
         }
         return $this->fetch('',[
             'qrCode_url' => $qrCode_url,
@@ -189,6 +190,7 @@ class Wxpay extends Base{
             return json(['code'=>'1004','data'=>'操作非法']);
         }
     }
+    // 这个是购物回调过来的
     public function create(){
         $url = request()->param('qrcodeurl');
         $qrcode = new QRcode();
@@ -205,5 +207,42 @@ class Wxpay extends Base{
             'data'=>$imageString
         );
         return json($data);
+    }
+    // 公用二维码生成
+    static function setQrcode($url){
+        //二维码图片保存路径
+        $pathname = date("Ymd",time());
+        $pathname = "./public/wxpay/qrcode/" . $pathname;
+        if(!is_dir($pathname)) { //若目录不存在则创建之
+            mkdir($pathname);
+        }
+        $qrcode = new QRcode();
+        //二维码图片保存路径(若不生成文件则设置为false)
+        $filename = $pathname . "/qrcode_" . randOrder() . ".png";
+        //二维码容错率，默认L
+        $level = "L";
+        //二维码图片每个黑点的像素，默认4
+        $size = '10';
+        //二维码边框的间距，默认2
+        $padding = 2;
+        //保存二维码图片并显示出来，$filename必须传递文件路径
+        $saveandprint = true;
+        //生成二维码图片
+        $qrcode->png($url,$filename,$level,$size,$padding,$saveandprint);
+        //二维码logo
+        $logo = "./public/wxpay/images/logo.png";
+        $QR = imagecreatefromstring(file_get_contents($filename));
+        $logo = imagecreatefromstring(file_get_contents($logo));
+        $QR_width = imagesx($QR);
+        $QR_height = imagesy($QR);
+        $logo_width = imagesx($logo);
+        $logo_height = imagesy($logo);
+        $logo_qr_width = $QR_width / 5;
+        $scale = $logo_width / $logo_qr_width;
+        $logo_qr_height = $logo_height / $scale;
+        $from_width = ($QR_width - $logo_qr_width) / 2;
+        imagecopyresampled($QR, $logo, $from_width, $from_width, 0, 0, $logo_qr_width, $logo_qr_height, $logo_width, $logo_height);
+        imagepng($QR,$filename);
+        return $filename;
     }
 }
