@@ -1,59 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97d77dec-0363-4779-82a5-8db98bf7f59f" name="Default Changelist" comment="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。">
-      <change afterPath="$PROJECT_DIR$/application/common/controller/Alisms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/common/model/sms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/map.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tp5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tp5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/controller/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Base.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Wxpay.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Wxpay.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201905/31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201906/03.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201906/04.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201906/05.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201906/11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201906/12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/01191e4ab69cafb9e3e36904da2a4e8f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/33ebc4559aa7daf28bb5e88923e62283.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/33ebc4559aa7daf28bb5e88923e62283.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/3787fb4ca2d76e31156eacb26ddf55b4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/3fd5299f2a95c022730216bce6f6a31f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/43fbaaa6bd799a106c97ad3dd229f294.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/51b494a36b396200eb8831f333e0dc6d.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/51b494a36b396200eb8831f333e0dc6d.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/59145641eadf4c3a125aaca4771fb65c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/628924c3c5754b79f8d296abec3c06ad.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/7b5ab1e5f2709303d4629d1589a517c2.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/7b5ab1e5f2709303d4629d1589a517c2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/bca4486f256f3f0e5c50017b429c20f4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/c0e9193d2490ae76d07349629478c002.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/eaea7dd779baaca3568d378f4d3e009f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Console.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Validate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/Driver.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/Driver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Redis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/Query.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Query.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/Collection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/Relation.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/Relation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Attribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Attribute.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Conversion.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Conversion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/concern/RelationShip.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/RelationShip.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/route/Rule.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/route/Rule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/route/RuleGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/route/RuleGroup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/route/RuleItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/route/RuleItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/admin/index/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/admin/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/admin/index/statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/statistics.html" afterDir="false" />
-    </list>
+    <list default="true" id="97d77dec-0363-4779-82a5-8db98bf7f59f" name="Default Changelist" comment="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,68 +27,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-              <folding>
-                <element signature="e#39#61#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extend/Map.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/map.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tpl/admin/index/statistics.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="125" column="64" selection-start-line="125" selection-start-column="64" selection-end-line="125" selection-end-column="64" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/admin/index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="121" column="36" selection-start-line="121" selection-start-column="36" selection-end-line="121" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/admin/index/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -286,65 +173,6 @@
               <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
               <item name="tp5" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="tpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="tpl" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="tpl" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -436,16 +264,15 @@
       <workItem from="1560301064767" duration="3569000" />
       <workItem from="1560324145480" duration="9194000" />
       <workItem from="1560392573274" duration="3967000" />
-      <workItem from="1560474017633" duration="14198000" />
+      <workItem from="1560474017633" duration="14696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277405000" />
+    <option name="totallyTimeSpent" value="277903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20439914" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -759,6 +586,20 @@
     <entry file="file://$PROJECT_DIR$/public/static/admin/home.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2010">
+          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/echarts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="90239" column="35" selection-start-line="90239" selection-start-column="35" selection-end-line="90239" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -766,13 +607,6 @@
           <folding>
             <element signature="e#39#61#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -790,6 +624,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/admin/index/statistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="125" column="64" selection-start-line="125" selection-start-column="64" selection-end-line="125" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/admin/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -801,23 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/js/echarts.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="90239" column="35" selection-start-line="90239" selection-start-column="35" selection-end-line="90239" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/admin/index/statistics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="125" column="64" selection-start-line="125" selection-start-column="64" selection-end-line="125" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
