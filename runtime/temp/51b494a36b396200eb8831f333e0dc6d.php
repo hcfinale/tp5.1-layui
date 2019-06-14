@@ -1,4 +1,4 @@
-<?php /*a:3:{s:38:"E:\www\tp5\/tpl/admin/index\index.html";i:1557971930;s:40:"E:\www\tp5\/tpl/admin/Public\header.html";i:1555291684;s:40:"E:\www\tp5\/tpl/admin/Public\footer.html";i:1555291684;}*/ ?>
+<?php /*a:3:{s:38:"E:\www\tp5\/tpl/admin/index\index.html";i:1560474645;s:40:"E:\www\tp5\/tpl/admin/Public\header.html";i:1555291684;s:40:"E:\www\tp5\/tpl/admin/Public\footer.html";i:1555291684;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -26,6 +26,7 @@
                     <a href="javascript:;">BieJun</a>
                     <dl class="layui-nav-child">
                         <dd><a href="">帮助中心</a></dd>
+                        <dd><a href="<?php echo url('users/cache'); ?>">清楚缓存</a></dd>
                         <dd><a href="<?php echo url('login/logout'); ?>">退出</a></dd>
                     </dl>
                 </li>

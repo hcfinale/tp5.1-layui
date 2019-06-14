@@ -21,7 +21,6 @@ class Wxpay extends Base{
         }
         $this->Order = new Order();
     }
-
     public function index(){
         $product_id = (time()+1).createStr(22);
         $notify = new NativePay();
@@ -112,7 +111,7 @@ class Wxpay extends Base{
             $resultObj ->setData('return_msg','error');
             return $resultObj->toXml();
         }
-        //TODO 根据订单号 out_trade_no 来查询订单数据
+        // TODO 根据订单号 out_trade_no 来查询订单数据
         $out_trade_no = $wxData['out_trade_no'];
         //此处为举例
         $input = new WxPayUnifiedOrder();

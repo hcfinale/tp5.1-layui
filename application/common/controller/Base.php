@@ -31,18 +31,6 @@ abstract class Base extends ReturnCode {
             $this->error('你没有权限访问','index/index/index');
         }
     }
-    // 用户管理
-    public function userAuth($uid = null){
-        $module = request()->module();
-        $controller = request()->controller();
-        $action = request()->action();
-        $auth = new Auth();
-        if ($auth->check($module.'/'.$controller . '/' . $action, $uid)){
-            return true;
-        }else {
-            return false;
-        }
-    }
     /**
      * Power by Mikkle
      * QQ:776329498
@@ -90,6 +78,18 @@ abstract class Base extends ReturnCode {
             }
         }
         return $data;
+    }
+    // 用户管理
+    public function userauth($uid = null){
+        $module = request()->module();
+        $controller = request()->controller();
+        $action = request()->action();
+        $auth = new Auth();
+        if ($auth->check($module.'/'.$controller . '/' . $action, $uid)){
+            return true;
+        }else {
+            return false;
+        }
     }
     public function _empty(){
         $this->error('您访问了一个不存在的方法','admin/index/demo');

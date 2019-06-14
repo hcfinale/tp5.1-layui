@@ -4,6 +4,7 @@ namespace app\admin\controller;
 use app\common\controller\Base;
 use think\Exception;
 use app\common\model\User;
+use think\facade\Env;
 class Users extends Base {
     public function index(){
         $user = new User();
@@ -11,5 +12,13 @@ class Users extends Base {
         return $this->fetch('index',[
             'result'    =>  $result,
         ]);
+    }
+    /**
+     * 清楚缓存
+     */
+    public function cache(){
+        $path = Env::get('runtime_path');
+        delDir($path);
+        $this->success('清除缓存成功');
     }
 }
