@@ -1,4 +1,4 @@
-<?php /*a:1:{s:43:"E:\www\tp5\/tpl/admin/index\statistics.html";i:1560501364;}*/ ?>
+<?php /*a:1:{s:43:"E:\www\tp5\/tpl/admin/index\statistics.html";i:1560501720;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -120,11 +120,11 @@
     </div>
 </div>
 <script src="/public/static/admin/assets/layui.all.js"></script>
+<!--cdn的就是这样，单文件的就会报错，暂时不懂是神马原因-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0/echarts.js"></script>
 <script>
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));
-
     // 指定图表的配置项和数据
     var option = {
         title: {

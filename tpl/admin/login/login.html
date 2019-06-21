@@ -49,8 +49,9 @@ layui.use(['layer','form'], function(){
             success:function(res){
                 if (res.code==1001){
                     location.href = '{:url("admin/index/index")}';
-                } else{
-                    layer.msg('登录名或密码错误');
+                } else if(res.code==1004){
+                    location.reload();
+                    layer.msg(res.msg);
                 }
             },
             error:function (data) {
