@@ -17,7 +17,7 @@
         <a href="#">首页</a>
       </p>
       <div class="sn-quick-menu">
-        <div class="login"><a href="login.html">登录</a></div>
+        <div class="login"><a href="login.html">{$Request.session.user}</a></div>
         <div class="sp-cart"><a href="shopcart.html">购物车</a><span>2</span></div>
       </div>
     </div>
@@ -99,112 +99,45 @@
       </div>
       <div class="OrderList">
         <div class="order-content" id="list-cont">
+          {volist name="ShopCart" id="vo"}
           <ul class="item-content layui-clear">
             <li class="th th-chk">
               <div class="select-all">
                 <div class="cart-checkbox">
                   <input class="CheckBoxShop check" id="" type="checkbox" num="all" name="select-all" value="true">
+                  <input type="hidden" class="myid" name="cid" value="{$vo.id}" />
                 </div>
               </div>
             </li>
             <li class="th th-item">
               <div class="item-cont">
-                <a href="javascript:;"><img src="__STATIC__/index/static/img/paging_img1.jpg" alt=""></a>
+                <a href="javascript:;"><img src="{$vo.img}" alt=""></a>
                 <div class="text">
-                  <div class="title">宝宝T恤棉质小衫</div>
-                  <p><span>粉色</span>  <span>130</span>cm</p>
+                  <div class="title">{$vo.name}</div>
+                  <p><span>描述：</span>&nbsp;&nbsp;<span>{$vo.d_key}</span></p>
                 </div>
               </div>
             </li>
             <li class="th th-price">
-              <span class="th-su">189.00</span>
+              <span class="th-su">{$vo.price}</span>
             </li>
             <li class="th th-amount">
               <div class="box-btn layui-clear">
                 <div class="less layui-btn">-</div>
-                <input class="Quantity-input" type="" name="" value="1" disabled="disabled">
+                <input class="Quantity-input" type="" name="" value="{$vo.sum}" disabled="disabled">
                 <div class="add layui-btn">+</div>
               </div>
             </li>
             <li class="th th-sum">
-              <span class="sum">189.00</span>
+              <span class="sum">{$vo.price}</span>
             </li>
             <li class="th th-op">
               <span class="dele-btn">删除</span>
             </li>
           </ul>
-          <ul class="item-content layui-clear">
-            <li class="th th-chk">
-              <div class="select-all">
-                <div class="cart-checkbox">
-                  <input class="CheckBoxShop check" id="" type="checkbox" num="all" name="select-all" value="true">
-                </div>
-              </div>
-            </li>
-            <li class="th th-item">
-              <div class="item-cont">
-                <a href="javascript:;"><img src="__STATIC__/index/static/img/paging_img2.jpg" alt=""></a>
-                <div class="text">
-                  <div class="title">宝宝T恤棉质小衫</div>
-                  <p><span>粉色</span>  <span>130</span>cm</p>
-                </div>
-              </div>
-            </li>
-            <li class="th th-price">
-              <span class="th-su">189.00</span>
-            </li>
-            <li class="th th-amount">
-              <div class="box-btn layui-clear">
-                <div class="less layui-btn">-</div>
-                <input class="Quantity-input" type="" name="" value="1" disabled="disabled">
-                <div class="add layui-btn">+</div>
-              </div>
-            </li>
-            <li class="th th-sum">
-              <span class="sum">189.00</span>
-            </li>
-            <li class="th th-op">
-              <span class="dele-btn">删除</span>
-            </li>
-          </ul>
-          <ul class="item-content layui-clear">
-            <li class="th th-chk">
-              <div class="select-all">
-                <div class="cart-checkbox">
-                  <input class="CheckBoxShop check" id="" type="checkbox" num="all" name="select-all" value="true">
-                </div>
-              </div>
-            </li>
-            <li class="th th-item">
-              <div class="item-cont">
-                <a href="javascript:;"><img src="__STATIC__/index/static/img/paging_img3.jpg" alt=""></a>
-                <div class="text">
-                  <div class="title">宝宝T恤棉质小衫</div>
-                  <p><span>粉色</span>  <span>130</span>cm</p>
-                </div>
-              </div>
-            </li>
-            <li class="th th-price">
-              <span class="th-su">189.00</span>
-            </li>
-            <li class="th th-amount">
-              <div class="box-btn layui-clear">
-                <div class="less layui-btn">-</div>
-                <input class="Quantity-input" type="" name="" value="1" disabled="disabled">
-                <div class="add layui-btn">+</div>
-              </div>
-            </li>
-            <li class="th th-sum">
-              <span class="sum">189.00</span>
-            </li>
-            <li class="th th-op">
-              <span class="dele-btn">删除</span>
-            </li>
-          </ul>
+          {/volist}
         </div>
       </div>
-
-
       <div class="FloatBarHolder layui-clear">
         <div class="th th-chk">
           <div class="select-all">
@@ -240,7 +173,7 @@
     let car = layui.car;
 
     // 模版导入数据
-    /*
+    /**
     var html = demo.innerHTML,
     listCont = document.getElementById('list-cont');
     mm.request({
@@ -254,7 +187,7 @@
         console.log(res);
       }
     });
-   */
+    **/
     car.init();
   });
 </script>

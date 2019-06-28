@@ -13,6 +13,13 @@ class Users extends Base {
             'result'    =>  $result,
         ]);
     }
+    public function add(){
+        if (request()->isPost()) {
+            # code...
+        }
+        return $this->fetch('add');
+    }
+
     /**
      * 清楚缓存
      */

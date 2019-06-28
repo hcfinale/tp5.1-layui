@@ -1,0 +1,206 @@
+---------------------------------------------------------------
+[2019-06-27T16:27:45+08:00] 127.0.0.1 GET www.tp5123.com/admin/users/cache.html
+[运行时间：0.102006s] [吞吐率：9.80req/s] [内存消耗：2,072.40kb] [文件加载：142]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/admins',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ds4uh9ch2d13itaiej5ch0135u; userKey=f8bWnY6M0kFQsqGAHdlipDjtvOmoVPez',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[2019-06-27T16:27:48+08:00] 127.0.0.1 GET www.tp5123.com/admins
+[运行时间：0.075005s] [吞吐率：13.33req/s] [内存消耗：2,121.23kb] [文件加载：141]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/admin/users/cache.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ds4uh9ch2d13itaiej5ch0135u; userKey=f8bWnY6M0kFQsqGAHdlipDjtvOmoVPez',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/admin/index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-06-27T16:27:49+08:00] 127.0.0.1 GET www.tp5123.com/admin/index/statistics.html
+[运行时间：0.192011s] [吞吐率：5.21req/s] [内存消耗：3,304.55kb] [文件加载：147]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/admins',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ds4uh9ch2d13itaiej5ch0135u; userKey=f8bWnY6M0kFQsqGAHdlipDjtvOmoVPez',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/admin/index\statistics.html [ array (
+  0 => 'countUser',
+  1 => 'user',
+  2 => 'countColumn',
+  3 => 'countDetail',
+  4 => 'countOrder',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_admin_user` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_admin_user` [ RunTime:0.013001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_column` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_order` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_order` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-06-27T16:27:49+08:00] 127.0.0.1 GET www.tp5123.com/admin/index/map.html
+[运行时间：0.114007s] [吞吐率：8.77req/s] [内存消耗：1,900.45kb] [文件加载：138]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tp5123.com/admin/index/statistics.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ds4uh9ch2d13itaiej5ch0135u; userKey=f8bWnY6M0kFQsqGAHdlipDjtvOmoVPez',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-06-27T16:27:49+08:00] 127.0.0.1 GET www.tp5123.com/public/static/admin/favicon.ico
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,298.05kb] [文件加载：113]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2019-06-27T16:27:57+08:00] 127.0.0.1 GET www.tp5123.com/admins
+[运行时间：0.061003s] [吞吐率：16.39req/s] [内存消耗：1,931.04kb] [文件加载：139]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/admin/users/cache.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ds4uh9ch2d13itaiej5ch0135u; userKey=f8bWnY6M0kFQsqGAHdlipDjtvOmoVPez',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/admin/index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-06-27T16:27:57+08:00] 127.0.0.1 GET www.tp5123.com/admin/index/statistics.html
+[运行时间：0.115006s] [吞吐率：8.70req/s] [内存消耗：2,682.62kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/admins',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ds4uh9ch2d13itaiej5ch0135u; userKey=f8bWnY6M0kFQsqGAHdlipDjtvOmoVPez',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/admin/index\statistics.html [ array (
+  0 => 'countUser',
+  1 => 'user',
+  2 => 'countColumn',
+  3 => 'countDetail',
+  4 => 'countOrder',
+) ]
+---------------------------------------------------------------
+[2019-06-27T16:27:57+08:00] 127.0.0.1 GET www.tp5123.com/admin/index/map.html
+[运行时间：0.110006s] [吞吐率：9.09req/s] [内存消耗：1,900.45kb] [文件加载：138]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tp5123.com/admin/index/statistics.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ds4uh9ch2d13itaiej5ch0135u; userKey=f8bWnY6M0kFQsqGAHdlipDjtvOmoVPez',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-06-27T16:27:59+08:00] 127.0.0.1 GET www.tp5123.com/admin/login/logout.html
+[运行时间：0.061004s] [吞吐率：16.39req/s] [内存消耗：1,903.45kb] [文件加载：137]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/admins',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ds4uh9ch2d13itaiej5ch0135u; userKey=f8bWnY6M0kFQsqGAHdlipDjtvOmoVPez',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]

@@ -1,4 +1,4 @@
-<?php /*a:3:{s:38:"E:\www\tp5\/tpl/admin/index\index.html";i:1560474645;s:40:"E:\www\tp5\/tpl/admin/Public\header.html";i:1555291684;s:40:"E:\www\tp5\/tpl/admin/Public\footer.html";i:1555291684;}*/ ?>
+<?php /*a:3:{s:38:"E:\www\tp5\/tpl/admin/index\index.html";i:1561686011;s:40:"E:\www\tp5\/tpl/admin/Public\header.html";i:1555291684;s:40:"E:\www\tp5\/tpl/admin/Public\footer.html";i:1555291684;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -74,7 +74,7 @@
                             <dd>
                                 <a href="javascript:;">订单</a>
                                 <dl class="layui-nav-child">
-                                    <dd><a href="<?php echo url('index/shop_cart/order'); ?>">订单一览表</a></dd>
+                                    <dd><a href="<?php echo url('shop_cart/order'); ?>">订单一览表</a></dd>
                                 </dl>
                             </dd>
                         </dl>

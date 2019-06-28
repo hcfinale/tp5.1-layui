@@ -1,4 +1,4 @@
-<?php /*a:1:{s:38:"E:\www\tp5\/tpl/admin/login\login.html";i:1561021438;}*/ ?>
+<?php /*a:1:{s:38:"E:\www\tp5\/tpl/admin/login\login.html";i:1561106770;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -33,7 +33,7 @@
     </div>
 </body>
 <script src="/public/static/admin/assets/layui.js"></script>
-<script src="/public/static/admin/login.js" data-main="login"></script>
+<!--<script src="/public/static/admin/login.js" data-main="login"></script>-->
 <script>
 layui.use(['layer','form'], function(){
     var form = layui.form;

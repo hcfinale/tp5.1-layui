@@ -135,16 +135,24 @@ class Wxpay extends Base{
             'password'  =>  config('redis.REDIS_AUTH'),
             'database'  =>  1,
         ]);
-        $client->set('han','this is my name');
-        $client->rpush('mylist',['one']);
-        $client->rpush('mylist',['two']);
-        $client->rpush('mylist',['three']);
-        $client->rpush('mylist',['fore']);
+        $loginSum = session('user').':'.date('Y-m-d',time());
+        $han = 'han';
+        $mylist = 'mylist';
+        $client->incr($loginSum);
+        
+        $client->set($han,'this is my name');
+        $client->rpush($mylist,['one']);
+        $client->rpush($mylist,['two']);
+        
         // 查看mylist中所有的数据
         $valueAll = $client->lrange('mylist','0','-1');
-        // 查找第二个push进去的数据
-        $value = $client->lindex('mylist','-2');
-        dump($valueAll);
+        $myname = $client->get('han');
+        
+        $failureTime = mktime(0,0,0,date('m'),date('d')+1,date('Y'))-time();
+        // 这个expire命令没有办法多次执行
+        $client->expire($loginSum,$failureTime);
+        //$client->expire($valueAll,$failureTime);
+
     }
     // 二维码生成
     public function qrcode(){

@@ -9,16 +9,19 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-Route::get('thinks', function () {
-    return 'hello,ThinkPHP5!这个也是可以的';
+Route::get('thinks/:name', function ($name = null) {
+    return $name;
 });
 
+// 路由重命名和其他的get、post等方法的命名方法不一样
+Route::alias('admins','admin/index/index');
+Route::alias('login','admin/login/login');
 
 Route::get('/', 'index/index');
 Route::get('demo', 'index/demo');
-Route::rule('goods', 'goods/index');
-Route::rule('goods/:id', 'goods/index');
-Route::rule('details/:id', 'goods/details');
+Route::get('goods', 'goods/index');
+Route::get('goods/:id', 'goods/index');
+Route::get('details/:id', 'goods/details');
 return [
 
 ];

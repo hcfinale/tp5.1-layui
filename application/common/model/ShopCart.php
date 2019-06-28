@@ -57,7 +57,7 @@ class ShopCart extends Model
             ->where('sc.status','=',1)
             ->where('sc.is_pay','<>',1)
             ->where('sc.uid','=',$uid)
-            ->field('sc.id,sc.name,sc.is_pay,sc.sum,sc.sort,sc.status,d.img,d.price,d.payman,c.title')
+            ->field('sc.id,sc.name,sc.is_pay,sc.sum,sc.sort,sc.status,d.keyword as d_key,d.img,d.price,d.payman,c.title')
             ->paginate(10,false,[
                 'type'=>'BootstrapDetailed'
             ]);
@@ -107,6 +107,19 @@ class ShopCart extends Model
                 return $result;
             }
         } catch (\Exception $e) {
+            // 回滚事务
+            Db::rollback();
+            return false;
+        }
+    }
+    // 删除购物车的订单
+    public function delCartOrder($id){
+        db::startTrans();
+        try{
+            db::query("delete from my_order where order_id = (select order_id from my_shop_cart where id = $id)");
+            db::query("delete from my_shop_cart where id = $id");
+            return true;
+        }catch (\Exception $e) {
             // 回滚事务
             Db::rollback();
             return false;
