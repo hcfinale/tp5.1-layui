@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9fc20f0ae7bb2668a2a7e3546f11b21c",
+    "content-hash": "ed5a97656472707b472dd62da0c829d4",
     "packages": [
         {
             "name": "aferrandini/phpqrcode",
@@ -52,53 +52,41 @@
             "time": "2013-07-08T09:39:08+00:00"
         },
         {
-            "name": "iscms/alisms-for-laravel",
-            "version": "0.0.3",
+            "name": "flc/dysms",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ISCLOUDX/alisms.git",
-                "reference": "c713ea802993fb6dd5a0852e660cf7451ef98d39"
+                "url": "https://github.com/flc1125/dysms.git",
+                "reference": "9786bd8f462d64def83af9432315c752a42627c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ISCLOUDX/alisms/zipball/c713ea802993fb6dd5a0852e660cf7451ef98d39",
-                "reference": "c713ea802993fb6dd5a0852e660cf7451ef98d39",
+                "url": "https://api.github.com/repos/flc1125/dysms/zipball/9786bd8f462d64def83af9432315c752a42627c5",
+                "reference": "9786bd8f462d64def83af9432315c752a42627c5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=5.4.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "iscms\\Alisms\\": "src/",
-                    "iscms\\AlismsSdk\\": "src/vendor/"
+                    "Flc\\Dysms\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "秋綾",
-                    "email": "root@iscloudx.com"
-                }
-            ],
-            "description": "阿里大鱼laravel5封装包,提供简单明确的调用方法",
-            "homepage": "https://www.iscloudx.com",
+            "description": "阿里短信-适用Laravel、Yii、Thinkphp等任何PHP项目...",
             "keywords": [
                 "alisms",
-                "bigfish",
-                "大鱼",
-                "短信接口",
-                "阿里云",
-                "阿里云大鱼短信",
-                "阿里云短信",
-                "阿里大鱼"
+                "aliyun",
+                "dysms",
+                "flc",
+                "阿里短信"
             ],
-            "abandoned": "iscms/alidayu",
-            "time": "2017-01-22T09:00:40+00:00"
+            "time": "2019-04-05T16:40:06+00:00"
         },
         {
             "name": "markbaker/complex",

@@ -1,14 +1,16 @@
-<?php /*a:1:{s:40:"E:\www\tp5\/tpl/index/goods\details.html";i:1559638945;}*/ ?>
+<?php /*a:2:{s:40:"E:\www\tp5\/tpl/index/goods\details.html";i:1562058588;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <title>商品信息</title>
-  <link rel="stylesheet" type="text/css" href="/public/static/index/static/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/public/static/index/static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css">
+	<script type="text/javascript" src="/public/static/index/layui/layui.js"></script>
 </head>
+<body>
 <body>
 <div class="site-nav-bg">
   <div class="site-nav w1200">
@@ -118,7 +120,6 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="/public/static/index/layui/layui.js"></script>
 <script type="text/javascript">
   layui.use(['form','layer','jquery'], function(){
     var form = layui.form;

@@ -29,4 +29,7 @@ class User extends Model
         $data = $this->field('uid,name,email,mobile,gender,status,loginnum')->select();
         return $data;
     }
+    public function register(){
+        
+    }
 }

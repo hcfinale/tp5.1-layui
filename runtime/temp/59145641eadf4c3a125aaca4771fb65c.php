@@ -1,25 +1,26 @@
-<?php /*a:1:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1561714814;}*/ ?>
+<?php /*a:2:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1562058601;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="/public/static/index/static/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css">
-  <script type="text/javascript" src="/public/static/index/layui/layui.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/public/static/index/static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css">
+	<script type="text/javascript" src="/public/static/index/layui/layui.js"></script>
 </head>
+<body>
 <body>
   <div class="site-nav-bg">
     <div class="site-nav w1200">
       <p class="sn-back-home">
         <i class="layui-icon layui-icon-home"></i>
-        <a href="#">首页</a>
+        <a href="/">首页</a>
       </p>
       <div class="sn-quick-menu">
-        <div class="login"><a href="login.html"><?php echo htmlentities(app('request')->session('user')); ?></a></div>
-        <div class="sp-cart"><a href="shopcart.html">购物车</a><span>2</span></div>
+        <div class="login"><a href="<?php echo url('user/login'); ?>"><?php echo htmlentities(app('request')->session('user')); ?></a></div>
+        <div class="sp-cart"><a href="<?php echo url('shopcart/cart'); ?>">购物车</a><span>2</span></div>
       </div>
     </div>
   </div>
@@ -106,7 +107,7 @@
               <div class="select-all">
                 <div class="cart-checkbox">
                   <input class="CheckBoxShop check" id="" type="checkbox" num="all" name="select-all" value="true">
-                  <input type="hidden" class="myid" name="cid" value="<?php echo htmlentities($vo['id']); ?>" />
+                  <input type="hidden" class="myid" name="cid[]" value="<?php echo htmlentities($vo['id']); ?>" />
                 </div>
               </div>
             </li>
@@ -172,7 +173,7 @@
     let $ = layui.jquery;
     let element = layui.element;
     let car = layui.car;
-
+    car.init();
     // 模版导入数据
     /**
     var html = demo.innerHTML,
@@ -189,7 +190,20 @@
       }
     });
     **/
-    car.init();
+    car.response();
+    /**
+    $('.Settlement button').click(function () {
+      var valArr = new Array;
+      var mm = $(".list-cont input[name='select-all']:checked").siblings();
+      mm.each(function(i){
+        valArr[i] = $(this).val();
+      });
+      var vals = valArr.join(',');
+      console.log(vals);
+      console.dir(mm);
+
+    });
+     **/
   });
 </script>
 </body>

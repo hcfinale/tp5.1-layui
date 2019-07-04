@@ -125,4 +125,8 @@ class ShopCart extends Model
             return false;
         }
     }
+    public function findCartNum(){
+        $data = $this->where('uid',session('uid'))->count('id');
+        return $data;
+    }
 }

@@ -1,15 +1,16 @@
-<?php /*a:1:{s:38:"E:\www\tp5\/tpl/index/index\index.html";i:1558660665;}*/ ?>
+<?php /*a:2:{s:38:"E:\www\tp5\/tpl/index/index\index.html";i:1562229127;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="/public/static/index/static/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css">
-  <script type="text/javascript" src="/public/static/index/layui/layui.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/public/static/index/static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css">
+	<script type="text/javascript" src="/public/static/index/layui/layui.js"></script>
 </head>
+<body>
 <body id="list-cont">
   <div class="site-nav-bg">
     <div class="site-nav w1200">
@@ -18,12 +19,11 @@
         <a href="#">首页</a>
       </p>
       <div class="sn-quick-menu">
-        <div class="login"><a href="<?php echo url('user/login'); ?>">登录</a></div>
-        <div class="sp-cart"><a href="<?php echo url('user/shopCart'); ?>">购物车</a><span>2</span></div>
+        <div class="login"><?php if(empty(app('request')->session('user'))): ?><a href="<?php echo url('user/login'); ?>">登录</a><?php else: ?>欢迎归来：<?php echo htmlentities(app('request')->session('user')); ?><?php endif; ?></div>
+        <div class="sp-cart"><a href="<?php echo url('shopcart/cart'); ?>">购物车</a><?php if(empty(app('request')->session('user'))): else: ?><span><?php echo htmlentities(app('request')->session('cartNum')); ?></span><?php endif; ?></div>
       </div>
     </div>
   </div>
-
 
   <div class="header">
     <div class="headerLayout w1200">
@@ -45,7 +45,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="content">
     <div class="main-nav">

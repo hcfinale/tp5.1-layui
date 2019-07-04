@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="__STATIC__/index/static/css/main.css">
-  <link rel="stylesheet" type="text/css" href="__STATIC__/index/layui/css/layui.css">
-  <script type="text/javascript" src="__STATIC__/index/layui/layui.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-</head>
+{include file="Public:header" /}
 <body id="list-cont">
   <div class="site-nav-bg">
     <div class="site-nav w1200">
@@ -17,12 +7,11 @@
         <a href="#">首页</a>
       </p>
       <div class="sn-quick-menu">
-        <div class="login"><a href="{:url('user/login')}">登录</a></div>
-        <div class="sp-cart"><a href="{:url('user/shopCart')}">购物车</a><span>2</span></div>
+        <div class="login">{if condition="empty($Request.session.user)"}<a href="{:url('user/login')}">登录</a>{else /}欢迎归来：{$Request.session.user}{/if}</div>
+        <div class="sp-cart"><a href="{:url('shopcart/cart')}">购物车</a>{if condition="empty($Request.session.user)"}{else /}<span>{$Request.session.cartNum}</span>{/if}</div>
       </div>
     </div>
   </div>
-
 
   <div class="header">
     <div class="headerLayout w1200">
@@ -44,7 +33,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="content">
     <div class="main-nav">

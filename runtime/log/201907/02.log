@@ -1,0 +1,2708 @@
+---------------------------------------------------------------
+[2019-07-02T16:48:22+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.307039s] [吞吐率：3.26req/s] [内存消耗：2,835.02kb] [文件加载：141]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066508s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.075010s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.003500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:15+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.107514s] [吞吐率：9.30req/s] [内存消耗：2,994.56kb] [文件加载：143]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.003500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:18+08:00] 127.0.0.1 GET www.tp5123.com/goods/id/9.html
+[运行时间：0.093512s] [吞吐率：10.69req/s] [内存消耗：3,206.95kb] [文件加载：146]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.005500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '9' [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '9' LIMIT 0,1 [ RunTime:0.001500s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:20+08:00] 127.0.0.1 GET www.tp5123.com/goods/id/9.html
+[运行时间：0.095012s] [吞吐率：10.52req/s] [内存消耗：2,883.48kb] [文件加载：144]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.003500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.005500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '9' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '9' LIMIT 0,1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:24+08:00] 127.0.0.1 GET www.tp5123.com/goods/id/21.html
+[运行时间：0.078010s] [吞吐率：12.82req/s] [内存消耗：2,884.27kb] [文件加载：144]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '21',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods/id/9.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '21',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '21' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '21' LIMIT 0,1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:26+08:00] 127.0.0.1 GET www.tp5123.com/details/1.html
+[运行时间：0.074509s] [吞吐率：13.42req/s] [内存消耗：3,146.16kb] [文件加载：147]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods/id/21.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '1' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '1' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '1' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:34+08:00] 127.0.0.1 GET www.tp5123.com/goods/id/21.html?page=2
+[运行时间：0.086511s] [吞吐率：11.56req/s] [内存消耗：2,884.85kb] [文件加载：144]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '21',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods/id/21.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'id' => '21',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '21' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '21' LIMIT 1,1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:36+08:00] 127.0.0.1 GET www.tp5123.com/details/2.html
+[运行时间：0.069509s] [吞吐率：14.39req/s] [内存消耗：2,825.38kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods/id/21.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '2' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '2' LIMIT 0,1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '2' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:42+08:00] 127.0.0.1 GET www.tp5123.com/goods/id/21.html?page=3
+[运行时间：0.078510s] [吞吐率：12.74req/s] [内存消耗：2,884.87kb] [文件加载：144]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '21',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods/id/21.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+  'id' => '21',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '21' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '21' LIMIT 2,1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:43+08:00] 127.0.0.1 GET www.tp5123.com/details/4.html
+[运行时间：0.103513s] [吞吐率：9.66req/s] [内存消耗：2,825.48kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods/id/21.html?page=3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '4' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '4' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '4' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:49+08:00] 127.0.0.1 GET www.tp5123.com/goods.html
+[运行时间：0.084511s] [吞吐率：11.83req/s] [内存消耗：2,888.48kb] [文件加载：144]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods/id/21.html?page=3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.001501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` LIMIT 0,15 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:58:51+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.071509s] [吞吐率：13.98req/s] [内存消耗：2,826.39kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:59:44+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.077009s] [吞吐率：12.99req/s] [内存消耗：3,147.61kb] [文件加载：147]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-07-02T16:59:46+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.076510s] [吞吐率：13.07req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-07-02T16:59:46+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.054507s] [吞吐率：18.35req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:59:47+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.063508s] [吞吐率：15.75req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:59:47+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.057007s] [吞吐率：17.54req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:59:47+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.061508s] [吞吐率：16.26req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:59:48+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.063008s] [吞吐率：15.87req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T16:59:48+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.056007s] [吞吐率：17.85req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:03:00+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.100013s] [吞吐率：10.00req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:03:01+08:00] 127.0.0.1 GET www.tp5123.com/details/login.html
+[运行时间：0.070509s] [吞吐率：14.18req/s] [内存消耗：2,822.98kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/details/5.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'login',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' LIMIT 0,1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = 'login' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[2019-07-02T17:03:05+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.093512s] [吞吐率：10.69req/s] [内存消耗：2,826.27kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.001500s ]
+---------------------------------------------------------------
+[2019-07-02T17:03:06+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.095512s] [吞吐率：10.47req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011002s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.005501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:03:08+08:00] 127.0.0.1 GET www.tp5123.com/details/login.html
+[运行时间：0.086011s] [吞吐率：11.63req/s] [内存消耗：2,822.98kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/details/5.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'login',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = 'login' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:03:09+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.068509s] [吞吐率：14.60req/s] [内存消耗：2,826.27kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:08:44+08:00] 127.0.0.1 GET www.tp5123.com/details/login.html
+[运行时间：0.101513s] [吞吐率：9.85req/s] [内存消耗：3,144.76kb] [文件加载：147]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/details/5.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'login',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = 'login' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:09:13+08:00] 127.0.0.1 GET www.tp5123.com/details/login.html
+[运行时间：0.066008s] [吞吐率：15.15req/s] [内存消耗：2,823.52kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/details/5.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'login',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' LIMIT 0,1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = 'login' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-07-02T17:09:15+08:00] 127.0.0.1 GET www.tp5123.com/details/login.html
+[运行时间：0.092512s] [吞吐率：10.81req/s] [内存消耗：2,823.52kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/details/5.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'login',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011002s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.004500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' LIMIT 0,1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = 'login' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-07-02T17:09:16+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.069509s] [吞吐率：14.39req/s] [内存消耗：2,826.62kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-07-02T17:09:19+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.074010s] [吞吐率：13.51req/s] [内存消耗：2,826.68kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[2019-07-02T17:09:33+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.097512s] [吞吐率：10.26req/s] [内存消耗：2,997.78kb] [文件加载：144]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:09:35+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.075509s] [吞吐率：13.24req/s] [内存消耗：2,838.73kb] [文件加载：142]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:10:05+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.068009s] [吞吐率：14.70req/s] [内存消耗：2,995.02kb] [文件加载：143]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:10:09+08:00] 127.0.0.1 GET www.tp5123.com/index/user/login.html
+[运行时间：0.046006s] [吞吐率：21.74req/s] [内存消耗：1,796.09kb] [文件加载：130]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-07-02T17:10:14+08:00] 127.0.0.1 GET www.tp5123.com/index/user/commodity.html
+[运行时间：0.052506s] [吞吐率：19.05req/s] [内存消耗：1,609.88kb] [文件加载：128]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[2019-07-02T17:10:20+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.119515s] [吞吐率：8.37req/s] [内存消耗：2,835.42kb] [文件加载：141]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.003501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:10:22+08:00] 127.0.0.1 GET www.tp5123.com/goods/id/9.html
+[运行时间：0.103514s] [吞吐率：9.66req/s] [内存消耗：3,207.59kb] [文件加载：146]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '9' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '9' LIMIT 0,1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-07-02T17:10:27+08:00] 127.0.0.1 GET www.tp5123.com/goods.html
+[运行时间：0.085011s] [吞吐率：11.76req/s] [内存消耗：2,888.48kb] [文件加载：144]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods/id/9.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` LIMIT 0,15 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:10:29+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.063008s] [吞吐率：15.87req/s] [内存消耗：3,147.61kb] [文件加载：147]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:10:54+08:00] 127.0.0.1 GET www.tp5123.com/details/login.html
+[运行时间：0.109014s] [吞吐率：9.17req/s] [内存消耗：2,822.98kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/details/5.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'login',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = 'login' LIMIT 0,1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = 'login' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:10:56+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.059507s] [吞吐率：16.80req/s] [内存消耗：2,826.27kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-07-02T17:10:57+08:00] 127.0.0.1 GET www.tp5123.com/details/5.html
+[运行时间：0.063008s] [吞吐率：15.87req/s] [内存消耗：2,826.33kb] [文件加载：145]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'details/<id>',
+  'route' => 'goods/details',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\details.html [ array (
+  0 => 'rescloumn',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`cid` = '5' LIMIT 0,1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`content`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` WHERE  `d`.`id` = '5' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[2019-07-02T17:10:59+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.095512s] [吞吐率：10.47req/s] [内存消耗：2,835.42kb] [文件加载：141]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:11:01+08:00] 127.0.0.1 GET www.tp5123.com/index/user/login.html
+[运行时间：0.051507s] [吞吐率：19.41req/s] [内存消耗：1,661.71kb] [文件加载：128]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-07-02T17:11:09+08:00] 127.0.0.1 GET www.tp5123.com/index/json/login.json
+[运行时间：0.046006s] [吞吐率：21.74req/s] [内存消耗：1,599.16kb] [文件加载：126]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://www.tp5123.com/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-07-02T17:11:11+08:00] 127.0.0.1 GET www.tp5123.com/index/json/login.json
+[运行时间：0.040005s] [吞吐率：25.00req/s] [内存消耗：1,599.16kb] [文件加载：126]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://www.tp5123.com/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-07-02T17:12:06+08:00] 127.0.0.1 GET www.tp5123.com/index/user/login.html
+[运行时间：0.038505s] [吞吐率：25.97req/s] [内存消耗：1,661.77kb] [文件加载：128]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-07-02T17:12:10+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.097513s] [吞吐率：10.26req/s] [内存消耗：2,835.42kb] [文件加载：141]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.003500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-07-02T17:19:52+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.156019s] [吞吐率：6.41req/s] [内存消耗：2,835.73kb] [文件加载：141]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[2019-07-02T17:19:53+08:00] 127.0.0.1 GET www.tp5123.com/index/user/login.html
+[运行时间：0.045506s] [吞吐率：21.98req/s] [内存消耗：1,797.41kb] [文件加载：130]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-07-02T17:19:56+08:00] 127.0.0.1 GET www.tp5123.com/goods.html
+[运行时间：0.090512s] [吞吐率：11.05req/s] [内存消耗：2,888.48kb] [文件加载：144]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.003500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` LIMIT 0,15 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-02T17:19:57+08:00] 127.0.0.1 GET www.tp5123.com/login.html
+[运行时间：0.060008s] [吞吐率：16.66req/s] [内存消耗：1,874.53kb] [文件加载：134]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/admin/login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-07-02T17:20:01+08:00] 127.0.0.1 GET www.tp5123.com/goods.html
+[运行时间：0.077510s] [吞吐率：12.90req/s] [内存消耗：2,888.48kb] [文件加载：144]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'goods',
+  'route' => 'goods/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/goods.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/goods\index.html [ array (
+  0 => 'id',
+  1 => 'category',
+  2 => 'count',
+  3 => 'goods',
+  4 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.003501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_detail` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `d`.`id`,`d`.`name`,`d`.`keyword`,`d`.`description`,`d`.`img`,`d`.`sum`,`d`.`price`,`d`.`payman`,`d`.`sort`,`d`.`status`,`c`.`title` FROM `my_detail` `d` LEFT JOIN `my_column` `c` ON `d`.`cid`=`c`.`id` LIMIT 0,15 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-07-02T17:20:09+08:00] 127.0.0.1 GET www.tp5123.com/
+[运行时间：0.103514s] [吞吐率：9.66req/s] [内存消耗：2,835.42kb] [文件加载：141]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/index\index.html [ array (
+  0 => 'result',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_column` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 0 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 9 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 10 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 12 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 13 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 14 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 16 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 17 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 18 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 20 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 21 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 22 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 23 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 24 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 25 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 26 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 8 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 27 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 28 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title` FROM `my_column` WHERE  `status` = 1  AND `pid` = 29 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-07-02T17:20:11+08:00] 127.0.0.1 GET www.tp5123.com/index/user/login.html
+[运行时间：0.053007s] [吞吐率：18.87req/s] [内存消耗：1,662.96kb] [文件加载：128]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-07-02T17:31:14+08:00] 127.0.0.1 GET www.tp5123.com/index/user/login.html
+[运行时间：0.067509s] [吞吐率：14.81req/s] [内存消耗：1,797.47kb] [文件加载：130]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.tp5123.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\tp5\/tpl/index/user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[2019-07-02T17:31:39+08:00] 127.0.0.1 GET www.tp5123.com/index/json/login.json
+[运行时间：0.034505s] [吞吐率：28.98req/s] [内存消耗：1,599.16kb] [文件加载：126]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://www.tp5123.com/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-07-02T17:31:40+08:00] 127.0.0.1 GET www.tp5123.com/index/json/login.json
+[运行时间：0.040505s] [吞吐率：24.69req/s] [内存消耗：1,599.16kb] [文件加载：126]
+[ info ] [ LANG ] E:\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5123.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://www.tp5123.com/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0g5aiko18r3eej0ftf9ok6g0rh',
+)
+[ info ] [ PARAM ] array (
+)
