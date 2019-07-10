@@ -22,6 +22,10 @@ Route::get('demo', 'index/demo');
 Route::get('goods', 'goods/index');
 Route::get('goods/:id', 'goods/index');
 Route::get('details/:id', 'goods/details');
+// 匹配所有路由
+Route::any('special','goods/special');
+Route::any('about','goods/about');
+
 return [
 
 ];

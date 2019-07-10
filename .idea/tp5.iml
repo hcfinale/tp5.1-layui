@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/application" isTestSource="false" packagePrefix="app\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/aferrandini/phpqrcode" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/flc/dysms" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/iscms/alisms-for-laravel" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/markbaker/complex" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/markbaker/matrix" />

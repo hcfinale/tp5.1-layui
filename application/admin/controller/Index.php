@@ -22,7 +22,7 @@ class Index extends Base {
     }
     public function SendMailer(){
         //邮件发送功能实现 990223979
-        send_mail("990223979@qq.com","蒋斌","邮箱提醒","蒋斌，你这个傻货的的邮箱已经被盗，快来哄我我给你解封。");
+        send_mail("691301630@qq.com","蒋斌","邮箱提醒","蒋斌，你这个傻货的的邮箱已经被盗，快来哄我我给你解封。");
     }
     public function test() {
         dump(\Map::getLngLat('北京昌平沙河地铁'));

@@ -1,56 +1,8 @@
 {include file="Public:header" /}
 <body>
-
-  <div class="site-nav-bg">
-    <div class="site-nav w1200">
-      <p class="sn-back-home">
-        <i class="layui-icon layui-icon-home"></i>
-        <a href="/">首页</a>
-      </p>
-      <div class="sn-quick-menu">
-        <div class="login"><a href="{:url('User/login')}">登录</a></div>
-        <div class="sp-cart"><a href="{:url('ShopCart/cart')}">购物车</a><span>2</span></div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="header">
-    <div class="headerLayout w1200">
-      <div class="headerCon">
-        <h1 class="mallLogo">
-          <a href="#" title="母婴商城">
-            <img src="__STATIC__/index/static/img/logo.png">
-          </a>
-        </h1>
-        <div class="mallSearch">
-          <form action="" class="layui-form" novalidate>
-            <input type="text" name="title" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
-            <button class="layui-btn" lay-submit lay-filter="formDemo">
-                <i class="layui-icon layui-icon-search"></i>
-            </button>
-            <input type="hidden" name="" value="">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
+{include file="Public:top_nav" /}
   <div class="content content-nav-base login-content">
-    <div class="main-nav">
-      <div class="inner-cont0">
-        <div class="inner-cont1 w1200">
-          <div class="inner-cont2">
-            <a href="{:url('goods/index')}" class="active">所有商品</a>
-            <a href="buytoday.html">今日团购</a>
-            <a href="information.html">母婴资讯</a>
-            <a href="about.html">关于我们</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    {include file="Public:category_nav" /}
     <div class="login-bg">
       <div class="login-cont w1200">
         <div class="layui-tab form-box">
@@ -78,13 +30,13 @@
                 </div>
                 <div class="layui-form-item login-btn">
                   <div class="layui-input-block">
-                    <button class="layui-btn" lay-submit="" lay-filter="login">登录</button>
+                    <button class="layui-btn" lay-filter="login" lay-submit="">登录</button>
                   </div>
                 </div>
               </form>
             </div>
             <div class="layui-tab-item">
-              <form class="layui-form" method="get" name="doregister" id="doregister">
+              <form class="layui-form" method="post" name="doregister" id="doregister">
                 <legend>手机号注册</legend>
                 <div class="layui-form-item">
                   <div class="layui-inline iphone">
@@ -108,7 +60,7 @@
                 </div>
                 <div class="layui-form-item login-btn">
                   <div class="layui-input-block">
-                    <button class="layui-btn" lay-submit="" lay-filter="register">登录</button>
+                    <button class="layui-btn" lay-filter="register" lay-submit="">登录</button>
                   </div>
                 </div>
               </form>
@@ -190,39 +142,13 @@
         } 
         setTimeout(function() { 
             settime(obj) }
-            ,1000) 
+            ,1000)
         };
-        //监听提交登录
-        form.on('submit(login)', function(data){
-            var param = data.field;
-            $.ajax({
-                type:'post',
-                url:"{:url('user/login')}",
-                data:param,
-                dataType:'JSON',
-                success:function(res){
-                    if (res.code==1001){
-                        layer.msg(res.msg);
-                        setTimeout(function(){
-                          location.href = '{:url("index/index")}';
-                        },2000);
-                    } else if(res.code==1004){
-                        location.reload();
-                        layer.msg(res.msg);
-                    }
-                },
-                error:function (ress) {
-                    setTimeout(function(){
-                      location.href = '{:url("user/login")}';
-                    },2000);
-                }
-            })
-        });
         // 手机号注册
         form.on('submit(register)', function(data){
             var param = data.field;
             $.ajax({
-                type:'get',
+                type:'post',
                 url:"{:url('user/register')}",
                 data:param,
                 dataType:'JSON',
@@ -233,17 +159,53 @@
                           location.href = '{:url("index/index")}';
                         },2000);
                     } else if(res.code==1004){
-                        // location.reload();
                         layer.msg(res.msg);
+                        setTimeout(function(){
+                          location.href = '{:url("user/login")}';
+                        },2000);
                     }
                 },
                 error:function (ress) {
-                    console.log(ress);
+                    layer.msg(ress);
+                    setTimeout(function(){
+                      location.href = '{:url("user/login")}';
+                    },2000);
                 }
             })
+            return false;
+        });
+        //监听提交登录
+        form.on('submit(login)', function(data){
+            var param = data.field;
+            console.log(param);
+            $.ajax({
+                type:'post',
+                url:"{:url('user/dologin')}",
+                data:param,
+                dataType:'JSON',
+                success:function(res){
+                    if (res.code==1001){
+                        layer.msg(res.msg);
+                        setTimeout(function(){
+                          location.href = '{:url("index/index")}';
+                        },2000);
+                    } else if(res.code==1004){
+                        layer.msg(res.msg);
+                        setTimeout(function(){
+                          location.reload();
+                        },2000);
+                    }
+                },
+                error:function (ress) {
+                    layer.msg(ress);
+                    setTimeout(function(){
+                      location.href = '{:url("user/login")}';
+                    },2000);
+                }
+            })
+            return false;
         });
     })
   </script>
-
 </body>
 </html>

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:37:"E:\www\tp5\/tpl/index/user\index.html";i:1562233094;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;}*/ ?>
+<?php /*a:4:{s:37:"E:\www\tp5\/tpl/index/user\index.html";i:1562728441;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;s:41:"E:\www\tp5\/tpl/index/Public\top_nav.html";i:1562728028;s:46:"E:\www\tp5\/tpl/index/Public\category_nav.html";i:1562642583;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,27 +12,24 @@
 </head>
 <body>
 <body>
-
-  <div class="site-nav-bg">
+<div class="site-nav-bg">
     <div class="site-nav w1200">
       <p class="sn-back-home">
         <i class="layui-icon layui-icon-home"></i>
         <a href="/">首页</a>
       </p>
       <div class="sn-quick-menu">
-        <div class="login"><a href="<?php echo url('User/login'); ?>">登录</a></div>
-        <div class="sp-cart"><a href="<?php echo url('ShopCart/cart'); ?>">购物车</a><span>2</span></div>
+        <div class="login"><?php if(empty(app('request')->session('user'))): ?><a href="<?php echo url('user/login'); ?>">登录 / 注册</a><?php else: ?>欢迎归来：<?php echo htmlentities(app('request')->session('user')); ?><?php endif; ?></div>
+        <div class="sp-cart"><a href="<?php echo url('shop_cart/cart'); ?>">购物车</a><?php if(empty(app('request')->session('user'))): else: ?><span><?php echo htmlentities(app('request')->session('cartNum')); ?></span><?php endif; ?></div>
       </div>
     </div>
   </div>
-
-
 
   <div class="header">
     <div class="headerLayout w1200">
       <div class="headerCon">
         <h1 class="mallLogo">
-          <a href="#" title="母婴商城">
+          <a href="/" title="母婴商城">
             <img src="/public/static/index/static/img/logo.png">
           </a>
         </h1>
@@ -48,17 +45,15 @@
       </div>
     </div>
   </div>
-
-
   <div class="content content-nav-base login-content">
-    <div class="main-nav">
+        <div class="main-nav">
       <div class="inner-cont0">
         <div class="inner-cont1 w1200">
           <div class="inner-cont2">
-            <a href="<?php echo url('goods/index'); ?>" class="active">所有商品</a>
-            <a href="buytoday.html">今日团购</a>
-            <a href="information.html">母婴资讯</a>
-            <a href="about.html">关于我们</a>
+            <a href="<?php echo url('goods/index'); ?>">所有商品</a>
+            <a href="<?php echo url('goods/special'); ?>">今日团购</a>
+            <a href="http://tb.53kf.com/code/client/10134569/1">母婴资讯</a>
+            <a href="<?php echo url('goods/about'); ?>">关于我们</a>
           </div>
         </div>
       </div>
@@ -90,13 +85,13 @@
                 </div>
                 <div class="layui-form-item login-btn">
                   <div class="layui-input-block">
-                    <button class="layui-btn" lay-submit="" lay-filter="login">登录</button>
+                    <button class="layui-btn" lay-filter="login" lay-submit="">登录</button>
                   </div>
                 </div>
               </form>
             </div>
             <div class="layui-tab-item">
-              <form class="layui-form" method="get" name="doregister" id="doregister">
+              <form class="layui-form" method="post" name="doregister" id="doregister">
                 <legend>手机号注册</legend>
                 <div class="layui-form-item">
                   <div class="layui-inline iphone">
@@ -120,7 +115,7 @@
                 </div>
                 <div class="layui-form-item login-btn">
                   <div class="layui-input-block">
-                    <button class="layui-btn" lay-submit="" lay-filter="register">登录</button>
+                    <button class="layui-btn" lay-filter="register" lay-submit="">登录</button>
                   </div>
                 </div>
               </form>
@@ -202,39 +197,13 @@
         } 
         setTimeout(function() { 
             settime(obj) }
-            ,1000) 
+            ,1000)
         };
-        //监听提交登录
-        form.on('submit(login)', function(data){
-            var param = data.field;
-            $.ajax({
-                type:'post',
-                url:"<?php echo url('user/login'); ?>",
-                data:param,
-                dataType:'JSON',
-                success:function(res){
-                    if (res.code==1001){
-                        layer.msg(res.msg);
-                        setTimeout(function(){
-                          location.href = '<?php echo url("index/index"); ?>';
-                        },2000);
-                    } else if(res.code==1004){
-                        location.reload();
-                        layer.msg(res.msg);
-                    }
-                },
-                error:function (ress) {
-                    setTimeout(function(){
-                      location.href = '<?php echo url("user/login"); ?>';
-                    },2000);
-                }
-            })
-        });
         // 手机号注册
         form.on('submit(register)', function(data){
             var param = data.field;
             $.ajax({
-                type:'get',
+                type:'post',
                 url:"<?php echo url('user/register'); ?>",
                 data:param,
                 dataType:'JSON',
@@ -245,17 +214,53 @@
                           location.href = '<?php echo url("index/index"); ?>';
                         },2000);
                     } else if(res.code==1004){
-                        // location.reload();
                         layer.msg(res.msg);
+                        setTimeout(function(){
+                          location.href = '<?php echo url("user/login"); ?>';
+                        },2000);
                     }
                 },
                 error:function (ress) {
-                    console.log(ress);
+                    layer.msg(ress);
+                    setTimeout(function(){
+                      location.href = '<?php echo url("user/login"); ?>';
+                    },2000);
                 }
             })
+            return false;
+        });
+        //监听提交登录
+        form.on('submit(login)', function(data){
+            var param = data.field;
+            console.log(param);
+            $.ajax({
+                type:'post',
+                url:"<?php echo url('user/dologin'); ?>",
+                data:param,
+                dataType:'JSON',
+                success:function(res){
+                    if (res.code==1001){
+                        layer.msg(res.msg);
+                        setTimeout(function(){
+                          location.href = '<?php echo url("index/index"); ?>';
+                        },2000);
+                    } else if(res.code==1004){
+                        layer.msg(res.msg);
+                        setTimeout(function(){
+                          location.reload();
+                        },2000);
+                    }
+                },
+                error:function (ress) {
+                    layer.msg(ress);
+                    setTimeout(function(){
+                      location.href = '<?php echo url("user/login"); ?>';
+                    },2000);
+                }
+            })
+            return false;
         });
     })
   </script>
-
 </body>
 </html>

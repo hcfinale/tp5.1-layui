@@ -16,49 +16,54 @@
         <form class="login-form" id="doLogin" name="doLogin" method="post">
             <h1 class="text-center title">用户登录</h1>
             <div class="input-group">
-                <input type="text" id="username" name="name" class="input-field">
+                <input type="text" id="username" name="name" lay-verify="required" class="input-field">
                 <label for="username" class="input-label">
                     <span class="label-title">用户名</span>
                 </label>
             </div>
             <div class="input-group">
-                <input type="password" id="password" name="passwd" class="input-field">
+                <input type="password" id="password" name="passwd" lay-verify="required" class="input-field">
                 <label for="password" class="input-label">
                     <span class="label-title">密码</span>
                 </label>
             </div>
-            <button class="login-button"  lay-submit="" lay-filter="login">登录<i class="ai ai-enter"></i></button>
+            <button class="login-button" lay-filter="dologin" lay-submit="">登录<i class="ai ai-enter"></i></button>
         </form>
     </div>
 </body>
 <script src="__STATIC__/admin/assets/layui.js"></script>
-<!--<script src="__STATIC__/admin/login.js" data-main="login"></script>-->
 <script>
 layui.use(['layer','form'], function(){
     var form = layui.form;
     var layer= layui.layer;
     $ =layui.jquery;
     //监听提交
-    form.on('submit(login)', function(data){
-        var param = data.field;
+    form.on('submit(dologin)', function(){
+        var uname = document.querySelector('#username').value;
+        var password = document.querySelector('#password').value;
         $.ajax({
-            url:"{:url('admin/login/login')}",
+            url:"{:url('admin/login/dologin')}",
             method:'post',
-            data:param,
+            data:{'name':uname,'passwd':password},
             dataType:'JSON',
             success:function(res){
                 if (res.code==1001){
-                    location.href = '{:url("admin/index/index")}';
-                } else if(res.code==1004){
-                    location.reload();
                     layer.msg(res.msg);
+                    setTimeout(function(){
+                        location.href = '{:url("admin/index/index")}';
+                    },2000);
+                } else if(res.code==1004){
+                    layer.msg(res.msg);
+                    setTimeout(function(){
+                        location.reload();
+                    },2000)
                 }
             },
-            error:function (data) {
-                console.log(data);
-                return false;
+            error:function (ress) {
+                layer.msg(ress);
             }
-        }) ;
+        })
+        return false;
     });
 });
 </script>

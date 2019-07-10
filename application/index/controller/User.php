@@ -14,57 +14,42 @@ class User extends Base {
         $this->user = new ModelUser();
         $this->cart = new Cart();
     }
-
+    // 用户登录验证
     public function login(){
+        return $this->fetch('index');
+    }
+    public function dologin(){
         if (request()->isPost()) {
             $phoneNum = trim(input('post.logphone'));
             $passwd = trim(input('post.logpasswd'));
-            $re = $this->user->where('mobile',$phoneNum)->find();
-            if (!$re){
-                // return json(['code'=>1004,'msg'=>'用户不存在']);
-                $this->error('用户名不存在');
-            }
-            $result = $this->user->where(['mobile'=>$phoneNum,'password'=>md5($passwd)])->find();
-            if($result){
-                $userKey = createStr(32);//生成userKey
-                session('userKey', $userKey);//写入userKey
-                cookie('userKey', $userKey);
-                session('uid',$result['uid']);
-                session('user',$result['name']);
-                session('cartNum',$this->cart->findCartNum());
-                session('logintime',request()->time());
-                // return json(['code'=>1001,'msg'=>'登录成功']);
-                $this->success('登录成功','index/index');
-            }else{
-                // return json(['code'=>1004,'msg'=>'密码错误']);
-                $this->error('密码错误');
+
+            $res = $this->user->found($phoneNum,$passwd);
+            if ($res[0]&&$res['code']=='1001') {
+                return json(['code'=>'1001','msg'=>$res['msg']]);
+            } else if($res[0]&&$res['code'=='1004']) {
+                return json(['code'=>'1004','msg'=>$res['msg']]);
+            } else {
+                return json(['code'=>'1004','msg'=>$res[1]]);
             }
         }
-        return $this->fetch('index');
     }
     // 注册账号
     public function register(){
-        if (request()->isGet()) {
-            $yzm = trim(input('post.punm'));
-            if ($yzm != session('smsCode')) {
-                return json(['code'=>1004,'msg'=>'验证码错误']);
-            }
+        if (request()->isPost()) {
+            $yzm = trim(input('post.pnum'));
             $phoneNum = trim(input('post.phone'));
             $passwd = trim(input('post.passwd'));
-            $re = $this->user->where('mobile',$phoneNum)->find();
-            if ($re){
-                // return json(['code'=>1004,'msg'=>'用户不存在']);
-                $this->error('此手机号已经注册！');
+
+            $res = $this->user->doReg($phoneNum,$passwd,$yzm);
+            if ($res[0]&&$res['code']=='1001') {
+                return json(['code'=>'1001','msg'=>$res['msg']]);
+            } else if($res[0]&&$res['code'=='1004']) {
+                return json(['code'=>'1004','msg'=>$res['msg']]);
+            } else {
+                return json(['code'=>'1004','msg'=>$res[1]]);
             }
-            $this->user->data([
-                'mobile'    =>  $phoneNum,
-                'password'  =>  md5($passwd),
-                'gid'       =>  '2'
-            ]);
-            $result = $this->user->save();
-            $this->success('注册账号成功','index/index');
         }else{
-            return json(['code'=>1004,'msg'=>'非法访问']);
+            return json(['code'=>'1004','msg'=>'非法访问']);
         }        
     }
     /**
@@ -93,10 +78,19 @@ class User extends Base {
     }
     // 发送验证码
     public static function mnSms(){
-        $phone = request()->get('phone');
-        $smsCode = mt_rand(100000,999999);
-        session('smsCode', $smsCode);
-        return json(['code'=>'1001','data'=>'数据请求成功','smsCode'=>$smsCode,'msg'=>$phone]);
+        if (request()->isGet()) {
+            $phone = request()->get('phone');
+            if (preg_match('/^1[34578]\d{9}$/',$phone)) {
+                $smsCode = mt_rand(100000,999999);
+                session('smsCode', $smsCode);
+                return json(['code'=>'1001','data'=>'数据请求成功','smsCode'=>$smsCode,'msg'=>$phone]);
+            }else{
+                return json(['code'=>'1004','data'=>'手机号格式有误']);
+            }
+        }else{
+            return json(['code'=>'1004','data'=>'非法请求']);
+        }
+        
     }
     // 退出登录
     public function logout(){

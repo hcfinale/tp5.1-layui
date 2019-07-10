@@ -14,6 +14,7 @@ class Detail extends Model
         $data = $column->field('id,pid,uid,title,keyword,sort,status')->select();
         return $this->sortTree($data);
     }
+    // 商品树形排序
     public function sortTree($data,$pid = 0,$level = 0){
         static $arr = array();
         foreach ($data as $k => $v){
@@ -25,14 +26,36 @@ class Detail extends Model
         }
         return $arr;
     }
-    // 首页商品展示
+    // 首页所有商品展示
     public function selectDetail(){
         $result = $this->alias('d')
             ->leftJoin('__COLUMN__ c','d.cid = c.id')
-            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.payman,d.sort,d.status,c.title')
+            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.new_price,d.payman,d.sort,d.status,c.title')
             ->paginate(15,false,[
                 'type'=>'BootstrapDetailed'
             ]);
+        return $result;
+    }
+    // 活动商品
+    public function findSpecial(){
+        $result = $this->alias('d')
+            ->leftJoin('__COLUMN__ c','d.cid = c.id')
+            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.new_price,d.payman,d.sort,d.status,c.title')
+            ->where('d.new_price != 0 or d.new_price != 0.00')
+            ->paginate(15,false,[
+                'type'=>'BootstrapDetailed'
+            ]);
+        return $result;
+    }
+    // 活动商品排行榜
+    public function sortFindSpecial(){
+        $result = $this->alias('d')
+            ->leftJoin('__COLUMN__ c','d.cid = c.id')
+            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.new_price,d.payman,d.sort,d.status,c.title')
+            ->where('d.new_price != 0 or d.new_price != 0.00')
+            ->order('d.payman desc')
+            ->limit(5)
+            ->select();
         return $result;
     }
     // 根据栏目展示
@@ -40,7 +63,7 @@ class Detail extends Model
         $result = $this->alias('d')
             ->leftJoin('__COLUMN__ c','d.cid = c.id')
             ->where('d.cid',$cid)
-            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.payman,d.sort,d.status,c.title')
+            ->field('d.id,d.name,d.keyword,d.description,d.img,d.sum,d.price,d.new_price,d.payman,d.sort,d.status,c.title')
             ->paginate(1,false,[
                 'type'=>'BootstrapDetailed'
             ]);
@@ -51,7 +74,7 @@ class Detail extends Model
         $result = $this->alias('d')
             ->leftJoin('__COLUMN__ c','d.cid = c.id')
             ->where('d.id',$id)
-            ->field('d.id,d.name,d.keyword,d.description,d.content,d.img,d.sum,d.price,d.payman,d.sort,d.status,c.title')
+            ->field('d.id,d.name,d.keyword,d.description,d.content,d.img,d.sum,d.price,d.new_price,d.payman,d.sort,d.status,c.title')
             ->find();
         return $result;
     }

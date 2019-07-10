@@ -1,0 +1,106 @@
+{include file="Public:header" /}
+<body>
+  {include file="Public:top_nav" /}
+  <div class="content content-nav-base buytoday-content">
+    <div id="list-cont">
+      {include file="Public:category_nav" /}
+      <div class="banner-box">
+        <div class="banner"></div>
+      </div>
+      <div class="product-list-box">
+        <div class="product-list w1200">  
+          <div class="tab-title">
+            <a href="javascript:;" class="active tuang" data-content="tuangou">今日团购</a>
+            <a href="javascript:;" data-content="yukao">明日预告</a>
+          </div>
+          <div class="list-cont" cont = 'tuangou'>
+            <div class="item-box layui-clear">
+              {volist name="special" id="vo"}
+              <div class="item">
+                <a href="{:url('goods/details',['id'=>$vo.id])}"><img src="{$vo.img}" title="{$vo.name}" style="display: block;margin: 0 auto;"></a>
+                <div class="text-box">
+                  <p class="title">{$vo.name}</p>
+                  <p class="plic">
+                    <span class="ciur-pic">￥{$vo.new_price|decimal}</span>
+                    <span class="Ori-pic">￥{$vo.price|decimal}</span>
+                    <span class="discount">{$vo.price/$vo.new_price}折</span>
+                  </p>
+                </div>
+              </div>
+              {/volist}
+            </div>
+            <div id="demo0" style="text-align: center;">
+              {$page|raw}
+            </div>
+          </div>
+          <div class="list-cont layui-hide" cont = 'yukao'>
+            <div class="item-box layui-clear">
+              {volist name="special" id="vo"}
+              <div class="item">
+                <a href="{:url('goods/details',['id'=>$vo.id])}"><img src="{$vo.img}" title="{$vo.name}" style="display: block;margin: 0 auto;"></a>
+                <div class="text-box">
+                  <p class="title">{$vo.name}</p>
+                  <p class="plic">
+                    <span class="ciur-pic">￥{$vo.new_price|decimal}</span>
+                    <span class="Ori-pic">￥{$vo.price|decimal}</span>
+                    <span class="discount">{$vo.price/$vo.new_price}折</span>
+                  </p>
+                </div>
+              </div>
+              {/volist}
+            </div>
+            <div id="demo0" style="text-align: center;">
+              {$page|raw}
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="footer-wrap">
+        <div class="footer w1200">
+          <div class="title">
+            <h3>团购销量榜</h3>
+          </div>
+          <div class="list-box layui-clear" id="footerList">
+            {volist name="orderSpecial" id="vo" length = "3" key="index"}
+            <div class="item">
+              <a href="{:url('goods/details',['id'=>$vo.id])}"><img src="{$vo.img}" title="{$vo.name}"></a>
+              <div class="text">
+                <div class="right-title-number">{$index}</div>
+                <div class="commod">
+                  <p>{$vo.name}</p>
+                  <span>￥{$vo.new_price|decimal}</span>
+                </div>
+              </div>
+            </div>
+            {/volist}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+  layui.config({
+    //你存放新模块的目录，注意，不是layui的模块目录
+    base: '__STATIC__/index/static/js/util/'
+  }).use(['mm','laypage','jquery'],function(){
+    var laypage = layui.laypage,$ = layui.$,mm = layui.mm;
+
+    $('.main-nav .inner-cont2 a').eq(1).addClass('active');
+
+    $('body').on('click','*[data-content]',function(){
+      $(this).addClass('active').siblings().removeClass('active')
+      var dataConte = $(this).attr('data-content');
+      $('*[cont]').each(function(i,item){
+        var itemCont = $(item).attr('cont');
+        console.log(item)
+        if(dataConte === itemCont){
+          $(item).removeClass('layui-hide');
+        }else{
+          $(item).addClass('layui-hide');
+        }
+      })
+    })
+});
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1562058601;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;}*/ ?>
+<?php /*a:4:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1562577696;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;s:41:"E:\www\tp5\/tpl/index/Public\top_nav.html";i:1562650428;s:46:"E:\www\tp5\/tpl/index/Public\category_nav.html";i:1562642583;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +19,8 @@
         <a href="/">首页</a>
       </p>
       <div class="sn-quick-menu">
-        <div class="login"><a href="<?php echo url('user/login'); ?>"><?php echo htmlentities(app('request')->session('user')); ?></a></div>
-        <div class="sp-cart"><a href="<?php echo url('shopcart/cart'); ?>">购物车</a><span>2</span></div>
+        <div class="login"><?php if(empty(app('request')->session('user'))): ?><a href="<?php echo url('user/login'); ?>">登录</a><?php else: ?>欢迎归来：<?php echo htmlentities(app('request')->session('user')); ?><?php endif; ?></div>
+        <div class="sp-cart"><a href="<?php echo url('shop_cart/cart'); ?>">购物车</a><?php if(empty(app('request')->session('user'))): else: ?><span><?php echo htmlentities(app('request')->session('cartNum')); ?></span><?php endif; ?></div>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
     <div class="headerLayout w1200">
       <div class="headerCon">
         <h1 class="mallLogo">
-          <a href="#" title="母婴商城">
+          <a href="/" title="母婴商城">
             <img src="/public/static/index/static/img/logo.png">
           </a>
         </h1>
@@ -45,16 +45,15 @@
       </div>
     </div>
   </div>
-
   <div class="content content-nav-base shopcart-content">
-    <div class="main-nav">
+        <div class="main-nav">
       <div class="inner-cont0">
         <div class="inner-cont1 w1200">
           <div class="inner-cont2">
-            <a href="commodity.html" class="active">所有商品</a>
-            <a href="buytoday.html">今日团购</a>
-            <a href="information.html">母婴资讯</a>
-            <a href="about.html">关于我们</a>
+            <a href="<?php echo url('goods/index'); ?>">所有商品</a>
+            <a href="<?php echo url('goods/special'); ?>">今日团购</a>
+            <a href="http://tb.53kf.com/code/client/10134569/1">母婴资讯</a>
+            <a href="<?php echo url('goods/about'); ?>">关于我们</a>
           </div>
         </div>
       </div>
