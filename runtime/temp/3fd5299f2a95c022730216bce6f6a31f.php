@@ -1,4 +1,4 @@
-<?php /*a:4:{s:38:"E:\www\tp5\/tpl/index/goods\index.html";i:1562639407;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;s:41:"E:\www\tp5\/tpl/index/Public\top_nav.html";i:1562728028;s:46:"E:\www\tp5\/tpl/index/Public\category_nav.html";i:1562642583;}*/ ?>
+<?php /*a:4:{s:38:"E:\www\tp5\/tpl/index/goods\index.html";i:1562836073;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;s:41:"E:\www\tp5\/tpl/index/Public\top_nav.html";i:1562812905;s:46:"E:\www\tp5\/tpl/index/Public\category_nav.html";i:1562642583;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,12 +34,12 @@
           </a>
         </h1>
         <div class="mallSearch">
-          <form action="" class="layui-form" novalidate>
-            <input type="text" name="title" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
-            <button class="layui-btn" lay-submit lay-filter="formDemo">
+          <form action="" class="layui-form" method="post">
+            <input type="text" name="searchKey" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
+            <button class="layui-btn" lay-submit lay-filter="search">
                 <i class="layui-icon layui-icon-search"></i>
             </button>
-            <input type="hidden" name="" value="">
+            <input type="hidden" name="key" value="1">
           </form>
         </div>
       </div>
@@ -130,30 +130,33 @@
 
   layui.config({
     base: '/public/static/index/static/js/util/' //你存放新模块的目录，注意，不是layui的模块目录
-  }).use(['mm','laypage','jquery'],function(){
-      var laypage = layui.laypage,$ = layui.$,
-     mm = layui.mm;
+  }).use(['form','mm','laypage','jquery','layer'],function(){
+    var form = layui.form,laypage = layui.laypage,$ = layui.$,mm = layui.mm,layer = layui.layer;
 
 
-
-    // 模版引擎导入
-    //  var html = demo.innerHTML;
-    //  var listCont = document.getElementById('list-cont');
-    //  // console.log(layui.router("#/about.html"))
-    // mm.request({
-    //     url: '../json/commodity.json',
-    //     success : function(res){
-    //       console.log(res)
-    //       listCont.innerHTML = mm.renderHtml(html,res)
-    //     },
-    //     error: function(res){
-    //       console.log(res);
-    //     }
-    //   })
     $('.main-nav .inner-cont2 a').eq(0).addClass('active');
     $('.sort a').on('click',function(){
       $(this).addClass('active').siblings().removeClass('active');
-    })
+
+      $.ajax({
+        url:"<?php echo url('Goods/index'); ?>",
+        method:'post',
+        data:{'event':$(this).attr('event')},
+        dataType:'JSON',
+        success:function(res){
+          if(res.code='1001'){
+            console.log(res.data);
+          }
+          else{
+            console.log(res.msg);
+          }
+        },
+        error:function(err){
+          layer.msg(err);
+        }
+      });
+    });
+
     $('.list-box dt').on('click',function(){
       if($(this).attr('off')){
         $(this).removeClass('active').siblings('dd').show()
@@ -162,11 +165,53 @@
         $(this).addClass('active').siblings('dd').hide()
         $(this).attr('off',true)
       }
-    })
-
+    });
+    // 搜索资源
+    form.on('submit(search)', function(data){
+        var param = data.field;
+        var list = [];
+        $.ajax({
+            type:'post',
+            url:"<?php echo url('index/goods/index'); ?>",
+            data:param,
+            dataType:'JSON',
+            success:function(res){
+                if (res.code=='1001'){
+                    layer.msg(res.msg);
+                    console.log(res.data);
+                    layui.each(res.data,function(index,items){
+                      $('#list-cont').empty();
+                      var html = "";
+                      html = "<div class='item'> \
+                        <div class='item'> \
+                          <a href='"+'/details/id/'+items.id+"'><img src='"+items.img+"' title='"+items.name+"' style='display: block;margin: 0 auto;'></a> \
+                        </div> \
+                        <div class='text'> \
+                          <p class='title'>'"+items.name+"'</p> \
+                          <p class='price'> \
+                            <span class='pri'>原来的价格</span> \
+                            <span class='nub'>'"+items.payman+"'付款</span> \
+                          </p> \
+                        </div> \
+                      </div>";
+                      list.push(html);
+                    })
+                    $('#list-cont').append(list);
+                    list = [];
+                } else if(res.code=='1004'){
+                    layer.msg(res.msg);
+                }
+            },
+            error:function (ress) {
+                layer.msg(ress);
+                setTimeout(function(){
+                  location.href = '<?php echo url("goods/index"); ?>';
+                },2000);
+            }
+        })
+        return false;
+    });
 });
 </script>
-
-
 </body>
 </html>

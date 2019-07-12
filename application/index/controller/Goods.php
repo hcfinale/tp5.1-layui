@@ -14,16 +14,36 @@ class Goods extends Base {
     // 全部商品
     public function index(){
         $category = $this->column->getNavCategory(0);
-        $id = request()->param('id');
-
-        if (!empty($id)){
-            $res = $this->goods->selectCId($id);
-            $page = $res->render();
-            $count = count($res);
-        }else{
-            $res = $this->goods->selectDetail();
-            $page = $res->render();
-            $count = count($res);
+        if (request()->isGet()) {
+            $id = request()->param('id');
+            $event = request()->param('event');             // 类别排序
+            /**
+            $volume = request()->param('volume');           // 销量
+            $price = request()->param('price');             // 价格
+            $newprod = request()->param('newprod');         // 新品
+            $collection = request()->param('collection');   // 收藏
+            **/
+            if (!empty($id)){
+                $res = $this->goods->selectCId($id);
+                $page = $res->render();
+                $count = count($res);
+            }elseif (!empty($event)) {
+                
+            }else{
+                $res = $this->goods->selectDetail();
+                $page = $res->render();
+                $count = count($res);
+            }
+        }
+        if (request()->isPost()) {
+            $searchKey = request()->param('searchKey');     // 搜索
+            $key = request()->param('key');                 // 确认搜索。key为1时为正常
+            if ($key=='1') {
+                $res = $this->goods->searchDetail($searchKey,$key);
+                return json(['code'=>'1001','msg'=>'数据获取成功','data'=>$res]);
+            }else{
+                return json(['code'=>'1004','msg'=>'非法操作']);
+            }
         }
         return $this->fetch('index',[
             'id'    =>  $id,

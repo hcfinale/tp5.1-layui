@@ -1,4 +1,4 @@
-<?php /*a:4:{s:37:"E:\www\tp5\/tpl/index/user\index.html";i:1562728441;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;s:41:"E:\www\tp5\/tpl/index/Public\top_nav.html";i:1562728028;s:46:"E:\www\tp5\/tpl/index/Public\category_nav.html";i:1562642583;}*/ ?>
+<?php /*a:4:{s:37:"E:\www\tp5\/tpl/index/user\index.html";i:1562728441;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;s:41:"E:\www\tp5\/tpl/index/Public\top_nav.html";i:1562812905;s:46:"E:\www\tp5\/tpl/index/Public\category_nav.html";i:1562642583;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,12 +34,12 @@
           </a>
         </h1>
         <div class="mallSearch">
-          <form action="" class="layui-form" novalidate>
-            <input type="text" name="title" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
-            <button class="layui-btn" lay-submit lay-filter="formDemo">
+          <form action="" class="layui-form" method="post">
+            <input type="text" name="searchKey" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
+            <button class="layui-btn" lay-submit lay-filter="search">
                 <i class="layui-icon layui-icon-search"></i>
             </button>
-            <input type="hidden" name="" value="">
+            <input type="hidden" name="key" value="1">
           </form>
         </div>
       </div>

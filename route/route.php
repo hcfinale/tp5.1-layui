@@ -16,6 +16,7 @@ Route::get('thinks/:name', function ($name = null) {
 // 路由重命名和其他的get、post等方法的命名方法不一样
 Route::alias('admins','admin/index/index');
 Route::alias('login','admin/login/login');
+Route::alias('cart','index/shop_cart/cart');
 
 Route::get('/', 'index/index');
 Route::get('demo', 'index/demo');
@@ -25,6 +26,7 @@ Route::get('details/:id', 'goods/details');
 // 匹配所有路由
 Route::any('special','goods/special');
 Route::any('about','goods/about');
+
 
 return [
 

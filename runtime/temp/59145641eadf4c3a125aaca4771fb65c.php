@@ -1,4 +1,4 @@
-<?php /*a:4:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1562577696;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;s:41:"E:\www\tp5\/tpl/index/Public\top_nav.html";i:1562650428;s:46:"E:\www\tp5\/tpl/index/Public\category_nav.html";i:1562642583;}*/ ?>
+<?php /*a:4:{s:41:"E:\www\tp5\/tpl/index/shop_cart\cart.html";i:1562917990;s:40:"E:\www\tp5\/tpl/index/Public\header.html";i:1562057687;s:41:"E:\www\tp5\/tpl/index/Public\top_nav.html";i:1562812905;s:46:"E:\www\tp5\/tpl/index/Public\category_nav.html";i:1562642583;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +19,7 @@
         <a href="/">首页</a>
       </p>
       <div class="sn-quick-menu">
-        <div class="login"><?php if(empty(app('request')->session('user'))): ?><a href="<?php echo url('user/login'); ?>">登录</a><?php else: ?>欢迎归来：<?php echo htmlentities(app('request')->session('user')); ?><?php endif; ?></div>
+        <div class="login"><?php if(empty(app('request')->session('user'))): ?><a href="<?php echo url('user/login'); ?>">登录 / 注册</a><?php else: ?>欢迎归来：<?php echo htmlentities(app('request')->session('user')); ?><?php endif; ?></div>
         <div class="sp-cart"><a href="<?php echo url('shop_cart/cart'); ?>">购物车</a><?php if(empty(app('request')->session('user'))): else: ?><span><?php echo htmlentities(app('request')->session('cartNum')); ?></span><?php endif; ?></div>
       </div>
     </div>
@@ -34,12 +34,12 @@
           </a>
         </h1>
         <div class="mallSearch">
-          <form action="" class="layui-form" novalidate>
-            <input type="text" name="title" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
-            <button class="layui-btn" lay-submit lay-filter="formDemo">
+          <form action="" class="layui-form" method="post">
+            <input type="text" name="searchKey" required  lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
+            <button class="layui-btn" lay-submit lay-filter="search">
                 <i class="layui-icon layui-icon-search"></i>
             </button>
-            <input type="hidden" name="" value="">
+            <input type="hidden" name="key" value="1">
           </form>
         </div>
       </div>
@@ -173,23 +173,28 @@
     let element = layui.element;
     let car = layui.car;
     car.init();
-    // 模版导入数据
-    /**
-    var html = demo.innerHTML,
-    listCont = document.getElementById('list-cont');
-    mm.request({
-      url: '../json/shopcart.json',
-      success : function(res){
-        listCont.innerHTML = mm.renderHtml(html,res)
-        element.render();
-        car.init()
-      },
-      error: function(res){
-        console.log(res);
-      }
-    });
-    **/
-    car.response();
+    // 提交数据，进行付款操作
+    var checkBokShop = document.querySelectorAll(".CheckBoxShop.check");
+    var zouni = document.getElementsByClassName('Settlement')[0];//批量删除按钮
+    zouni.onclick = function(){
+      layer.confirm('你确定要提交吗',{
+        yes:function(index,layero){
+          layer.close(index);
+          localStorage.removeItem('id')
+          var list = [];
+          for(var i=0;i<checkBokShop.length;i++){
+            if(checkBokShop[i].checked==true){
+              console.log(checkBokShop[i].nextElementSibling.value);
+              let num = checkBokShop[i].nextElementSibling.value;
+              list.push(num);
+            }
+          }
+          window.localStorage.setItem('id',list);
+          var list = [];
+        }
+      })
+    }
+    // car.response();  // 缺点，无法提交数据，操作不便，提炼出来单独操作
     /**
     $('.Settlement button').click(function () {
       var valArr = new Array;

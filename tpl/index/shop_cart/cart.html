@@ -118,23 +118,28 @@
     let element = layui.element;
     let car = layui.car;
     car.init();
-    // 模版导入数据
-    /**
-    var html = demo.innerHTML,
-    listCont = document.getElementById('list-cont');
-    mm.request({
-      url: '../json/shopcart.json',
-      success : function(res){
-        listCont.innerHTML = mm.renderHtml(html,res)
-        element.render();
-        car.init()
-      },
-      error: function(res){
-        console.log(res);
-      }
-    });
-    **/
-    car.response();
+    // 提交数据，进行付款操作
+    var checkBokShop = document.querySelectorAll(".CheckBoxShop.check");
+    var zouni = document.getElementsByClassName('Settlement')[0];//批量删除按钮
+    zouni.onclick = function(){
+      layer.confirm('你确定要提交吗',{
+        yes:function(index,layero){
+          layer.close(index);
+          localStorage.removeItem('id')
+          var list = [];
+          for(var i=0;i<checkBokShop.length;i++){
+            if(checkBokShop[i].checked==true){
+              console.log(checkBokShop[i].nextElementSibling.value);
+              let num = checkBokShop[i].nextElementSibling.value;
+              list.push(num);
+            }
+          }
+          window.localStorage.setItem('id',list);
+          var list = [];
+        }
+      })
+    }
+    // car.response();  // 缺点，无法提交数据，操作不便，提炼出来单独操作
     /**
     $('.Settlement button').click(function () {
       var valArr = new Array;

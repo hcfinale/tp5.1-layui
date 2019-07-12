@@ -36,6 +36,11 @@ class Detail extends Model
             ]);
         return $result;
     }
+    // 
+    public function searchDetail($search,$key){
+        $result = $this->where('name|keyword','like',"%".$search."%")->select();
+        return $result;
+    }
     // 活动商品
     public function findSpecial(){
         $result = $this->alias('d')
