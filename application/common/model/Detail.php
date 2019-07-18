@@ -95,4 +95,5 @@ class Detail extends Model
         $res = $this->field('id,cid')->find($id);
         return $res['cid'];
     }
+    // 修改
 }

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2019-07-10 17:25:09
+Date: 2019-07-17 13:42:46
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -75,6 +75,7 @@ INSERT INTO `my_admin_user` VALUES ('3', null, '2', null, '', '0', null, '', nul
 DROP TABLE IF EXISTS `my_auth_rule`;
 CREATE TABLE `my_auth_rule` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` smallint(3) NOT NULL DEFAULT '0',
   `name` char(80) NOT NULL DEFAULT '',
   `title` char(20) NOT NULL DEFAULT '',
   `type` tinyint(1) NOT NULL DEFAULT '1',
@@ -82,46 +83,52 @@ CREATE TABLE `my_auth_rule` (
   `condition` char(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of my_auth_rule
 -- ----------------------------
-INSERT INTO `my_auth_rule` VALUES ('1', 'admin/index/index', '超级管理', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('2', 'admin/index/form', '表单', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('3', 'admin/index/demo', '测试', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('4', 'admin/index/statistics', '控制台', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('5', 'admin/index/SendMailer', '发送邮件', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('6', 'admin/index/map', '地图', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('7', 'admin/users/index', '所有用户', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('8', 'admin/users/add', '添加用户', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('9', 'admin/users/edit', '编辑用户', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('10', 'admin/users/del', '删除用户', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('11', 'admin/users/cache', '清楚缓存', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('12', 'admin/column/index', '栏目首页', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('13', 'admin/column/edit', '编辑栏目', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('14', 'admin/column/del', '删除栏目', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('15', 'admin/column/add', '栏目添加', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('16', 'admin/column/columnUpImg', '上传栏目图片', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('17', 'admin/column/status', '状态修改', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('18', 'admin/column/sort', '栏目排序', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('19', 'admin/detail/index', '后台所有商品', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('20', 'admin/detail/edit', '商品编辑', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('21', 'admin/detail/del', '商品删除', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('22', 'admin/detail/add', '商品添加', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('23', 'admin/detail/columnUpImg', '商品图片上传', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('24', 'admin/detail/status', '商品状态', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('25', 'admin/detail/sort', '商品排序', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('26', 'admin/ShopCart/cart', '购物车首页', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('27', 'admin/ShopCart/add', '购物车添加', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('28', 'admin/ShopCart/edit', '购物车修改', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('29', 'admin/ShopCart/del', '购物车删除', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('30', 'admin/ShopCart/pay', '商品购买', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('31', 'admin/ShopCart/order', '购物车订单', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('32', 'admin/ShopCart/setAddress', '收货地址修改', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('33', 'admin/ShopCart/status', '购物车状态', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('34', 'admin/ShopCart/sort', '购物车排序', '1', '1', '');
-INSERT INTO `my_auth_rule` VALUES ('35', 'admin/rules/index', '权限首页', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('1', '36', 'admin/index/index', '超级管理', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('2', '36', 'admin/index/form', '表单', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('3', '36', 'admin/index/demo', '测试', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('4', '36', 'admin/index/statistics', '控制台', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('5', '36', 'admin/index/SendMailer', '发送邮件', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('6', '36', 'admin/index/map', '地图', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('7', '37', 'admin/users/index', '所有用户', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('8', '37', 'admin/users/add', '添加用户', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('9', '37', 'admin/users/edit', '编辑用户', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('10', '37', 'admin/users/del', '删除用户', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('11', '37', 'admin/users/cache', '清楚缓存', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('12', '38', 'admin/column/index', '栏目首页', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('13', '38', 'admin/column/edit', '编辑栏目', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('14', '38', 'admin/column/del', '删除栏目', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('15', '38', 'admin/column/add', '栏目添加', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('16', '38', 'admin/column/columnUpImg', '上传栏目图片', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('17', '38', 'admin/column/status', '状态修改', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('18', '38', 'admin/column/sort', '栏目排序', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('19', '39', 'admin/detail/index', '后台所有商品', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('20', '39', 'admin/detail/edit', '商品编辑', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('21', '39', 'admin/detail/del', '商品删除', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('22', '39', 'admin/detail/add', '商品添加', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('23', '39', 'admin/detail/columnUpImg', '商品图片上传', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('24', '39', 'admin/detail/status', '商品状态', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('25', '39', 'admin/detail/sort', '商品排序', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('26', '40', 'admin/ShopCart/cart', '购物车首页', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('27', '40', 'admin/ShopCart/add', '购物车添加', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('28', '40', 'admin/ShopCart/edit', '购物车修改', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('29', '40', 'admin/ShopCart/del', '购物车删除', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('30', '40', 'admin/ShopCart/pay', '商品购买', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('31', '40', 'admin/ShopCart/order', '购物车订单', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('32', '40', 'admin/ShopCart/setAddress', '收货地址修改', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('33', '40', 'admin/ShopCart/status', '购物车状态', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('34', '40', 'admin/ShopCart/sort', '购物车排序', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('35', '41', 'admin/rules/index', '权限首页', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('36', '0', 'admin/index', 'Index控制器', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('37', '0', 'admin/users', 'user控制器', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('38', '0', 'admin/colurmn', '栏目类别控制器', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('39', '0', 'admin/detail', '商品控制器', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('40', '0', 'admin/ShopCart', '购物车控制器', '1', '1', '');
+INSERT INTO `my_auth_rule` VALUES ('41', '0', 'admin/rules', '权限控制器', '1', '1', '');
 
 -- ----------------------------
 -- Table structure for my_column
@@ -196,17 +203,18 @@ CREATE TABLE `my_detail` (
   `sort` char(5) NOT NULL DEFAULT '50',
   `status` smallint(3) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`,`cid`,`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of my_detail
 -- ----------------------------
 INSERT INTO `my_detail` VALUES ('1', '21', '2', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', null, '\\public\\uploads\\20190405\\829aa4b62b9de6c8d3905d00b81e06be.jpg', '37', '2.00', '49.00', '33', '1554468256', '1557130763', '50', '1');
 INSERT INTO `my_detail` VALUES ('2', '21', '2', '小白兔童装', '小白兔童装', '小白兔童装', null, '\\public\\uploads\\20190405\\07d5229a5a9b63547fc2661556850cc9.jpg', '23', '1.00', '388.00', '23', '1554468350', '1557130765', '50', '1');
-INSERT INTO `my_detail` VALUES ('3', '9', '2', '黄色衣服', '黄色衣服', '黄色衣服', '<p><strong>狗蛋</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '98', '3.00', '0.01', '47', '1554948742', '1557130766', '50', '1');
-INSERT INTO `my_detail` VALUES ('4', '21', '2', '黄色小鸭童装', '黄色童装', '黄色童装', '<p>妈卖批，就是不加进去。<strong>我也不小的啦</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '22', '3.01', '99.00', '40', '1554949357', '1557896723', '50', '1');
+INSERT INTO `my_detail` VALUES ('3', '9', '2', '黄色衣服', '黄色衣服', '黄色衣服', '<p><strong>狗蛋</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '98', '0.00', '0.01', '47', '1554948742', '1557130766', '50', '1');
+INSERT INTO `my_detail` VALUES ('4', '21', '2', '黄色小鸭童装', '黄色童装', '黄色童装', '<p>妈卖批，就是不加进去。<strong>我也不小的啦</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '22', '3.00', '99.00', '40', '1554949357', '1557896723', '50', '1');
 INSERT INTO `my_detail` VALUES ('5', '23', '2', '黑色童鞋', '灰色的童鞋，灰色的童装，傻傻的孩子，宽宽的胸膛。', '灰色的童鞋，灰色的童装，傻傻的孩子，宽宽的胸膛。', '<p style=\"text-align: center;\"><strong>商品详情：</strong></p><p style=\"text-align: center;\"><strong><img src=\"/ueditor/php/upload/image/20190506/1557126608104851.jpg\" title=\"1557126608104851.jpg\" alt=\"1557126608104851.jpg\" width=\"800\" height=\"322\"/></strong></p><p>春季换新装，新鞋先穿上。</p><p><img src=\"/ueditor/php/upload/image/20190506/1557126656137490.jpg\" title=\"1557126656137490.jpg\" alt=\"1557126656137490.jpg\" width=\"300\" height=\"230\"/><img src=\"/ueditor/php/upload/image/20190506/1557126697841185.jpg\" title=\"1557126697841185.jpg\" alt=\"1557126697841185.jpg\" width=\"300\" height=\"276\"/></p><p><br/></p><p>不知道好不好，试试就知道。</p><p style=\"text-align: center;\"><img src=\"/ueditor/php/upload/image/20190506/1557126745707528.jpg\" title=\"1557126745707528.jpg\" alt=\"1557126745707528.jpg\" width=\"800\" height=\"430\"/></p>', '\\public\\uploads\\20190506\\f8af55e474aeca9e8afd140dddcbbdb5.jpg', '100', '0.00', '99.00', '0', '1557126803', '1557130768', '50', '1');
-INSERT INTO `my_detail` VALUES ('6', '21', '2', '黄色小鸭童装', '黄色童装', '黄色童装', '<p>妈卖批，就是不加进去。<strong>我也不小的啦</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '100', '0.00', '99.00', '4', '1554949357', '1557130768', '50', '1');
+INSERT INTO `my_detail` VALUES ('6', '21', '2', '这个衣服好看', '黄色童装', '黄色童装', '<p>妈卖批，就是不加进去。<strong>我也不小的啦</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '100', '0.03', '99.00', '4', '1554949357', '1563259565', '50', '1');
+INSERT INTO `my_detail` VALUES ('7', '21', '2', '潮流短衫', '潮流短衫', '潮流短衫', '<p>潮流短衫</p><p>潮流短衫</p>', '\\public\\uploads\\20190716\\954dfde21b09e9ba640ea46d2555a1fa.png', '2', '20.00', '40.00', '0', '1563259842', '1563259842', '50', '1');
 
 -- ----------------------------
 -- Table structure for my_group

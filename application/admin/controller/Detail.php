@@ -5,6 +5,7 @@ use app\common\controller\Base;
 use think\Exception;
 use app\common\model\User;
 use app\common\model\Detail as DetailModule;
+use app\common\validate\Detail as DetailValidate;
 
 class Detail extends Base {
     protected function initialize(){
@@ -24,7 +25,7 @@ class Detail extends Base {
             $columns = $this->modDetail->listTree();
             $detailId = request()->param('id');
             $colPId = $this->modDetail->getParentById($detailId);
-            $detailRes = $this->modDetail->field('id,cid,name,img,sum,price,keyword,description,content,status')->find($detailId);
+            $detailRes = $this->modDetail->field('id,cid,name,img,sum,price,new_price,keyword,description,content,status')->find($detailId);
             return $this->fetch('edit',[
                 'category'  =>  $columns,
                 'detail'    =>  $detailRes,

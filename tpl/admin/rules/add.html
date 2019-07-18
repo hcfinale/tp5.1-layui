@@ -8,59 +8,45 @@
 </head>
 <body class="layui-view-body">
 <div class="layui-content">
-	<div class="layui-page-header">
-		<div class="pagewrap">
-			<span class="layui-breadcrumb">
-				<a href="">首页</a>
-				<a href="">用户</a>
-				<a><cite>栏目添加</cite></a>
-			</span>
-			<h2 class="title">栏目添加</h2>
-		</div>
-	</div>
 	<div class="layui-row">
-		<div class="layui-col-lg-offset3 layui-col-xs6">
+		<div class="layui-col-xs-offset2 layui-col-xs6">
 			<form class="layui-form">
 				<div class="layui-form-item">
-					<label class="layui-form-label">父级栏目</label>
+					<label class="layui-form-label">父级：</label>
 					<div class="layui-input-block">
 						<select name="pid" lay-verify="required">
 							<option value="0">请选择</option>
-							{volist name="category" id="cate"}
+							{volist name="rules" id="cate"}
 							<option value="{$cate.id}">{if condition ="$cate['pid'] neq '0'"}|<?php echo str_repeat("___",$cate['level']); ?>{/if} {$cate.title}</option>
 							{/volist}
 						</select>
 					</div>
 				</div>
 				<div class="layui-form-item">
-					<label class="layui-form-label">栏目名称</label>
+					<label class="layui-form-label">权限名称：</label>
 					<div class="layui-input-block">
-						<input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+						<input type="text" name="title" required  lay-verify="required" placeholder="请输入权限名称" autocomplete="off" class="layui-input">
 					</div>
 				</div>
 				<div class="layui-form-item">
-					<label class="layui-form-label">栏目图片</label>
+					<label class="layui-form-label">方法：</label>
 					<div class="layui-input-block">
-						<button type="button" class="layui-btn" id="upcolumn">
-							<i class="layui-icon">&#xe67c;</i>上传图片
-						</button>
-						<img src="" alt="" width="30%" height="auto" id="columnImg" class="layui-hide" />
-						<input type="hidden" value="" name="img" id="columnimgs">
+						<input type="text" name="name" required  lay-verify="required" placeholder="请输入操作方法" autocomplete="off" class="layui-input">
 					</div>
 				</div>
+				<div class="layui-form-item">
+                    <label class="layui-form-label">状态：</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="status" value="1" title="开" checked>
+                        <input type="radio" name="status" value="0" title="关">
+                    </div>
+                </div>
 				<div class="layui-form-item layui-form-text">
-					<label class="layui-form-label">关键词</label>
+					<label class="layui-form-label">附加条件：</label>
 					<div class="layui-input-block">
-						<textarea name="keyword" placeholder="请输入内容" class="layui-textarea"></textarea>
+						<textarea name="condition" placeholder="请输入附加条件，可以为空" class="layui-textarea"></textarea>
 					</div>
 				</div>
-				<div class="layui-form-item layui-form-text">
-					<label class="layui-form-label">描述</label>
-					<div class="layui-input-block">
-						<textarea name="description" placeholder="请输入内容" class="layui-textarea"></textarea>
-					</div>
-				</div>
-				{:token()}
 				<div class="layui-form-item">
 					<div class="layui-input-block">
 						<button class="layui-btn" lay-submit lay-filter="add">立即提交</button>
@@ -73,57 +59,22 @@
 </div>
 {include file="Public:footer" /}
 <script type="text/javascript">
-var option = {
-	"upcolumnurl":"{:url('column/columnUpImg')}",
-};
-layui.use(['form','upload'], function(){
+layui.use(['form','jquery'], function(){
 	var form = layui.form;
-	var upload = layui.upload;
-	form.render();
-	//图片上传
-	var uploadInst = upload.render({
-		elem: '#upcolumn'
-		, accept: 'images'
-		,acceptMime: 'image/*'
-		, field: 'columnImg' //后台控制器中接受的参数，必须
-		,auto:true // 自动上传
-		,url: option.upcolumnurl //上传接口
-		,before:function (obj) {
-			console.log(obj);
-			// 预览
-			obj.preview(function(index,file,result) {
-				$('#columnImg').toggleClass('layui-hide').attr({'src':result,'title':'栏目图片'});;// 图片链接加载
-				$('#columnImgs').val(result);
-			});
-		}
-		,done: function (res) {
-			if (res.code == 0) {
-				layer.msg('上传成功！', {
-					icon: 1,
-					end: function () {
-						$('#columnimgs').attr('src', res.url);
-					}
-				});
-				$('#columnimgs').val(res.img);
-			}
-		}
-		,error: function () {
-
-		}
-	});
+	$ = layui.jquery;
 	//监听提交
 	form.on('submit(add)', function(data){
 		var data = data.field;
-		// console.log(data);
-		$.post("{:url('column/add')}",data,function(res){
+		console.log(data);
+		$.post("{:url('rules/add')}",data,function(res){
 			if(res.code == '1001'){
 				layer.msg(res.data);
 				setTimeout(function () {
-					window.location.href = '';
+					let index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);//关闭当前页
 				},2000)
 			}else{
-				// layer.msg(res.info, {time: 2000});
-				layer.msg('添加失败 ');
+				layer.msg('添加失败', {time: 2000});
 			}
 		},'json');
 		return false;

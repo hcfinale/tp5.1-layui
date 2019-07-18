@@ -3,8 +3,7 @@ namespace app\common\validate;
 
 use think\Validate;
 
-class Column extends Validate
-{
+class Column extends Validate{
     protected $rule =   [
         'name'  => 'require|max:25',
         'age'   => 'number|between:1,120',
