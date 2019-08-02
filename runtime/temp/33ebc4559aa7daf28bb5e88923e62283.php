@@ -1,12 +1,12 @@
-<?php /*a:1:{s:43:"E:\www\tp5\/tpl/admin/index\statistics.html";i:1560501720;}*/ ?>
+<?php /*a:1:{s:43:"E:\www\tp5\/tpl/admin/index\statistics.html";i:1564734255;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/public/static/admin/assets/css/layui.css">
     <link rel="stylesheet" href="/public/static/admin/assets/css/view.css"/>
-    <title></title>
+    <title>主页</title>
 </head>
 <body class="layui-view-body">
 <div class="layui-content">
@@ -100,8 +100,8 @@
             <div class="layui-card">
                 <div class="layui-tab layui-tab-brief">
                     <ul class="layui-tab-title">
-                        <li class="layui-this">新增数</li>
-                        <li>活跃度</li>
+                        <li class="layui-this">所在位置</li>
+                        <li>商品详情一览图</li>
                     </ul>
                     <div class="layui-tab-content">
                         <div class="layui-tab-item layui-show">
@@ -110,7 +110,8 @@
                         <div class="layui-tab-item">
                             <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
                             <div id="main" style="width: 600px;height:400px;">
-
+                            </div>
+                            <div id="pie" style="width: 500px;height:400px;">
                             </div>
                         </div>
                     </div>
@@ -121,32 +122,48 @@
 </div>
 <script src="/public/static/admin/assets/layui.all.js"></script>
 <!--cdn的就是这样，单文件的就会报错，暂时不懂是神马原因-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0/echarts.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0/echarts.js"></script> -->
+<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.js"></script>
 <script>
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));
     // 指定图表的配置项和数据
     var option = {
         title: {
-            text: 'ECharts 入门示例'
+            text: '商品详情一览图'
         },
         tooltip: {},
         legend: {
-            data:['销量']
+            data:['数量']
         },
         xAxis: {
-            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            data: [<?php if(is_array($goodsDetail) || $goodsDetail instanceof \think\Collection || $goodsDetail instanceof \think\Paginator): $i = 0; $__LIST__ = $goodsDetail;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>"<?php echo htmlentities($vo['name']); ?>",<?php endforeach; endif; else: echo "" ;endif; ?>]
         },
         yAxis: {},
         series: [{
-            name: '销量',
+            name: '数量',
             type: 'bar',
-            data: [55, 120, 360, 100, 10, 26]
+            data: [<?php if(is_array($goodsDetail) || $goodsDetail instanceof \think\Collection || $goodsDetail instanceof \think\Paginator): $i = 0; $__LIST__ = $goodsDetail;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><?php echo htmlentities($vo['sum']); ?>,<?php endforeach; endif; else: echo "" ;endif; ?>]
         }]
     };
-
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
+
+    var pie = echarts.init(document.getElementById('pie'));
+    pie.setOption({
+        series : [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: '70%',
+            data:[
+                <?php if(is_array($goodsDetail) || $goodsDetail instanceof \think\Collection || $goodsDetail instanceof \think\Paginator): $i = 0; $__LIST__ = $goodsDetail;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                {value:<?php echo htmlentities($vo['sum']); ?>,name:'<?php echo htmlentities($vo['name']); ?>'},
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            ]
+        }
+    ]
+    });
 </script>
 </body>
 </html>

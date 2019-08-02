@@ -1,4 +1,4 @@
-<?php /*a:3:{s:38:"E:\www\tp5\/tpl/admin/index\index.html";i:1563324510;s:40:"E:\www\tp5\/tpl/admin/Public\header.html";i:1555291684;s:40:"E:\www\tp5\/tpl/admin/Public\footer.html";i:1555291684;}*/ ?>
+<?php /*a:3:{s:38:"E:\www\tp5\/tpl/admin/index\index.html";i:1564018301;s:40:"E:\www\tp5\/tpl/admin/Public\header.html";i:1555291684;s:40:"E:\www\tp5\/tpl/admin/Public\footer.html";i:1555291684;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -91,6 +91,9 @@
                                 <dl class="layui-nav-child">
                                     <dd>
                                         <a href="<?php echo url('login/login'); ?>">登录页</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="<?php echo url('order/chart'); ?>">商品订单图表</a>
                                     </dd>
                                 </dl>
                             </dd>

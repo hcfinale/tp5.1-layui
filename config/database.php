@@ -17,9 +17,9 @@ return [
     // 数据库名
     'database'        => 'tp5',
     // 用户名
-    'username'        => 'root',
+    'username'        => 'hc',
     // 密码
-    'password'        => '',
+    'password'        => 'hc123456',
     // 端口
     'hostport'        => '',
     // 连接dsn

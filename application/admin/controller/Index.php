@@ -15,6 +15,8 @@ class Index extends Base {
         $this->assign('countColumn',db('column')->cache(true,'300')->count('*'));
         $this->assign('countDetail',db('detail')->cache(true,'300')->count('*'));
         $this->assign('countOrder',db('order')->cache(true,'300')->count('*'));
+        $this->assign('goodsDetail',db('column')->alias('c')->join('__DETAIL__ d','c.id = d.cid')->select());
+
         return $this->fetch('index/statistics');
     }
     public function form(){
@@ -29,9 +31,7 @@ class Index extends Base {
         return 'singwa';
     }
     public function map() {
-//        $lnglat = \Map::getLngLat('河南大学');
-//        dump($lnglat);
-        return \Map::staticimage('南京大学');
+        return \Map::staticimage('郑州大学');
     }
     /**
      * 发送短信

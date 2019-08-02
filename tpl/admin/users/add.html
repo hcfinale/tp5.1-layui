@@ -2,7 +2,6 @@
 <html lang="zh-CN">
 <head>
     {include file="Public:header" /}
-    <link rel="stylesheet" href="../assets/css/view.css"/>
     <link rel="icon" href="__STATIC__/admin/favicon.ico">
     <title>用户添加</title>
 </head>
@@ -68,7 +67,7 @@
               </div>
               <div class="layui-form-item">
                 <div class="layui-input-block">
-                  <button class="layui-btn layui-btn-blue" lay-submit lay-filter="formDemo">立即提交</button>
+                  <button class="layui-btn layui-btn-blue" lay-submit lay-filter="addUser">立即提交</button>
                   <button type="reset" class="layui-btn layui-btn-primary">重置</button>
                 </div>
               </div>
@@ -80,8 +79,24 @@
 <script>
 window.onload = function(){
   layui.use(['form','layer'], function(){
-    var form = layui.form
-    ,layer = layui.layer;
+    var form = layui.form,layer = layui.layer;
+    // 监控提交
+    form.on('submit(addUser)',function(data){
+    var data = data.field;
+    console.log(data);
+    $.post("{:url('users/add')}",data,function(res){
+      if(res.code == '1001'){
+        layer.msg(res.data);
+        setTimeout(function () {
+          let index = parent.layer.getFrameIndex(window.name);
+          parent.layer.close(index);//关闭当前页
+        },2000)
+      }else{
+        layer.msg('添加失败', {time: 2000});
+      }
+    },'json');
+    return false;
+    })
   })
 }
 </script>

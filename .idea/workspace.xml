@@ -3,13 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="97d77dec-0363-4779-82a5-8db98bf7f59f" name="Default Changelist" comment="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/3fd5299f2a95c022730216bce6f6a31f.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/3fd5299f2a95c022730216bce6f6a31f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/611d6dd435482687830b718cb959ea4d.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/611d6dd435482687830b718cb959ea4d.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/bca4486f256f3f0e5c50017b429c20f4.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/bca4486f256f3f0e5c50017b429c20f4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/bcb11c504c42931f44fd192e83414e09.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/bcb11c504c42931f44fd192e83414e09.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/c0e9193d2490ae76d07349629478c002.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/c0e9193d2490ae76d07349629478c002.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/d449cd24a77c25462a73e08df12b3dbe.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/d449cd24a77c25462a73e08df12b3dbe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/index/goods/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/index/goods/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/validate/Column.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201907/18.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/201907/18.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/33ebc4559aa7daf28bb5e88923e62283.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/33ebc4559aa7daf28bb5e88923e62283.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/51b494a36b396200eb8831f333e0dc6d.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/51b494a36b396200eb8831f333e0dc6d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/abe03ae57073048193b78b845c427b26.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/abe03ae57073048193b78b845c427b26.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/dd526495ff0703ad1183c0f18ae58974.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/dd526495ff0703ad1183c0f18ae58974.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/admin/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/admin/index/statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/statistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/admin/users/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/users/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/admin/users/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/users/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,6 +190,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,16 +287,17 @@
       <workItem from="1561941870296" duration="3272000" />
       <workItem from="1562722278182" duration="94000" />
       <workItem from="1563152401248" duration="1341000" />
+      <workItem from="1564539744653" duration="741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="293676000" />
+    <option name="totallyTimeSpent" value="294417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18991417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19259657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -437,13 +442,6 @@
     <entry file="file://$PROJECT_DIR$/public/static/admin/home.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/js/echarts.min.js" />
     <entry file="file://$PROJECT_DIR$/extend/Map.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -581,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="520" column="13" selection-start-line="520" selection-start-column="13" selection-end-line="520" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/index/template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -675,6 +666,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="111" column="7" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="520" column="22" lean-forward="true" selection-start-line="520" selection-start-column="22" selection-end-line="520" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
         </state>
       </provider>
     </entry>
