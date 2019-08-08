@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97d77dec-0363-4779-82a5-8db98bf7f59f" name="Default Changelist" comment="微信支付功能回调完善成功，啊，会了很easy，不会的话就是很蛋疼。">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/validate/Column.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201907/18.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/201907/18.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/33ebc4559aa7daf28bb5e88923e62283.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/33ebc4559aa7daf28bb5e88923e62283.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/51b494a36b396200eb8831f333e0dc6d.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/51b494a36b396200eb8831f333e0dc6d.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/abe03ae57073048193b78b845c427b26.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/abe03ae57073048193b78b845c427b26.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/dd526495ff0703ad1183c0f18ae58974.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/dd526495ff0703ad1183c0f18ae58974.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/admin/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/admin/index/statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/index/statistics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/admin/users/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/users/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/admin/users/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/admin/users/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/map.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/map.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -179,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,7 +180,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,7 +190,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hcadmin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Console" />
@@ -288,16 +277,17 @@
       <workItem from="1562722278182" duration="94000" />
       <workItem from="1563152401248" duration="1341000" />
       <workItem from="1564539744653" duration="741000" />
+      <workItem from="1564969097264" duration="18000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294417000" />
+    <option name="totallyTimeSpent" value="294435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19259657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19527897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

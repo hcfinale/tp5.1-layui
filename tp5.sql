@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 本地
+Source Server         : 本机
 Source Server Version : 50505
-Source Host           : 127.0.0.1:3306
+Source Host           : localhost:3306
 Source Database       : tp5
 
 Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2019-07-17 13:42:46
+Date: 2019-08-08 15:29:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -208,11 +208,11 @@ CREATE TABLE `my_detail` (
 -- ----------------------------
 -- Records of my_detail
 -- ----------------------------
-INSERT INTO `my_detail` VALUES ('1', '21', '2', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', null, '\\public\\uploads\\20190405\\829aa4b62b9de6c8d3905d00b81e06be.jpg', '37', '2.00', '49.00', '33', '1554468256', '1557130763', '50', '1');
+INSERT INTO `my_detail` VALUES ('1', '21', '2', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', '宝宝五彩袜棉质舒服', null, '\\public\\uploads\\20190405\\829aa4b62b9de6c8d3905d00b81e06be.jpg', '36', '2.00', '49.00', '33', '1554468256', '1557130763', '50', '1');
 INSERT INTO `my_detail` VALUES ('2', '21', '2', '小白兔童装', '小白兔童装', '小白兔童装', null, '\\public\\uploads\\20190405\\07d5229a5a9b63547fc2661556850cc9.jpg', '23', '1.00', '388.00', '23', '1554468350', '1557130765', '50', '1');
-INSERT INTO `my_detail` VALUES ('3', '9', '2', '黄色衣服', '黄色衣服', '黄色衣服', '<p><strong>狗蛋</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '98', '0.00', '0.01', '47', '1554948742', '1557130766', '50', '1');
+INSERT INTO `my_detail` VALUES ('3', '9', '2', '黄色衣服', '黄色衣服', '黄色衣服', '<p><strong>狗蛋</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '97', '0.00', '0.01', '47', '1554948742', '1557130766', '50', '1');
 INSERT INTO `my_detail` VALUES ('4', '21', '2', '黄色小鸭童装', '黄色童装', '黄色童装', '<p>妈卖批，就是不加进去。<strong>我也不小的啦</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '22', '3.00', '99.00', '40', '1554949357', '1557896723', '50', '1');
-INSERT INTO `my_detail` VALUES ('5', '23', '2', '黑色童鞋', '灰色的童鞋，灰色的童装，傻傻的孩子，宽宽的胸膛。', '灰色的童鞋，灰色的童装，傻傻的孩子，宽宽的胸膛。', '<p style=\"text-align: center;\"><strong>商品详情：</strong></p><p style=\"text-align: center;\"><strong><img src=\"/ueditor/php/upload/image/20190506/1557126608104851.jpg\" title=\"1557126608104851.jpg\" alt=\"1557126608104851.jpg\" width=\"800\" height=\"322\"/></strong></p><p>春季换新装，新鞋先穿上。</p><p><img src=\"/ueditor/php/upload/image/20190506/1557126656137490.jpg\" title=\"1557126656137490.jpg\" alt=\"1557126656137490.jpg\" width=\"300\" height=\"230\"/><img src=\"/ueditor/php/upload/image/20190506/1557126697841185.jpg\" title=\"1557126697841185.jpg\" alt=\"1557126697841185.jpg\" width=\"300\" height=\"276\"/></p><p><br/></p><p>不知道好不好，试试就知道。</p><p style=\"text-align: center;\"><img src=\"/ueditor/php/upload/image/20190506/1557126745707528.jpg\" title=\"1557126745707528.jpg\" alt=\"1557126745707528.jpg\" width=\"800\" height=\"430\"/></p>', '\\public\\uploads\\20190506\\f8af55e474aeca9e8afd140dddcbbdb5.jpg', '100', '0.00', '99.00', '0', '1557126803', '1557130768', '50', '1');
+INSERT INTO `my_detail` VALUES ('5', '23', '2', '黑色童鞋', '灰色的童鞋，灰色的童装，傻傻的孩子，宽宽的胸膛。', '灰色的童鞋，灰色的童装，傻傻的孩子，宽宽的胸膛。', '<p style=\"text-align: center;\"><strong>商品详情：</strong></p><p style=\"text-align: center;\"><strong><img src=\"/ueditor/php/upload/image/20190506/1557126608104851.jpg\" title=\"1557126608104851.jpg\" alt=\"1557126608104851.jpg\" width=\"800\" height=\"322\"/></strong></p><p>春季换新装，新鞋先穿上。</p><p><img src=\"/ueditor/php/upload/image/20190506/1557126656137490.jpg\" title=\"1557126656137490.jpg\" alt=\"1557126656137490.jpg\" width=\"300\" height=\"230\"/><img src=\"/ueditor/php/upload/image/20190506/1557126697841185.jpg\" title=\"1557126697841185.jpg\" alt=\"1557126697841185.jpg\" width=\"300\" height=\"276\"/></p><p><br/></p><p>不知道好不好，试试就知道。</p><p style=\"text-align: center;\"><img src=\"/ueditor/php/upload/image/20190506/1557126745707528.jpg\" title=\"1557126745707528.jpg\" alt=\"1557126745707528.jpg\" width=\"800\" height=\"430\"/></p>', '\\public\\uploads\\20190506\\f8af55e474aeca9e8afd140dddcbbdb5.jpg', '132', '0.00', '99.00', '0', '1557126803', '1557130768', '50', '1');
 INSERT INTO `my_detail` VALUES ('6', '21', '2', '这个衣服好看', '黄色童装', '黄色童装', '<p>妈卖批，就是不加进去。<strong>我也不小的啦</strong></p>', '\\public\\uploads\\20190411\\12b3ae6381b3865fb73cf331fac1bed5.png', '100', '0.03', '99.00', '4', '1554949357', '1563259565', '50', '1');
 INSERT INTO `my_detail` VALUES ('7', '21', '2', '潮流短衫', '潮流短衫', '潮流短衫', '<p>潮流短衫</p><p>潮流短衫</p>', '\\public\\uploads\\20190716\\954dfde21b09e9ba640ea46d2555a1fa.png', '2', '20.00', '40.00', '0', '1563259842', '1563259842', '50', '1');
 
@@ -247,13 +247,15 @@ CREATE TABLE `my_order` (
   `create_time` int(11) DEFAULT NULL,
   `status` int(5) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of my_order
 -- ----------------------------
 INSERT INTO `my_order` VALUES ('1', '1562578720KJMlFTQn6LIG2Ood3qD5gr', '2', '0', '0.01', null, '1');
 INSERT INTO `my_order` VALUES ('2', '1562578749ekqHxBOFWN8vplYZh4Cf6L', '2', '2', '0.02', null, '1');
+INSERT INTO `my_order` VALUES ('3', '1565082925Wb3PtlafJQM2n96RpZs8wo', '2', '0', '0.01', null, '1');
+INSERT INTO `my_order` VALUES ('4', '1565143255vB871SkNQCmh2AJR9MXUHb', '2', '0', '49.00', null, '1');
 
 -- ----------------------------
 -- Table structure for my_shop_address
@@ -291,10 +293,12 @@ CREATE TABLE `my_shop_cart` (
   `sort` char(5) NOT NULL DEFAULT '50' COMMENT '排序',
   `status` smallint(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of my_shop_cart
 -- ----------------------------
 INSERT INTO `my_shop_cart` VALUES ('1', '2', '1562578720KJMlFTQn6LIG2Ood3qD5gr', '黄色衣服', '-2', '0.01', '1', '1562578719', '50', '1');
 INSERT INTO `my_shop_cart` VALUES ('2', '2', '1562578749ekqHxBOFWN8vplYZh4Cf6L', '黄色衣服', '0', '0.01', '2', '1562578748', '50', '1');
+INSERT INTO `my_shop_cart` VALUES ('3', '2', '1565082925Wb3PtlafJQM2n96RpZs8wo', '黄色衣服', '0', '0.01', '1', '1565082924', '50', '1');
+INSERT INTO `my_shop_cart` VALUES ('4', '2', '1565143255vB871SkNQCmh2AJR9MXUHb', '宝宝五彩袜棉质舒服', '0', '49.00', '1', '1565143254', '50', '1');
